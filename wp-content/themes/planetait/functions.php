@@ -72,7 +72,7 @@ function html5blank_nav()
     wp_nav_menu(
         array(
             'theme_location' => 'header-menu',
-            'menu' => '',
+            'menu' => GlobalConfig::get("project_slug_name")."_menu",
             'container' => 'div',
             'container_class' => 'menu-{menu slug}-container',
             'container_id' => '',
@@ -338,7 +338,29 @@ function html5blankcomments($comment, $args, $depth)
 	<?php endif; ?>
 <?php 
 }
+/**
+ * Slug goodies
+ */
+function na_remove_slug( $post_link, $post, $leavename ) {
 
+    if ( 'sub_page' != $post->post_type || 'publish' != $post->post_status ) {
+        return $post_link;
+    }
+
+    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
+
+    return $post_link;
+}
+function na_parse_request( $query ) {
+
+    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
+        return;
+    }
+
+    if ( ! empty( $query->query['name'] ) ) {
+        $query->set( 'post_type', array( 'post', 'sub_page', 'page' ) );
+    }
+}
 /*------------------------------------*\
 	Actions + Filters + ShortCodes
 \*------------------------------------*/
@@ -353,7 +375,7 @@ add_action('admin_menu', 'register_html5_admin_menu'); // Add Admin Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
-
+add_action( 'pre_get_posts', 'na_parse_request' );
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
 remove_action('wp_head', 'feed_links', 2); // Display the links to the general feeds: Post and Comment Feed
@@ -385,7 +407,7 @@ add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 add_filter('style_loader_tag', 'html5_style_remove'); // Remove 'text/css' from enqueued stylesheet
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to post images
-
+add_filter( 'post_type_link', 'na_remove_slug', 10, 3 );
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
@@ -412,9 +434,7 @@ function register_html5_admin_menu()
  */
 function admin_project_ustawienia_page_content()
 {
-    ?>
-        <button id="ustawienia_generuj_tresci">Generuj Treści</button>
-    <?php
+    require_once("settings.php");
 
 }
 add_action('admin_footer', 'ustawienia_ajax');
@@ -449,7 +469,7 @@ function ustawienia_ajax()
         function project_generate_content()
         {
             global $wpdb; // generating content
-            $flush = bool( $_POST['flush'] );
+            $flush = filter_var( $_POST['flush'], FILTER_VALIDATE_BOOLEAN );
     // Creating main sections
             check_ajax_referer('ajax-generate-content-nonce', 'security');
 
@@ -467,15 +487,19 @@ function ustawienia_ajax()
 
             if ($page_projects != 0 && $flush) {
                 wp_delete_post($page_projects, true);
+                $page_projects = 0;
             }
             if ($page_refferences != 0 && $flush) {
                 wp_delete_post($page_refferences, true);
+                $page_refferences = 0;
             }
             if ($page_carrier != 0 && $flush) {
                 wp_delete_post($page_carrier, true);
+                $page_carrier = 0;
             }
             if ($page_contact != 0 && $flush) {
                 wp_delete_post($page_contact, true);
+                $page_contact = 0;
             }
             if ($page_projects == 0) {
                 $page_projects = wp_insert_post(array(
@@ -516,18 +540,23 @@ function ustawienia_ajax()
 
             if ($section_what_we_do != 0 && $flush) {
                 wp_delete_post($section_what_we_do, true);
+                $section_what_we_do = 0;
             }
             if ($section_achievements != 0 && $flush) {
                 wp_delete_post($section_achievements, true);
+                $section_achievements = 0;
             }
             if ($section_prog_languages != 0 && $flush) {
                 wp_delete_post($section_prog_languages, true);
+                $section_prog_languages = 0;
             }
             if ($section_about_us != 0 && $flush) {
                 wp_delete_post($section_about_us, true);
+                $section_about_us = 0;
             }
             if ($section_partners != 0 && $flush) {
                 wp_delete_post($section_partners, true);
+                $section_partners = 0;
             }
             if ($section_what_we_do == 0) {
                 $section_what_we_do = wp_insert_post(array(
@@ -588,7 +617,7 @@ function ustawienia_ajax()
                 "menu-item-url" => home_url("/"),
                 "menu-item-status" => "publish"
             ));
-            $pagess = get_posts(array(
+            $pages = get_posts(array(
                 'posts_per_page' => 99999,
                 'orderby' => 'menu_order',
                 'order' => 'ASC',

@@ -24,6 +24,7 @@ class Project_MenuWalker extends Walker_Nav_Menu{
         } else {
             $output .= '</span>';
         }
+        
     }
 }
 ?>
