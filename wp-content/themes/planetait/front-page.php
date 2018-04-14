@@ -1,4 +1,4 @@
-<h1>Menu</h1>
+<?php get_header(); ?>
 <h1>slajder</h1>
 <small>Sekcje: </small>
 <?php
@@ -16,3 +16,5 @@ foreach($sections as $section): ?>
 <?php endforeach;
 ?>
 <h1>stopka</h1>
+
+<?php get_footer(); ?>
