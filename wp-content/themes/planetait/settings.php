@@ -80,7 +80,29 @@ function project_settings_slider_slides_input_display() {
         <?php
     } else {
         foreach($decodedSlides as $slide){
-            
+            $mediaObject = new WP_Query(array(
+                'post_id' => $slide->ImgID,
+                'post_type' => 'attachment'
+            ));
+            $media_post = get_post($slide->ImgID);
+            if(strpos($media_post->post_mime_type, "video") !== false){
+
+            } else{
+                
+            }
+            ?>
+                <tr>
+                    <td data-id="<?= $slide->ImgID;?>" class="image column-image column-primary">
+                        <img src="<?=wp_get_attachment_thumb_url($slide->ImgID)?>"/>
+                    </td>
+                    <td class="title column-title column-primary" data-name="header">
+                        <input type="text" name="header" value="<?=$slide->Header?>">
+                    </td>
+                    <td class="title column-title column-primary" data-name="text">
+                        <input type="text" name="text" value="<?=$slide->Text?>">
+                        </td>
+                </tr>
+            <?php
         }
     }
     ?>
