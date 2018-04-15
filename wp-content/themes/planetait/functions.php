@@ -34,7 +34,7 @@ if (function_exists('add_theme_support')) {
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
+    add_image_size('hd', 1920, '', true); // Custom Thumbnail Size call using the_post_thumbnail('hd');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
@@ -114,16 +114,28 @@ function html5blank_conditional_scripts()
         wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
         wp_enqueue_script('scriptname'); // Enqueue it!
     }
+
+    if(is_front_page()){
+        wp_register_script('fractionslider', get_template_directory_uri() . '/js/lib/jquery.fractionslider.min.js', array('jquery'), '1.9.0'); // Fraction Slider
+        wp_enqueue_script('fractionslider'); // Enqueue it!
+
+        wp_register_script('frontpage_script', get_template_directory_uri() . '/js/frontpage_script.js', array('jquery'), '1.9.0'); // Frontpage script Slider
+        wp_enqueue_script('frontpage_script'); // Enqueue it!
+    }
 }
 
 // Load HTML5 Blank styles
 function html5blank_styles()
 {
-    wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
+    wp_register_style('normalize', get_template_directory_uri() . '/css/lib/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+    if(is_front_page()){
+        wp_register_style('fractionslider', get_template_directory_uri() . '/css/lib/fractionslider.css', array(), '1.0', 'all'); // Fraction Slider
+        wp_enqueue_style('fractionslider'); // Enqueue it!
+    }
 }
 
 // Register HTML5 Blank Navigation
@@ -436,6 +448,8 @@ function register_html5_admin_menu()
 add_action("admin_init", "register_theme_settings");
 function register_theme_settings() {
     register_setting("project_settings", "project_settings", "project_settings_validate");
+    add_settings_section("project_settings_header", "Ustawienia Nagłówka", "project_settings_header_display","project_settings_page");
+    add_settings_field("project_settings_header_logo", "Logo", "project_settings_header_logo_display", "project_settings_page", "project_settings_header");
 
     register_setting("project_settings_tresc", "project_settings_tresc", "project_settings_tresc_validate");
 

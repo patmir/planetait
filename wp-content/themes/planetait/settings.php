@@ -6,7 +6,7 @@
 defined( 'ABSPATH' ) or die( "Restricted access!" );
 require_once( ABSPATH . 'wp-admin/admin-header.php' );
 $settings_url = admin_url("admin.php?page=".GlobalConfig::get("project_slug_name")."_ustawienia");
-$action =  $_GET['action'];
+$action =  (isset($_GET['action'])?$_GET['action']:null);
 /**
  * Render Settings Tab Content
  */
@@ -23,8 +23,13 @@ global $wp;
  <?php
  /** Ogólne */
  if(!isset($action)){
+    wp_enqueue_media();
      ?>
-     Ogólne
+      <form action="options.php" id="general_settings" method="POST">
+     <?php  settings_fields("project_settings");
+            do_settings_sections( "project_settings_page" ); ?>
+    <button id="save_general" name="Zapisz" type="button" class="button button-primary">Zapisz</button>
+     </form>
      <?php
  } else if ($action == 'tresc'){
      ?>
@@ -48,6 +53,31 @@ global $wp;
 
 <?php 
 /** Display Functions */
+function project_settings_header_display(){
+    ?>
+    <h4>Wybierz właściwości nagłówka strony</h3>
+    <?php  
+}
+function project_settings_header_logo_display(){
+    $options = get_option('project_settings');
+    $logo = intval(json_decode($options["project_settings_header_logo"]));
+    ?>
+    <input 
+    id="project_settings_header_logo" 
+    name="project_settings[project_settings_header_logo]"
+    type="hidden" value="<?= $options["project_settings_header_logo"] ?>"/>
+    <?php
+    $thumb;
+    if($logo != 0) {
+    $logo_post = get_post($logo);
+    $thumb = wp_get_attachment_thumb_url($logo);
+    } else {
+        $thumb = includes_url("images/media/default.png");
+    }
+            ?>
+    <img src="<?=$thumb?>" id="logo_img" data-id="<?=$logo?>"/>
+    <?php
+}
 function project_settings_slider_slides_display(){
     ?>
     <h4>Wybierz i konfiguruj slajdy wyświetlanie na stronie głównej</h3>
@@ -80,20 +110,18 @@ function project_settings_slider_slides_input_display() {
         <?php
     } else {
         foreach($decodedSlides as $slide){
-            $mediaObject = new WP_Query(array(
-                'post_id' => $slide->ImgID,
-                'post_type' => 'attachment'
-            ));
             $media_post = get_post($slide->ImgID);
             if(strpos($media_post->post_mime_type, "video") !== false){
-
+                $thumb = includes_url("images/media/video.png");
             } else{
-                
+                $thumb = wp_get_attachment_thumb_url($slide->ImgID);
             }
             ?>
                 <tr>
                     <td data-id="<?= $slide->ImgID;?>" class="image column-image column-primary">
-                        <img src="<?=wp_get_attachment_thumb_url($slide->ImgID)?>"/>
+                    <script>
+            </script>
+                        <img src="<?=$thumb?>"/>
                     </td>
                     <td class="title column-title column-primary" data-name="header">
                         <input type="text" name="header" value="<?=$slide->Header?>">

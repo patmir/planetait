@@ -19,10 +19,16 @@ function ustawienia_ajax()
 		};
 
 		jQuery.post(ajaxurl, data, function(response) {
-			console.log(response);
 		    });
         
         });
+        /**
+         * Save general
+         */
+        jQuery("#save_general").on("click", function(e){
+             jQuery("#project_settings_header_logo").val(JSON.stringify(jQuery("#logo_img").data("id")));
+             jQuery("#general_settings").submit();
+         });
         /**
         Save slides
          */
@@ -57,6 +63,7 @@ function ustawienia_ajax()
             thumb = attachment['thumb']['src'];
             }
                 jQuery(target).children("img").attr('src', thumb);
+                jQuery(target).attr("data-id", attachment["id"]);
         }
 		var addSlide = function(media_object){
             var thumb;
@@ -81,6 +88,33 @@ function ustawienia_ajax()
             });
         }
         var media_upload_frame;
+        var media_upload_frame_logo;
+        var getMediaForLogo = function(target){
+            if(media_upload_frame_logo) {
+                media_upload_frame_logo.collection = target;
+                media_upload_frame_logo.open();
+                return;
+            }
+            media_upload_frame_logo = wp.media({
+                title: "Wybierz logo",
+                button: {
+                    text: "Wybierz",
+                },
+                multiple: false,
+                library : {
+                    type: [ 'image' ],
+                            }
+            });
+            media_upload_frame_logo.on('select', function(){
+                attachment = media_upload_frame_logo.state().get('selection').first().toJSON();
+                    jQuery(media_upload_frame_logo['collection']).attr("data-id", attachment['id']);
+                    jQuery(media_upload_frame_logo['collection']).attr("src", attachment['sizes']['thumbnail']['url']);
+            });   
+            media_upload_frame_logo.open();
+            
+            media_upload_frame_logo['collection']= target;
+        }
+
         var getMediaObject = function(target){
 
             if(media_upload_frame) {
@@ -103,9 +137,6 @@ function ustawienia_ajax()
             
             media_upload_frame.on('select', function(){
                 attachment = media_upload_frame.state().get('selection').first().toJSON();
-                console.log(media_upload_frame);
-                //handle attch
-                console.log(attachment);
                 if(media_upload_frame['collection']){
                     editSlide(media_upload_frame['collection'], attachment);
                 } else {
@@ -116,6 +147,15 @@ function ustawienia_ajax()
             
             media_upload_frame['collection']= target;
         }
+
+        
+                    
+        jQuery("td[data-id]").on("click", function(){
+                callEdit(this);
+            });
+            jQuery("#logo_img").on("click", function(){
+                getMediaForLogo(this);
+            });
 	});
 	</script>
  <?php
