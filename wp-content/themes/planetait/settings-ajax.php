@@ -81,10 +81,15 @@ function ustawienia_ajax()
             append += '<input type="text" name="header"></td>';
             append += '<td class="title column-title column-primary" data-name="text">';
             append += '<input type="text" name="header"></td>';
+            append += '<td class="title column-title column-primary" data-name="text"><button type="button" class="button button-danger delete_slide">Usuń</button></td>';
             append += '</tr>';
             jQuery("#slides_list").append(append);
             jQuery("td[data-id="+media_object['id']+"]").on("click", function(){
                 callEdit(this);
+            });
+            jQuery(".delete_slide").off('click').on('click', function(){
+                jQuery(this).parent().parent().remove();
+
             });
         }
         var media_upload_frame;
@@ -155,6 +160,12 @@ function ustawienia_ajax()
             });
             jQuery("#logo_img").on("click", function(){
                 getMediaForLogo(this);
+            });
+        
+            jQuery(".delete_slide").on("click",function(){
+                console.log(this);
+                jQuery(this).parent().parent().remove();
+
             });
 	});
 	</script>

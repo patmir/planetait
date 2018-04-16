@@ -305,3 +305,5 @@ a img.aligncenter {
 		page-break-after:avoid;
 	}
 }
+.rev_slider video {pointer-events: none}
+.tp-video-play-button {display: none !important}

@@ -98,6 +98,7 @@ function project_settings_slider_slides_input_display() {
                 <th scope="col" id="slide_img" class="manage-column column-name column-primary">Zdjęcie/Film</th>
                 <th scope="col" id="slide_header" class="manage-column column-name column-primary">Nagłówek</th>
                 <th scope="col" id="slide_text" class="manage-column column-name column-primary">Tekst</th>
+                <th scope="col" id="slide_delete" class="manage-column column-name column-primary">Akcja</th>
             </tr>
         </thead>
         <tbody id="slides_list">
@@ -128,6 +129,8 @@ function project_settings_slider_slides_input_display() {
                     </td>
                     <td class="title column-title column-primary" data-name="text">
                         <input type="text" name="text" value="<?=$slide->Text?>">
+                        </td>
+                    <td class="title column-title column-primary" data-name="text"><button type="button" class="button button-danger delete_slide">Usuń</button>
                         </td>
                 </tr>
             <?php

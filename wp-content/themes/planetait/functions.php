@@ -110,18 +110,31 @@ function html5blank_header_scripts()
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
 
+    wp_register_script('commonscript', get_template_directory_uri() . '/js/common.js', array('jquery'), '1.9.0'); // Fraction Slider
+    wp_enqueue_script('commonscript'); // Enqueue it!
+    $translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
+    wp_localize_script( 'commonscript', 'global_object', $translation_array );
     if(is_front_page()){
-        wp_register_script('fractionslider', get_template_directory_uri() . '/js/lib/jquery.fractionslider.min.js', array('jquery'), '1.9.0'); // Fraction Slider
-        wp_enqueue_script('fractionslider'); // Enqueue it!
 
         wp_register_script('frontpage_script', get_template_directory_uri() . '/js/frontpage_script.js', array('jquery'), '1.9.0'); // Frontpage script Slider
         wp_enqueue_script('frontpage_script'); // Enqueue it!
-    }
+        foreach( glob( get_template_directory(). '/js/lib/revolution/js/*.js' ) as $file ) {
+            // $file contains the name and extension of the file
+            wp_register_script("sliderrev_".basename($file), get_template_directory_uri().'/js/lib/revolution/js/'.basename($file), array('jquery'), '1.11.1');
+            wp_enqueue_script("sliderrev_".basename($file));
+        }
+        foreach( glob( get_template_directory(). '/js/lib/revolution/extensions/*.js' ) as $file ) {
+            // $file contains the name and extension of the file
+            wp_register_script("sliderrev_".basename($file), get_template_directory_uri().'/js/lib/revolution/js/extensions/js/'.basename($file), array('jquery'), '1.11.1');
+            wp_enqueue_script("sliderrev_".basename($file));
+        }
+        wp_register_script("sliderrev_addon_countdown", get_template_directory_uri().'/js/lib/revolution-addons/countdown/revolution.addon.countdown.min.js', array('jquery'), '1.11.1');
+        wp_enqueue_script("sliderrev_addon_countdown");
+
+        wp_register_script("sliderrev_addon_typewriter", get_template_directory_uri().'/js/lib/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js', array('jquery'), '1.11.1');
+        wp_enqueue_script("sliderrev_addon_typewriter");
+       }
 }
 
 // Load HTML5 Blank styles
@@ -133,8 +146,27 @@ function html5blank_styles()
     wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
     if(is_front_page()){
-        wp_register_style('fractionslider', get_template_directory_uri() . '/css/lib/fractionslider.css', array(), '1.0', 'all'); // Fraction Slider
-        wp_enqueue_style('fractionslider'); // Enqueue it!
+        wp_register_style('sliderrev_pe_icon', get_template_directory_uri() . '/css/lib/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_pe_icon'); // Enqueue it!*/
+
+        wp_register_style('sliderrev_fa', get_template_directory_uri() . '/css/lib/fonts/font-awesome/css/font-awesome.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_fa'); // Enqueue it!*/
+
+        wp_register_style('sliderrev_settings', get_template_directory_uri() . '/css/lib/revolution/settings.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_settings'); // Enqueue it!*/
+
+        wp_register_style('sliderrev_layers', get_template_directory_uri() . '/css/lib/revolution/layers.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_layers'); // Enqueue it!*/
+
+        wp_register_style('sliderrev_nav', get_template_directory_uri() . '/css/lib/revolution/navigation.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_nav'); // Enqueue it!*/
+
+        wp_register_style('sliderrev_nav', get_template_directory_uri() . '/css/lib/revolution/navigation.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_nav'); // Enqueue it!*/
+
+
+        wp_register_style('sliderrev_typewriter', get_template_directory_uri() . '/js/lib/revolution-addons/typewriter/css/typewriter.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_typewriter'); // Enqueue it!*/
     }
 }
 
