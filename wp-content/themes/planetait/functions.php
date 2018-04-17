@@ -84,7 +84,7 @@ function html5blank_nav()
             'after' => '',
             'link_before' => '',
             'link_after' => '',
-            'items_wrap' => '<ul>%3$s</ul>',
+            'items_wrap' => '%3$s',
             'depth' => 0,
             'walker' => new Project_MenuWalker()
         )
@@ -111,7 +111,7 @@ function html5blank_header_scripts()
 function html5blank_conditional_scripts()
 {
 
-    wp_register_script('commonscript', get_template_directory_uri() . '/js/common.js', array('jquery'), '1.9.0'); // Fraction Slider
+    wp_register_script('commonscript', get_template_directory_uri() . '/js/common.js', array('jquery'), '1.9.0', true); // Fraction Slider
     wp_enqueue_script('commonscript'); // Enqueue it!
     $translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
     wp_localize_script( 'commonscript', 'global_object', $translation_array );
@@ -461,7 +461,12 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 
 // Shortcodes above would be nested like this -
 // [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
-
+function add_first_and_last($items) {
+    $items[1]->classes[] = 'first-nav-item';
+    $items[count($items)]->classes[] = 'last-nav-item';
+    return $items;
+}
+add_filter('wp_nav_menu_objects', 'add_first_and_last');
 /*********************************
  * Custom Admin Menu Entry
  */
