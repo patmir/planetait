@@ -2,7 +2,7 @@
 $general_settings = get_option("project_settings");
 $logo = intval($general_settings["project_settings_header_logo"]);
 $logo_obj = wp_get_attachment_metadata($logo);
-$logo = wp_get_attachment_image_src($logo, "small")[0];
+$logo = wp_get_attachment_image_src($logo, "full")[0];
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
@@ -18,7 +18,7 @@ $logo = wp_get_attachment_image_src($logo, "small")[0];
 		<link href="http://fonts.googleapis.com/css?family=Lato%3A700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 		<link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
-			
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
@@ -125,7 +125,7 @@ $logo = wp_get_attachment_image_src($logo, "small")[0];
 												data-paddingright="[0,0,0,0]"
 												data-paddingbottom="[0,0,0,0]"
 												data-paddingleft="[0,0,0,0]"
-												style="z-index: 8; max-width: 100%; height: auto; color: rgba(0,0,0,1); display: inline-block;font-family:Open Sans;"><a href="<?= home_url()?>"><img src="<?= $logo ?>" alt="logo" height="50" /></a>
+												style="z-index: 8; max-width: 100%; height: auto; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;"><a href="<?= home_url()?>"><img src="<?= $logo ?>" alt="logo" height="50" /></a>
 											</div>
 									</div>
 								<!-- LAYER NR. 5 MENU -->

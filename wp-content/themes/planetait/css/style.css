@@ -313,12 +313,11 @@ a img.aligncenter {
 }
 
 .tp-caption.niceclean_menu, .niceclean_menu {
-	color: #ffffff;
 	font-size: 17px;
 	line-height: 40px;
 	font-weight: 400;
 	font-style: normal;
-	font-family: Varela Round;
+	font-family: Ubuntu;
 	text-decoration: none;
 	background-color: transparent;
 	border-color: #f8c255;
@@ -334,6 +333,14 @@ a img.aligncenter {
 	border-style: solid;
 	border-radius: 0px 0px 0px 0px;
 	cursor: pointer
+}
+
+video::-webkit-media-controls-start-playback-button {
+	display: none !important
+}
+
+#welcome_wrapper .tp-loader.spinner3 {
+	background-color: #313437 !important;
 }
 
 #menu_forcefullwidth {
@@ -359,14 +366,14 @@ a img.aligncenter {
 	white-space: normal !important;
 	font-weight: 500 !important;
 	display: inline-block !important;
-	font-family: Poppins !important;
+	font-family: Ubuntu !important;
 	cursor: pointer !important;
 	text-decoration: none !important;
 }
 
 .last-nav-item {
-	border-color: rgba(0, 0, 0, 1);
-	border-radius: 20px 20px 20px 20px;
+	border-color: rgba(0, 0, 0, 0);
+	border-radius: 5px 5px 5px 5px;
 	outline: none;
 	box-shadow: none;
 	box-sizing: border-box;

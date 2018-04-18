@@ -26,9 +26,10 @@ class Project_MenuWalker extends Walker_Nav_Menu{
         $output .= 'data-responsive_offset="off" ';        
         $output .= 'data-responsive="off"';  
         if($isLast === true){
-            $output .= 'data-frames=\'[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(60,201,111,1);bc:rgba(60,201,111,1);bs:solid;"}]\'';
+        $output .= 'data-frames=\'[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]\'';        
         } else {
-            $output .= 'data-frames=\'[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bc:rgba(60,201,111,1);br:0px 0px 0px 0px;"}]\'';        
+            $output .= 'data-frames=\'[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);"}]\'';        
+       
         }
         $output .= 'data-margintop="[3,3,0,0]"';        
         $output .= 'data-marginright="[15,10,10,5]"';        
@@ -47,9 +48,19 @@ class Project_MenuWalker extends Walker_Nav_Menu{
         } else {
             $output .= 'data-paddingleft="[0,0,0,0]"';   
         }     
-        $output .= 'style="z-index: '.(10+$item->menu_order).'; border-color: transparent; color: rgba(0, 0, 0, 0.95); border-width: 0px 0px 2px 0px';
+        $output .= 'style="z-index: '.(10+$item->menu_order).'; border-color: transparent;  border-width: 0px 0px 2px 0px;';
         if($isLast === true){
-            $output .= 'background-color:rgba(208,193,132,1);border-color:rgba(60,201,111,1);border-radius:20px 20px 20px 20px;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;';
+            $output .= '  color: #EFA6C5;
+            border-radius:5px 5px 5px 5px;box-shadow:none;box-sizing:
+            border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
+            background: #c11437;
+            background: -moz-linear-gradient(top, #c11437 0%, #921c79 100%);
+            background: -webkit-linear-gradient(top, #c11437 0%,#921c79 100%);
+            background: linear-gradient(to bottom, #c11437 0%,#921c79 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=\'#c11437\', endColorstr=\'#921c79\',GradientType=0 );     
+            ';
+        } else {
+            $output .=' color: #696969;';
         }
         $output .= '">';   
         $output .= $title;

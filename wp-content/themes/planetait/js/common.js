@@ -1,11 +1,11 @@
 		var templateUrl = global_object.templateUrl;
 		var revapi20,tpj;
 		(function () {
-			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoad)
+			if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoadHead)
 			else
-				onLoad();
+				onLoadHead();
 
-			function onLoad() {
+			function onLoadHead() {
 				if (tpj === undefined) {
 					tpj = jQuery;
 

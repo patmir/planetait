@@ -117,7 +117,7 @@ function html5blank_conditional_scripts()
     wp_localize_script( 'commonscript', 'global_object', $translation_array );
     if(is_front_page()){
 
-        wp_register_script('frontpage_script', get_template_directory_uri() . '/js/frontpage_script.js', array('jquery'), '1.9.0'); // Frontpage script Slider
+        wp_register_script('frontpage_script', get_template_directory_uri() . '/js/frontpage_script.js', array('jquery'), '1.9.0', true); // Frontpage script Slider
         wp_enqueue_script('frontpage_script'); // Enqueue it!
         foreach( glob( get_template_directory(). '/js/lib/revolution/js/*.js' ) as $file ) {
             // $file contains the name and extension of the file
@@ -134,6 +134,9 @@ function html5blank_conditional_scripts()
 
         wp_register_script("sliderrev_addon_typewriter", get_template_directory_uri().'/js/lib/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js', array('jquery'), '1.11.1');
         wp_enqueue_script("sliderrev_addon_typewriter");
+
+        wp_register_script("sliderrev_addon_particles", get_template_directory_uri().'/js/lib/revolution-addons/particles/js/revolution.addon.particles.min.js', array('jquery'), '1.11.1');
+        wp_enqueue_script("sliderrev_addon_particles");
        }
 }
 
@@ -167,6 +170,9 @@ function html5blank_styles()
 
         wp_register_style('sliderrev_typewriter', get_template_directory_uri() . '/js/lib/revolution-addons/typewriter/css/typewriter.css', array(), '1.0', 'all');
         wp_enqueue_style('sliderrev_typewriter'); // Enqueue it!*/
+
+        wp_register_style('sliderrev_particles', get_template_directory_uri() . '/js/lib/revolution-addons/particles/css/revolution.addon.particles.css', array(), '1.0', 'all');
+        wp_enqueue_style('sliderrev_particles'); // Enqueue it!*/
     }
 }
 
