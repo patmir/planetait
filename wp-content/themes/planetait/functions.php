@@ -628,6 +628,45 @@ require_once("settings-ajax.php");
                     )
                 )
             );
+            register_post_type(
+                'what_we_do',
+                array(
+                    'labels' => array(
+                        'name' => __('Co robimy', 'html5blank'),
+                        'singular_name' => __('Co robimy', 'html5blank'),
+                        'add_new' => __('Dodaj nowe Co robimy', 'html5blank'),
+                        'add_new_item' => __('Dodaj nowe Co robimy', 'html5blank'),
+                        'edit' => __('Edytuj', 'html5blank'),
+                        'edit_item' => __('Edytuj Co robimy', 'html5blank'),
+                        'new_item' => __('Nowa oferta pracy', 'html5blank'),
+                        'view' => __('Zobacz', 'html5blank'),
+                        'view_item' => __('Zobacz Co robimy', 'html5blank'),
+                        'search_items' => __('Szukaj', 'html5blank'),
+                        'not_found' => __('Nie znaleziono Co robimy', 'html5blank'),
+                        'not_found_in_trash' => __('Nie znaleziono Co robimyw koszu', 'html5blank'),
+                        'description' => __('Co Robimy', 'html5blank')
+                    ),
+                    'show_ui' => true,
+                    'show_in_nav_menus' => false,
+                    'show_in_menu' => GlobalConfig::get("project_slug_name"),
+                    'exclude_from_search' => false,
+                    'public' => true,
+                    'hierarchical' => true,
+                    'has_archive' => true,
+                    'supports' => array(
+                        'title',
+                        'editor',
+                        'excerpt',
+                        'thumbnail',
+                        'page-attributes'
+                    ),
+                    'can_export' => true,
+                    'taxonomies' => array(
+                        'post_tag',
+                        'category'
+                    )
+                )
+            );
         }
 
 /*------------------------------------*\

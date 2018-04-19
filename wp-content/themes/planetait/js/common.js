@@ -42,25 +42,6 @@
 							disableFocusListener: false,
 						}
 					});
-					revapi20.bind("revolution.slide.onloaded", function (e) {
-						var menubg = jQuery('#tp-menubg');
-						punchgs.TweenLite.set(menubg, { autoAlpha: 0 });
-						punchgs.TweenLite.set(menubg.closest('.tp-parallax-wrap'), { autoAlpha: 0 });
-						function fadeInOutBG() {
-							if (document.documentElement.scrollTop > 50 || document.body.scrollTop > 50) {
-								punchgs.TweenLite.to(menubg, 0.3, { autoAlpha: 1 });
-								punchgs.TweenLite.to(menubg.closest('.tp-parallax-wrap'), 0.3, { autoAlpha: 1 });
-							} else {
-
-								punchgs.TweenLite.to(menubg, 0.3, { autoAlpha: 0 });
-								//punchgs.TweenLite.to(menubg.closest('.tp-parallax-wrap'),0.3,{autoAlpha:0});
-							}
-						}
-						jQuery(document).on('scroll', function () {
-							fadeInOutBG();
-						});
-						fadeInOutBG();
-					});
 
 					function sliderAnchors() {
 

@@ -145,7 +145,7 @@ $slide = json_decode($slides)[0];
 			data-whitespace="nowrap"
  
             data-type="text" 
-			data-typewriter='{"lines":"OPTIMISATION,INTEGRATION,REVOLUTION","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
+			data-typewriter='{"lines":"OPTIMISATION,INTEGRATION,&nbsp;REVOLUTION&nbsp;","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
 			data-responsive_offset="on" 
 
             data-frames='[{"delay":2520,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -155,7 +155,7 @@ $slide = json_decode($slides)[0];
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 20px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">ANALYSIS| </div>
+            style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 20px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">&nbsp;&nbsp;ANALYSIS&nbsp;</div>
 
 		<!-- LAYER NR. 6 -->
 		<div class="tp-caption   rs-parallaxlevel-4" 
@@ -178,10 +178,86 @@ $slide = json_decode($slides)[0];
             data-paddingbottom="[0,0,0,0]"
             data-paddingleft="[0,0,0,0]"
 
-            style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">DEVELOP YOUR BUSINESS WITH US </div>
+            style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">ROZWIJAJ SWÓJ BIZNES Z NAMI</div>
 	</li>
 </ul>
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
-</div><!-- END REVOLUTION SLIDER -->
+</div><!-- END REVOLUTION SLIDER  MAIN SLIDER-->
+<div id="rev_slider_41_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="co-robimy-header" data-source="gallery" style="margin:0px auto;background:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+<!-- START REVOLUTION SLIDER CO ROBIMY HEADER -->
+	<div id="rev_slider_41_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+<ul>	<!-- SLIDE  -->
+    <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<!-- MAIN IMAGE -->
+        <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+		<!-- LAYERS -->
 
+		<!-- LAYER NR. 1 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-59-layer-2" 
+			 data-x="['center','center','center','center']" data-hoffset="['-6','-6','-6','-6']" 
+			 data-y="['top','top','top','top']" data-voffset="['50','50','50','50']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+            data-type="text" 
+			data-responsive_offset="on" 
+
+            data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+
+            style="z-index: 5; white-space: nowrap; font-size: 36px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px;font-family:Ubuntu;">CO ROBIMY? </div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-caption   tp-resizeme" 
+			 id="slide-59-layer-5" 
+			 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+			 data-y="['top','top','top','top']" data-voffset="['100','100','100','100']" 
+						data-width="1000"
+			data-height="none"
+			data-whitespace="normal"
+ 
+            data-type="text" 
+			data-basealign="slide" 
+			data-responsive_offset="on" 
+
+            data-frames='[{"delay":1500,"speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['center','center','center','center']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+
+            style="z-index: 6; min-width: 1000px; max-width: 1000px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #000000; letter-spacing: 0px;font-family:Ubuntu;">Posiadamy zgrany zespół doświadczonych programistów, który tworzy autorskie systemy IT, rozwija już działające systemy oraz 
+przeprowadza integrację między systemami. Uczestniczymy w licznych projektach deweloperskich w Polsce i zagranicą. </div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+			 id="slide-59-layer-6" 
+			 data-x="['center','center','center','center']" data-hoffset="['-2','-2','-2','-2']" 
+			 data-y="['top','top','top','top']" data-voffset="['160','160','160','160']" 
+						data-width="100"
+			data-height="2"
+			data-whitespace="nowrap"
+ 
+            data-type="shape" 
+			data-responsive_offset="on" 
+
+            data-frames='[{"delay":2000,"speed":2000,"frame":"0","from":"rY:90deg;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+            data-textAlign="['inherit','inherit','inherit','inherit']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+
+            style="z-index: 7;background-color:rgb(198,178,192);"> </div>
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
+</div><!-- END REVOLUTION SLIDER CO ROBIMY HEADER-->
 <?php get_footer(); ?>

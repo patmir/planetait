@@ -69,7 +69,12 @@
                           speedbg:0,
                           speedls:0,
 							levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
-						},
+						},viewPort: {
+                            enable: true,
+                            outof: 'wait',
+                            visible_area: '80%',
+                            presize: true
+                        },
 						shadow:0,
 						spinner:"spinner3",
 						autoHeight:"off",
@@ -88,10 +93,67 @@
 							disableFocusListener:false,
 						}
 					});
-    }; /* END OF revapi call */
+                }; /* END OF revapi call */
     
                 RsTypewriterAddOn(tpj, revapi39);
 
                 RsParticlesAddOn(revapi39);
+
+                if(tpj("#rev_slider_41_1").revolution == undefined){
+					revslider_showDoubleJqueryError("#rev_slider_41_1");
+				}else{
+					revapi41 = tpj("#rev_slider_41_1").show().revolution({
+						sliderType:"hero",
+                        jsFileLocation: templateUrl+"/js/lib/revolution/js/",
+						sliderLayout:"fullwidth",
+						dottedOverlay:"none",
+						delay:9000,
+						navigation: {
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1400,1024,778,480],
+						gridheight:[600,768,960,720],
+						lazyType:"none",
+						parallax: {
+							type:"mouse",
+							origo:"slidercenter",
+							speed:2000,
+                          speedbg:0,
+                          speedls:0,
+							levels:[2,3,4,5,6,7,12,16,10,50,47,48,49,50,51,55],
+						},
+                        scrolleffect: {
+                            fade:"on",
+                            grayscale:"on",
+                            on_slidebg:"on",
+                            on_parallax_layers:"on",
+                            direction:"top",
+                            multiplicator_layers:"1.4",
+                            tilt:"10",
+                            disable_on_mobile:"off",
+                        },viewPort: {
+                            enable: true,
+                            outof: 'wait',
+                            visible_area: '80%',
+                            presize: true
+                        },
+						shadow:1,
+						spinner:"off",
+						autoHeight:"off",
+						disableProgressBar:"on",
+						hideThumbsOnMobile:"on",
+						hideSliderAtLimit:0,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						debugMode:false,
+						fallbacks: {
+							simplifyAll:"off",
+							disableFocusListener:false,
+						}
+					});
+    			}; 
+
+
  }; /* END OF ON LOAD FUNCTION */
 }()); /* END OF WRAPPING FUNCTION */

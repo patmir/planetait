@@ -32,20 +32,22 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
             tests: {}
         });
         </script>
-<script type="text/javascript">function setREVStartSize(e){
+<script type="text/javascript">
+function setREVStartSize(e){
 			document.addEventListener("DOMContentLoaded", function() {
 				try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
 					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})                    
 				}catch(d){console.log("Failure at Presize of Slider:"+d)}
 			});
+
 		};</script>
 	</head>
 	<body <?php body_class(); ?> style="margin: 0; padding: 0; background-color:  #edf1f4;"> 
 		<!-- MENU -->			
 
-		<div id="menu_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+		<div id="menu_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 			<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-			<div id="menu" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+			<div id="menu" class="rev_slider fullwidthabanner" style="display:none;     background-color: rgba(255,255,255,1);" data-version="5.4.7">
 				<ul>	<!-- SLIDE  -->
    					<li data-index="rs-30" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Menu" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 						<!-- MAIN IMAGE -->
@@ -100,7 +102,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 										data-paddingright="[0,0,0,0]"
 										data-paddingbottom="[20,20,0,0]"
 										data-paddingleft="[30,30,0,0]"
-										style="z-index: 7; width: 100%;">
+										style="z-index: 7; width: 100%;     background-color: rgba(255,255,255,1);">
 										<!-- LAYER NR. 3 LOGO -->
 			
 											<div class="tp-caption tp-resizeme" 
@@ -125,7 +127,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 												data-paddingright="[0,0,0,0]"
 												data-paddingbottom="[0,0,0,0]"
 												data-paddingleft="[0,0,0,0]"
-												style="z-index: 8; max-width: 100%; height: auto; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;"><a href="<?= home_url()?>"><img src="<?= $logo ?>" alt="logo" height="50" /></a>
+												style="z-index: 8; max-width: 100%; height: auto; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;    background-color: rgba(255,255,255,1);"><a href="<?= home_url()?>"><img src="<?= $logo ?>" alt="logo" height="50" /></a>
 											</div>
 									</div>
 								<!-- LAYER NR. 5 MENU -->
@@ -153,7 +155,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 									data-paddingright="[20,20,0,0]"
 									data-paddingbottom="[27,27,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 10; width: 100%;">
+									style="z-index: 10; width: 100%;    background-color: rgba(255,255,255,1);">
 									<!-- LAYER NAV LAYERS -->
 									<?php html5blank_nav(); ?>
 								</div>					
@@ -177,7 +179,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 									data-paddingright="[0,0,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 5;background-color:rgba(45,48,50,1);">
+									style="z-index: 5;background-color:rgba(45,48,50,1);    background-color: rgba(255,255,255,1);">
 								</div>
 							</div>
 						</div>
