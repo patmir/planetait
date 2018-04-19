@@ -52,24 +52,7 @@
 						gridwidth:[1240,1024,778,480],
 						gridheight:[868,768,960,720],
 						lazyType:"none",
-                        scrolleffect: {
-                            fade:"on",
-                            grayscale:"on",
-                            on_slidebg:"on",
-                            on_parallax_layers:"on",
-                            direction:"top",
-                            multiplicator_layers:"1.4",
-                            tilt:"10",
-                            disable_on_mobile:"off",
-                        },
-						parallax: {
-							type:"scroll",
-							origo:"slidercenter",
-							speed:400,
-                          speedbg:0,
-                          speedls:0,
-							levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
-						},viewPort: {
+						viewPort: {
                             enable: true,
                             outof: 'wait',
                             visible_area: '80%',

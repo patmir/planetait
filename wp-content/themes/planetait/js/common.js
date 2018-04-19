@@ -40,7 +40,12 @@
 						fallbacks: {
 							simplifyAll: "off",
 							disableFocusListener: false,
-						}
+						},viewPort: {
+                            enable: true,
+                            outof: 'wait',
+                            visible_area: '80%',
+                            presize: true
+                        },
 					});
 
 					function sliderAnchors() {
@@ -133,3 +138,18 @@
 				}; /* END OF revapi call */
 			}; /* END OF ON LOAD FUNCTION */
 		}()); /* END OF WRAPPING FUNCTION */
+
+// common utils
+jQuery(document).ready(function(){
+    jQuery(".set-img").each(function(e){
+        var imgsrc = jQuery(this).data('bg');
+        jQuery(this).css("background-image", "url("+imgsrc+")");
+        jQuery(this).css("background-size", "cover");
+        jQuery(this).css("background-position", "center center");
+	});
+
+	jQuery(".center-margin").each(function(e){
+        jQuery(this).css("margin", "0 auto");
+	});
+
+});
