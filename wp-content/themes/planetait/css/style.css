@@ -380,3 +380,7 @@ video::-webkit-media-controls-start-playback-button {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 }
+.responsive-img {
+	width: 100% !important;
+	height: auto !important;
+}

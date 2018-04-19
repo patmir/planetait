@@ -537,13 +537,19 @@ require_once("settings-ajax.php");
                         'description' => __('Sekcje widoczne na stronie głównej', 'html5blank'),
                     ),
                     'public' => true,
-                    'hierarchical' => true,
-                    'has_archive' => true,
+                    'hierarchical' => false,
+                    'has_archive' => false,
                     'supports' => array(
                         'title',
                         'editor',
                         'excerpt',
-                        'thumbnail'
+                        'thumbnail',
+                        'page-attributes',
+                        'author',
+                        'trackbacks',
+                        'custom-fields',
+                        'post-formats'
+
                     ),
                     'can_export' => true,
                     'show_ui' => true,
@@ -684,5 +690,3 @@ require_once("settings-ajax.php");
         {
             return '<h2>' . $content . '</h2>';
         }
-
-        ?>
