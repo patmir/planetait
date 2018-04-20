@@ -12,13 +12,13 @@ $numRows = ceil(sizeof($co_robimy) / 3);
 <div class="row">
     <div id="rev_slider_41_1_wrapper" class="rev_slider_wrapper" data-alias="co-robimy-header" data-source="gallery" style="margin:0px auto;background:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
     <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-        <div id="rev_slider_41_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+        <div id="rev_slider_41_1" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
             <ul>	<!-- SLIDE  -->
                 <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png"  data-bgcolor='#ffffff' style='background:#ffffff' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
-                    <div id="rrzt_59" class="rev_row_zone rev_row_zone_top" style="z-index: 10;">
+                    <div id="rrzt_59" class="rev_row_zone rev_row_zone_top" style="z-index: 9;">
 
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption  " 
@@ -354,15 +354,15 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                         lazyType:"none",
                         viewPort: {
                             enable: true,
-                            outof: 'pause',
-                            visible_area: '60%',
-                            presize: false
+                            outof: 'wait',
+                            visible_area: '80%',
+                            presize: true
                         },stopLoop: "on",
-    stopAfterLoops: 0,
-    stopAtSlide: 1,
+                        stopAfterLoops: 0,
+                        stopAtSlide: 1,
 						shadow:1,
 						spinner:"off",
-						autoHeight:"off",
+						autoHeight:"true",
 						disableProgressBar:"on",
 						hideThumbsOnMobile:"on",
 						hideSliderAtLimit:0,
@@ -372,9 +372,27 @@ $numRows = ceil(sizeof($co_robimy) / 3);
 						fallbacks: {
 							simplifyAll:"off",
 							disableFocusListener:false,
-                        } 
+                        } ,
+                        waitForInit: true
 					});
     }; /* END OF revapi call */
      }; /* END OF ON LOAD FUNCTION */
     }()); /* END OF WRAPPING FUNCTION */
+        var coRobimyStarted = false;
+    jQuery(window).scroll(function() {
+    var top_of_element = jQuery("#rev_slider_41_1").offset().top;
+    var bottom_of_element = jQuery("#rev_slider_41_1").offset().top + jQuery("#rev_slider_41_1").outerHeight();
+    var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
+    var top_of_screen = jQuery(window).scrollTop();
+
+    if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !coRobimyStarted){
+        // The element is visible, do something
+        console.log("STARTING - CR");
+        revapi41.revstart();
+        coRobimyStarted = true;
+    }
+    else {
+        // The element is not visible, do something else
+    }
+});
 </script>

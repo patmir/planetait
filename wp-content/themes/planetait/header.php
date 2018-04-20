@@ -19,6 +19,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 		<link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+		<link href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah%3A400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" media="all">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -79,7 +80,7 @@ function setREVStartSize(e){
 									data-paddingleft="[0,0,0,0]"
 									style="z-index: 660; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
 									<!-- LAYER NR. 2 LOGO AND MENU CONTAINER-->
-										<div class="tp-caption  " 
+										<div class="tp-caption " 
 											id="slide-30-layer-20" 
 											data-x="['left','left','left','left']"
 											data-hoffset="['310','310','100','100']" 
@@ -99,23 +100,23 @@ function setREVStartSize(e){
 											data-marginbottom="[0,0,0,0]"
 											data-marginleft="[0,0,0,0]"
 											data-textAlign="['left','left','center','center']"
-											data-paddingtop="[20,20,10,10]"
+											data-paddingtop="[5,5,5,5]"
 											data-paddingright="[0,0,0,0]"
-											data-paddingbottom="[20,20,0,0]"
+											data-paddingbottom="[5,5,5,5]"
 											data-paddingleft="[30,30,0,0]"
 											style="z-index: 7; width: 100%;     background-color: rgba(255,255,255,1);">
 											<!-- LAYER NR. 3 LOGO -->
 				
-												<div class="tp-caption tp-resizeme" 
+												<div class="tp-caption tp-resizeme set-img-contain" 
 													id="slide-30-layer-34" 
 													data-x="['left','left','left','left']"
 													data-hoffset="['0','0','0','0']" 
 													data-y="['top','top','top','top']"
 													data-voffset="['0','0','0','0']" 
-													data-width="['auto']"
-													data-height="['50']"
+													data-width="100%"
+													data-height="90px"
 													data-whitespace="normal" 
-													data-type="image"
+													data-type="text"
 													data-responsive_offset="off" 
 													data-responsive="off"
 													data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -128,7 +129,8 @@ function setREVStartSize(e){
 													data-paddingright="[0,0,0,0]"
 													data-paddingbottom="[0,0,0,0]"
 													data-paddingleft="[0,0,0,0]"
-													style="z-index: 8; max-width: 100%; height: auto; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;    background-color: rgba(255,255,255,1);"><a href="<?= home_url()?>"><img src="<?= $logo ?>" alt="logo" height="50" /></a>
+													data-bg="<?= $logo ?>"
+													style="z-index: 8; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;    background-color: rgba(255,255,255,1);"><a href="<?= home_url()?>"></a>
 												</div>
 										</div>
 									<!-- LAYER NR. 5 MENU -->

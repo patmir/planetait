@@ -22,6 +22,7 @@
                         jsFileLocation: templateUrl+"/js/lib/revolution/js/",
 						sliderLayout:"fullscreen",
 						dottedOverlay:"none",
+						fullScreenOffsetContainer: "#menu",
 						delay:9000,
 						particles: {startSlide: "first", endSlide: "last", zIndex: "1",
 							particles: {
@@ -74,13 +75,60 @@
 						fallbacks: {
 							simplifyAll:"off",
 							disableFocusListener:false,
-						}
+						},
+						
+						whiteboard:{
+							movehand: {
+								src:templateUrl+"/js/lib/revolution-addons/whiteboard/assets/images/hand_point_right.png",
+								width:400,
+								height:1000,
+								handtype:"right",
+								transform:{
+									transformX:186,
+									transformY:66
+								},
+								jittering:{
+									distance:"80",
+									distance_horizontal:"100",
+									repeat:"5",
+									offset:"10",
+									offset_horizontal:"0"
+								},
+								rotation:{
+									angle:"10",
+									repeat:"3"
+								}
+							},
+							writehand: {
+								src:templateUrl+"/js/lib/revolution-addons/whiteboard/assets/images/write_right_angle.png",
+								width:572,
+								height:691,
+								handtype:"right",
+								transform:{
+									transformX:49,
+									transformY:50
+								},
+								jittering:{
+									distance:"80",
+									distance_horizontal:"100",
+									repeat:"5",
+									offset:"10",
+									offset_horizontal:"0"
+								},
+								rotation:{
+									angle:"10",
+									repeat:"5"
+								}
+							}
+						},
 					});
                 }; /* END OF revapi call */
     
                 RsTypewriterAddOn(tpj, revapi39);
 
-                RsParticlesAddOn(revapi39);
+				RsParticlesAddOn(revapi39);
+				
+				tpj("#welcome").rsWhiteBoard();
  /* END MAIN SLIDER */
 
 

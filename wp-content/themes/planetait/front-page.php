@@ -123,12 +123,12 @@ $slide = json_decode($slides)[0];
 					<div class="tp-caption   tp-resizeme" 
 						id="slide-57-layer-9" 
 						data-x="['center','center','center','center']" data-hoffset="['0','-1','0','1']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['100','100','100','50']" 
+						data-y="['middle','middle','middle','middle']" data-voffset="['140','140','100','50']" 
 						data-width="none"
 						data-height="none"
 						data-whitespace="nowrap"		
-						data-type="text" 
-						data-typewriter='{"lines":"OPTIMISATION,INTEGRATION,&nbsp;REVOLUTION&nbsp;","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
+						data-type="text" 		   
+						data-typewriter='{"lines":"OPTYMALIZACJA,&nbsp;INTEGRACJA&nbsp;,&nbsp;REVOLUCJA&nbsp;","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
 						data-responsive_offset="on"
 						data-frames='[{"delay":2520,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 						data-textAlign="['inherit','inherit','inherit','inherit']"
@@ -136,13 +136,13 @@ $slide = json_decode($slides)[0];
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 20px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">&nbsp;&nbsp;ANALYSIS&nbsp;
+						style="z-index: 9; white-space: nowrap; font-size:32px; line-height: 60px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">&nbsp;&nbsp;ANALIZA&nbsp;&nbsp;
 					</div>
 					<!-- LAYER NR. 6 -->
-					<div class="tp-caption   rs-parallaxlevel-4" 
+					<div class="tp-caption  tp-resizeme" 
 						id="slide-57-layer-11" 
 						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['200','200','200','200']" 
+						data-y="['middle','middle','middle','middle']" data-voffset="['220','220','220','220']" 
 						data-fontsize="['40','25','20','17']"
 						data-lineheight="['50','30','25','25']"
 						data-width="none"
@@ -151,14 +151,31 @@ $slide = json_decode($slides)[0];
 						data-type="text" 
 						data-responsive_offset="off" 
 						data-responsive="off"
-						data-frames='[{"delay":800,"speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"nothing"}]'
-						data-textAlign="['center','center','center','center']"
+						data-whiteboard='{"hand_function":"write","jitter_distance":"60","jitter_offset":"20","jitter_offset_horizontal":"0","hand_angle":"5","hand_angle_repeat":"5","goto_next_layer":"on"}'
+						data-frames='[{"from":"opacity:0;","speed":150,"to":"o:1;","delay":3500,"split":"chars","splitdelay":0.05,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0","ease":"Power3.easeIn"}]'data-textAlign="['center','center','center','center']"
 						data-paddingtop="[0,0,0,0]"
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">ROZWIJAJ SWÓJ BIZNES Z NAMI
+						style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Gloria Hallelujah;">ROZWIJAJ SWÓJ BIZNES Z NAMI
 					</div>
+					<div class="tp-caption   tp-resizeme" 
+						id="slide-2919-layer-5" 
+						data-x="['center','center','center','center']" data-hoffset="['30','0','0','0']" 
+						data-y="['middle','middle','middle','middle']" data-voffset="['470','460','460','460']" 
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="image" 
+						data-whiteboard='{"hand_function":"draw","jitter_repeat":"0","jitter_distance":"60","jitter_offset":"0","hand_angle":"0","hand_angle_repeat":"0","goto_next_layer":"on"}'
+						data-responsive_offset="on" 
+						data-frames='[{"from":"x:[100%];","mask":"x:[-100%];y:0;rZ:-2deg;s:inherit;e:inherit;","speed":600,"to":"o:1;rZ:-2deg;","delay":6000,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0;","ease":"Power3.easeIn"}]'
+						data-textAlign="['left','left','left','left']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						style="z-index: 18;border-width:0px;"><img src="<?= get_template_directory_uri()?>/assets/images/underline.png" alt="" data-ww="['600px','220px','220px','150px']" data-hh="20px" width="180" height="8" data-no-retina> </div>
 				</li>
 			</ul>
 		</div>

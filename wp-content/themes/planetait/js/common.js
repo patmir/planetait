@@ -146,6 +146,15 @@ jQuery(document).ready(function(){
         jQuery(this).css("background-image", "url("+imgsrc+")");
         jQuery(this).css("background-size", "cover");
         jQuery(this).css("background-position", "center center");
+        jQuery(this).css("background-repeat", "no-repat");
+	});
+
+	jQuery(".set-img-contain").each(function(e){
+        var imgsrc = jQuery(this).data('bg');
+        jQuery(this).css("background-image", "url("+imgsrc+")");
+        jQuery(this).css("background-size", "contain");
+        jQuery(this).css("background-position", "center center");
+        jQuery(this).css("background-repeat", "no-repeat");
 	});
 
 	jQuery(".center-margin").each(function(e){

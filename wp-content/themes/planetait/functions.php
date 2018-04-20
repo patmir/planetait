@@ -137,6 +137,12 @@ function html5blank_conditional_scripts()
 
         wp_register_script("sliderrev_addon_particles", get_template_directory_uri().'/js/lib/revolution-addons/particles/js/revolution.addon.particles.min.js', array('jquery'), '1.11.1');
         wp_enqueue_script("sliderrev_addon_particles");
+
+        wp_register_script("sliderrev_addon_whiteboard", get_template_directory_uri().'/js/lib/revolution-addons/whiteboard/js/revolution.addon.whiteboard.min.js', array('jquery'), '1.11.1');
+        wp_enqueue_script("sliderrev_addon_whiteboard");
+
+        wp_register_script("counterup", get_template_directory_uri().'/js/lib/jquery.counterup.min.js', array('jquery'), '1.11.1');
+        wp_enqueue_script("counterup");
        }
 }
 
