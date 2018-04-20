@@ -45,151 +45,152 @@ function setREVStartSize(e){
 	</head>
 	<body <?php body_class(); ?> style="margin: 0; padding: 0; background-color:  #edf1f4;"> 
 		<!-- MENU -->			
-
-		<div id="menu_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-			<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-			<div id="menu" class="rev_slider fullwidthabanner" style="display:none;     background-color: rgba(255,255,255,1);" data-version="5.4.7">
-				<ul>	<!-- SLIDE  -->
-   					<li data-index="rs-30" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Menu" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-						<!-- MAIN IMAGE -->
-        				<img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-						<!-- LAYERS -->
-       					<div id="rrzt_30" class="rev_row_zone rev_row_zone_top" style="z-index: 659; background-color: rgba(255,255,255,1);">
-							<!-- LAYER NR. 1  MENU WRAP-->
-							<div class="tp-caption  " 
-								id="slide-30-layer-18" 
-								data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-								data-y="['top','top','top','top']" data-voffset="['100','100','100','100']" 
-								data-width="none"
-								data-height="none"
-								data-whitespace="nowrap"
-								data-type="row" 
-								data-columnbreak="2" 
-								data-responsive_offset="on" 
-								data-responsive="off"
-								data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-								data-margintop="[0,0,0,0]"
-								data-marginright="[0,0,0,0]"
-								data-marginbottom="[0,0,0,0]"
-								data-marginleft="[0,0,0,0]"
-								data-textAlign="['inherit','inherit','inherit','inherit']"
-								data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								style="z-index: 660; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
-								<!-- LAYER NR. 2 LOGO AND MENU CONTAINER-->
-									<div class="tp-caption  " 
-										id="slide-30-layer-20" 
-										data-x="['left','left','left','left']"
-										data-hoffset="['310','310','100','100']" 
-										data-y="['top','top','top','top']"
-										data-voffset="['0','0','100','100']" 
-										data-width="none"
-										data-height="none"
-										data-whitespace="nowrap"	
-										data-type="column" 
-										data-responsive_offset="on" 
-										data-responsive="off"
-										data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-										data-columnwidth="25%"
-										data-verticalalign="top"
-										data-margintop="[0,0,0,0]"
-										data-marginright="[0,0,0,0]"
-										data-marginbottom="[0,0,0,0]"
-										data-marginleft="[0,0,0,0]"
-										data-textAlign="['left','left','center','center']"
-										data-paddingtop="[20,20,10,10]"
-										data-paddingright="[0,0,0,0]"
-										data-paddingbottom="[20,20,0,0]"
-										data-paddingleft="[30,30,0,0]"
-										style="z-index: 7; width: 100%;     background-color: rgba(255,255,255,1);">
-										<!-- LAYER NR. 3 LOGO -->
-			
-											<div class="tp-caption tp-resizeme" 
-												id="slide-30-layer-34" 
-												data-x="['left','left','left','left']"
-												data-hoffset="['0','0','0','0']" 
-												data-y="['top','top','top','top']"
-												data-voffset="['0','0','0','0']" 
-												data-width="['auto']"
-												data-height="['50']"
-												data-whitespace="normal" 
-												data-type="image"
-												data-responsive_offset="off" 
-												data-responsive="off"
-												data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-												data-margintop="[0,0,0,0]"
-												data-marginright="[0,0,0,0]"
-												data-marginbottom="[0,0,0,0]"
-												data-marginleft="[0,0,0,0]"
-												data-textAlign="['inherit','inherit','inherit','inherit']"
-												data-paddingtop="[0,0,0,0]"
-												data-paddingright="[0,0,0,0]"
-												data-paddingbottom="[0,0,0,0]"
-												data-paddingleft="[0,0,0,0]"
-												style="z-index: 8; max-width: 100%; height: auto; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;    background-color: rgba(255,255,255,1);"><a href="<?= home_url()?>"><img src="<?= $logo ?>" alt="logo" height="50" /></a>
-											</div>
-									</div>
-								<!-- LAYER NR. 5 MENU -->
+		<header>
+			<div id="menu_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+				<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
+				<div id="menu" class="rev_slider fullwidthabanner" style="display:none;     background-color: rgba(255,255,255,1);" data-version="5.4.7">
+					<ul>	<!-- SLIDE  -->
+						<li data-index="rs-30" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Menu" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+							<!-- MAIN IMAGE -->
+							<img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+							<!-- LAYERS -->
+							<div id="rrzt_30" class="rev_row_zone rev_row_zone_top" style="z-index: 659; background-color: rgba(255,255,255,1);">
+								<!-- LAYER NR. 1  MENU WRAP-->
 								<div class="tp-caption  " 
-									id="slide-30-layer-29" 
-									data-x="['left','left','left','left']"
-									data-hoffset="['100','100','100','100']" 
-									data-y="['top','top','top','top']"
-									data-voffset="['100','100','100','100']" 
+									id="slide-30-layer-18" 
+									data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
+									data-y="['top','top','top','top']" data-voffset="['100','100','100','100']" 
 									data-width="none"
 									data-height="none"
-									data-whitespace="nowrap"		
-									data-type="column" 
+									data-whitespace="nowrap"
+									data-type="row" 
+									data-columnbreak="2" 
 									data-responsive_offset="on" 
 									data-responsive="off"
-									data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-									data-columnwidth="75%"
-									data-verticalalign="top"
+									data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 									data-margintop="[0,0,0,0]"
 									data-marginright="[0,0,0,0]"
 									data-marginbottom="[0,0,0,0]"
 									data-marginleft="[0,0,0,0]"
-									data-textAlign="['right','right','center','center']"
-									data-paddingtop="[27,27,0,0]"
-									data-paddingright="[20,20,0,0]"
-									data-paddingbottom="[27,27,0,0]"
-									data-paddingleft="[0,0,0,0]"
-									style="z-index: 10; width: 100%;    background-color: rgba(255,255,255,1);">
-									<!-- LAYER NAV LAYERS -->
-									<?php html5blank_nav(); ?>
-								</div>					
-								<!-- LAYER NR. 12 -->
-								<div class="tp-caption tp-shape tp-shapewrapper " 
-									id="tp-menubg" 
-									data-x="['center','center','center','center']"
-									data-hoffset="['0','0','0','0']" 
-									data-y="['top','top','top','top']"
-									data-voffset="['0','0','0','0']" 
-									data-width="full"
-									data-height="['90','90','100','70']"
-									data-whitespace="nowrap"
-									data-type="shape" 
-									data-basealign="slide" 
-									data-responsive_offset="off" 
-									data-responsive="off"
-									data-frames='[{"delay":10,"speed":0,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":0,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 									data-textAlign="['inherit','inherit','inherit','inherit']"
 									data-paddingtop="[0,0,0,0]"
 									data-paddingright="[0,0,0,0]"
 									data-paddingbottom="[0,0,0,0]"
 									data-paddingleft="[0,0,0,0]"
-									style="z-index: 5;background-color:rgba(45,48,50,1);    background-color: rgba(255,255,255,1);">
+									style="z-index: 660; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+									<!-- LAYER NR. 2 LOGO AND MENU CONTAINER-->
+										<div class="tp-caption  " 
+											id="slide-30-layer-20" 
+											data-x="['left','left','left','left']"
+											data-hoffset="['310','310','100','100']" 
+											data-y="['top','top','top','top']"
+											data-voffset="['0','0','100','100']" 
+											data-width="none"
+											data-height="none"
+											data-whitespace="nowrap"	
+											data-type="column" 
+											data-responsive_offset="on" 
+											data-responsive="off"
+											data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+											data-columnwidth="25%"
+											data-verticalalign="top"
+											data-margintop="[0,0,0,0]"
+											data-marginright="[0,0,0,0]"
+											data-marginbottom="[0,0,0,0]"
+											data-marginleft="[0,0,0,0]"
+											data-textAlign="['left','left','center','center']"
+											data-paddingtop="[20,20,10,10]"
+											data-paddingright="[0,0,0,0]"
+											data-paddingbottom="[20,20,0,0]"
+											data-paddingleft="[30,30,0,0]"
+											style="z-index: 7; width: 100%;     background-color: rgba(255,255,255,1);">
+											<!-- LAYER NR. 3 LOGO -->
+				
+												<div class="tp-caption tp-resizeme" 
+													id="slide-30-layer-34" 
+													data-x="['left','left','left','left']"
+													data-hoffset="['0','0','0','0']" 
+													data-y="['top','top','top','top']"
+													data-voffset="['0','0','0','0']" 
+													data-width="['auto']"
+													data-height="['50']"
+													data-whitespace="normal" 
+													data-type="image"
+													data-responsive_offset="off" 
+													data-responsive="off"
+													data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+													data-margintop="[0,0,0,0]"
+													data-marginright="[0,0,0,0]"
+													data-marginbottom="[0,0,0,0]"
+													data-marginleft="[0,0,0,0]"
+													data-textAlign="['inherit','inherit','inherit','inherit']"
+													data-paddingtop="[0,0,0,0]"
+													data-paddingright="[0,0,0,0]"
+													data-paddingbottom="[0,0,0,0]"
+													data-paddingleft="[0,0,0,0]"
+													style="z-index: 8; max-width: 100%; height: auto; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;    background-color: rgba(255,255,255,1);"><a href="<?= home_url()?>"><img src="<?= $logo ?>" alt="logo" height="50" /></a>
+												</div>
+										</div>
+									<!-- LAYER NR. 5 MENU -->
+									<div class="tp-caption  " 
+										id="slide-30-layer-29" 
+										data-x="['left','left','left','left']"
+										data-hoffset="['100','100','100','100']" 
+										data-y="['top','top','top','top']"
+										data-voffset="['100','100','100','100']" 
+										data-width="none"
+										data-height="none"
+										data-whitespace="nowrap"		
+										data-type="column" 
+										data-responsive_offset="on" 
+										data-responsive="off"
+										data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+										data-columnwidth="75%"
+										data-verticalalign="top"
+										data-margintop="[0,0,0,0]"
+										data-marginright="[0,0,0,0]"
+										data-marginbottom="[0,0,0,0]"
+										data-marginleft="[0,0,0,0]"
+										data-textAlign="['right','right','center','center']"
+										data-paddingtop="[27,27,0,0]"
+										data-paddingright="[20,20,0,0]"
+										data-paddingbottom="[27,27,0,0]"
+										data-paddingleft="[0,0,0,0]"
+										style="z-index: 10; width: 100%;    background-color: rgba(255,255,255,1);">
+										<!-- LAYER NAV LAYERS -->
+										<?php html5blank_nav(); ?>
+									</div>					
+									<!-- LAYER NR. 12 -->
+									<div class="tp-caption tp-shape tp-shapewrapper " 
+										id="tp-menubg" 
+										data-x="['center','center','center','center']"
+										data-hoffset="['0','0','0','0']" 
+										data-y="['top','top','top','top']"
+										data-voffset="['0','0','0','0']" 
+										data-width="full"
+										data-height="['90','90','100','70']"
+										data-whitespace="nowrap"
+										data-type="shape" 
+										data-basealign="slide" 
+										data-responsive_offset="off" 
+										data-responsive="off"
+										data-frames='[{"delay":10,"speed":0,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":0,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+										data-textAlign="['inherit','inherit','inherit','inherit']"
+										data-paddingtop="[0,0,0,0]"
+										data-paddingright="[0,0,0,0]"
+										data-paddingbottom="[0,0,0,0]"
+										data-paddingleft="[0,0,0,0]"
+										style="z-index: 5;background-color:rgba(45,48,50,1);    background-color: rgba(255,255,255,1);">
+									</div>
 								</div>
 							</div>
-						</div>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
+			
+				<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
 			</div>
-		
-			<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
-		</div>
+		</header>
 		<div class="container-fluid">
 		<!-- END MENU -->
 	<!--BODY-->

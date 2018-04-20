@@ -50,7 +50,7 @@
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],
 						gridwidth:[1240,1024,778,480],
-						gridheight:[868,768,960,720],
+						gridheight:[1800,768,960,720],
 						lazyType:"none",
 						viewPort: {
                             enable: true,
