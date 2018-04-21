@@ -11,7 +11,7 @@
                     data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                     data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri()?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
                         data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                 </li>
@@ -21,7 +21,7 @@
                     data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                     data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri()?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
+                    <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
                         data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                     <div id="rrzt_109" class="rev_row_zone rev_row_zone_top" style="z-index: 23;">
@@ -47,7 +47,7 @@
                                     data-marginleft="[auto,auto,auto,auto]" data-textAlign="['center','center','center','center']"
                                     data-paddingtop="[50,50,50,50]" data-paddingright="[30,30,30,30]" data-paddingbottom="[0,0,0,0]"
                                     data-paddingleft="[30,30,30,30]" style="z-index: 7; display: block;">
-                                    <img src="<?= get_template_directory_uri()?>/img/logo-w.png" alt="" data-ww="100%" data-hh="auto" data-no-retina> </div>
+                                    <img src="<?= get_template_directory_uri() ?>/img/logo-w.png" alt="" data-ww="100%" data-hh="auto" data-no-retina> </div>
                             </div>
 
                             <!-- LAYER NR. 4 -->
@@ -150,13 +150,7 @@
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">hr@planetait.eu </div>
 
-                                <!-- LAYER NR. 17 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-26" data-x="" data-y="" data-width="['259']" data-height="['auto']"
-                                    data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+900","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
-                                    data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 22; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">business@planetait.eu </div>
-
+                             
                                 <!-- LAYER NR. 18 -->
                                 <div class="tp-caption   tp-resizeme" id="slide-109-layer-25" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+600","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
@@ -164,6 +158,13 @@
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                     style="z-index: 21; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">Business Development </div>
+                              <!-- LAYER NR. 17 -->
+                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-26" data-x="" data-y="" data-width="['259']" data-height="['auto']"
+                                    data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+900","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+                                    data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 22; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">business@planetait.eu </div>
+
                             </div>
                         </div>
 
@@ -315,7 +316,9 @@ jQuery.LoadingOverlaySetup({
 	background      : "rgba(42, 42, 42, 1)",
 	textColor : "#ffffff",
 	fontawesomeColor : "#ffffff",
-	imageColor: "#ffffff"
+    imageColor: "#ffffff",
+    progressColor: "#ffffff",
+    progress: true
 });
 
 jQuery.LoadingOverlay("show");
@@ -325,7 +328,10 @@ var loadedRevs = 0;
 jQuery(document).on('revolution.slide.onloaded', function() { 
  loadedRevs++;
  console.log("loaded "+loadedRevs+"/"+totalRevs);
+ jQuery.LoadingOverlay("progress", totalRevs/loadedRevs*100)
 if(loadedRevs == totalRevs){
+
+jQuery(".loadingoverlay-placeholder").remove();
 	jQuery.LoadingOverlay("hide");
 }
 });

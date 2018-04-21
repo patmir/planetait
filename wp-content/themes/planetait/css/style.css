@@ -384,6 +384,9 @@ video::-webkit-media-controls-start-playback-button {
 	width: 100% !important;
 	height: auto !important;
 }
+.responsive-img-2 {
+	height: auto !important;
+}
 .force-absolutex {
 	position: absolute !important;
 }
@@ -405,6 +408,10 @@ video::-webkit-media-controls-start-playback-button {
   white-space: normal;
   line-height: 50px;
   vertical-align: middle;
+  max-height: 200px;
+}
+#partnerzy-slider .MS-content .item img{
+	max-height: 200px;
 }
 @media (max-width: 991px) {
 

@@ -19,7 +19,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 		<link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet" property="stylesheet" type="text/css" media="all">
-		<link href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah%3A400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" media="all">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
@@ -43,8 +43,34 @@ function setREVStartSize(e){
 			});
 
 		};</script>
+		<script>
+		var logger = function()
+{
+    var oldConsoleLog = null;
+    var pub = {};
+
+    pub.enableLogger =  function enableLogger()  
+                        {
+                            if(oldConsoleLog == null)
+                                return;
+
+                            window['console']['log'] = oldConsoleLog;
+                        };
+
+    pub.disableLogger = function disableLogger()
+                        {
+                            oldConsoleLog = console.log;
+                            window['console']['log'] = function() {};
+                        };
+
+    return pub;
+}();
+</script>
 	</head>
 	<body <?php body_class(); ?> style="margin: 0; padding: 0; background-color:  #edf1f4;"> 
+
+        <div class="loadingoverlay-placeholder" style="box-sizing: border-box; position: fixed; display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-around; background: rgb(42, 42, 42); top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1;">
+        </div>
 		<!-- MENU -->	
 			<div id="nav_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 				<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->

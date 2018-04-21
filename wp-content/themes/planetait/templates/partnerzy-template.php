@@ -74,33 +74,33 @@ background-image: url(<?= get_template_directory_uri() ?>/img/handshake.png);
 	<!-- JQUERY SLIDER -->
 	<div id="partnerzy-slider" style="visibility: hidden;">
 		<div class="MS-content">
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
-			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
+			<div class="item">			<img src="<?= get_template_directory_uri() ?>/img/jp/python.png" class="responsive-img-2"/>			</div> 
 		</div>
 	</div>
 </div>
