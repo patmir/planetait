@@ -115,10 +115,7 @@ function html5blank_conditional_scripts()
     wp_enqueue_script('commonscript'); // Enqueue it!
     $translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
     wp_localize_script( 'commonscript', 'global_object', $translation_array );
-    if(is_front_page()){
 
-        wp_register_script('frontpage_script', get_template_directory_uri() . '/js/frontpage_script.js', array('jquery'), '1.9.0', true); // Frontpage script Slider
-        wp_enqueue_script('frontpage_script'); // Enqueue it!
         foreach( glob( get_template_directory(). '/js/lib/revolution/js/*.js' ) as $file ) {
             // $file contains the name and extension of the file
             wp_register_script("sliderrev_".basename($file), get_template_directory_uri().'/js/lib/revolution/js/'.basename($file), array('jquery'), '1.11.1');
@@ -129,6 +126,14 @@ function html5blank_conditional_scripts()
             wp_register_script("sliderrev_".basename($file), get_template_directory_uri().'/js/lib/revolution/js/extensions/js/'.basename($file), array('jquery'), '1.11.1');
             wp_enqueue_script("sliderrev_".basename($file));
         }
+
+    if(is_front_page()){
+        wp_register_script('frontpage_script', get_template_directory_uri() . '/js/frontpage_script.js', array('jquery'), '1.9.0', true); // Frontpage script Slider
+        wp_enqueue_script('frontpage_script'); // Enqueue it!
+
+        wp_register_script('jquery_multislider', get_template_directory_uri() . '/js/lib/multislider.min.js', array('jquery'), '1.9.0', true); // Frontpage script Slider
+        wp_enqueue_script('jquery_multislider'); // Enqueue it!
+       
         wp_register_script("sliderrev_addon_countdown", get_template_directory_uri().'/js/lib/revolution-addons/countdown/revolution.addon.countdown.min.js', array('jquery'), '1.11.1');
         wp_enqueue_script("sliderrev_addon_countdown");
 
@@ -154,7 +159,7 @@ function html5blank_styles()
 
     wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
-    if(is_front_page()){
+   
         wp_register_style('sliderrev_pe_icon', get_template_directory_uri() . '/css/lib/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css', array(), '1.0', 'all');
         wp_enqueue_style('sliderrev_pe_icon'); // Enqueue it!*/
 
@@ -173,7 +178,7 @@ function html5blank_styles()
         wp_register_style('sliderrev_nav', get_template_directory_uri() . '/css/lib/revolution/navigation.css', array(), '1.0', 'all');
         wp_enqueue_style('sliderrev_nav'); // Enqueue it!*/
 
-
+        if(is_front_page()){
         wp_register_style('sliderrev_typewriter', get_template_directory_uri() . '/js/lib/revolution-addons/typewriter/css/typewriter.css', array(), '1.0', 'all');
         wp_enqueue_style('sliderrev_typewriter'); // Enqueue it!*/
 
@@ -423,7 +428,7 @@ function na_parse_request( $query ) {
 
 // Add Actions
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
+add_action('wp_enqueue_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu

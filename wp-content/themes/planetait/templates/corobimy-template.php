@@ -9,12 +9,14 @@ $co_robimy = get_posts(array(
 ));
 $numRows = ceil(sizeof($co_robimy) / 3);
 ?>
-<div class="row">
-    <div id="rev_slider_41_1_wrapper" class="rev_slider_wrapper" data-alias="co-robimy-header" data-source="gallery" style="margin:0px auto;background:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;">
+    <div id="rev_slider_41_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="co-robimy-header" data-source="gallery" style="background:#ffffff; padding-bottom: 100px;">
     <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-        <div id="rev_slider_41_1" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
-            <ul>	<!-- SLIDE  -->
-                <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+        <div id="rev_slider_41_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-index="rs-58" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="1000" data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+</li>
+                <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="1000" data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png"  data-bgcolor='#ffffff' style='background:#ffffff' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
@@ -120,8 +122,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-paddingbottom="[20,20,20,20]"
                                     data-paddingleft="[20,20,20,20]"
 
-                                    style="z-index: 8; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;">Posiadamy zgrany zespół doświadczonych programistów, który tworzy autorskie systemy IT, rozwija już działające systemy oraz 
-                                        przeprowadza integrację między systemami. Uczestniczymy w licznych projektach deweloperskich w Polsce i zagranicą. 
+                                    style="z-index: 8; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;">Posiadamy zgrany zespół doświadczonych programistów, który tworzy autorskie systemy IT, rozwija już działające systemy oraz przeprowadza integrację między systemami.<br> Uczestniczymy w licznych projektach deweloperskich w Polsce i zagranicą. 
                                 </div>
                                                             
                                 <!-- LAYER NR. 5 -->
@@ -155,9 +156,9 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                         $currIndex = 0;
                         $layerNo = 29;
                         $zIndex = 10;
-                            while($currIndex < sizeof($co_robimy)){
+                        while ($currIndex < sizeof($co_robimy)) {
                                 //row begging?
-                                if($currIndex%3 == 0): // początek row?>
+                            if ($currIndex % 3 == 0) : // początek row?>
                                         
                                 <div class="tp-caption " 
                                     id="slide-59-layer-<?= $layerNo ?>" 
@@ -167,7 +168,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-height="auto"
                                     data-whitespace="nowrap"            
                                     data-type="row" 
-                                    data-columnbreak="3" 
+                                    data-columnbreak="1" 
                                     data-responsive_offset="on" 
                                     data-responsive="off"
                                     data-frames='[{"delay":"2000","speed":300,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -182,15 +183,17 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-paddingleft="[0,0,0,0]"
                                     style="z-index: <?= $zIndex ?>; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
 
-                                <?php $layerNo++; $zIndex++;?> 
+                                <?php $layerNo++;
+                                $zIndex++; ?> 
                                 <?php endif;
                                 // kolumny
-                                $el = $co_robimy[$currIndex]; 
+                                $el = $co_robimy[$currIndex];
                                 ?>
                                     <div class="tp-caption" 
                                         id="slide-59-layer-<?= $layerNo ?>" 
                                         data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-                                        data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
+                                        data-y="['top','top','top','top']" data-voffset="['0','0','0','0']"
+                                        data-visibility=['on','on','on','off'] 
                                         data-width="auto"
                                         data-height="auto"
                                         data-whitespace="nowrap"
@@ -211,7 +214,8 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                         data-paddingbottom="[0,0,0,0]"
                                         data-paddingleft="[0,0,0,0]"
                                         style="z-index: <?= $zIndex ?>; width: 100%;">
-                                        <?php $layerNo++;$zIndex++ ?>
+                                        <?php $layerNo++;
+                                        $zIndex++ ?>
                                         <div class="tp-caption tp-resizeme set-img" 
                                                 id="slide-59-layer-<?= $layerNo ?>" 
                                                 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
@@ -221,7 +225,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                                 data-whitespace="normal"                                
                                                 data-type="image" 
                                                 data-responsive_offset="on" 
-                                                data-frames='[{"delay":"<?=500*($currIndex+2)?>","speed":2000,"frame":"0","from":"y:0px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:1;fb:0;","ease":"Power3.easeInOut"}]'
+                                                data-frames='[{"delay":"<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:0px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:1;fb:0;","ease":"Power3.easeInOut"}]'
                                                 data-margintop="[0,0,0,0]"
                                                 data-marginright="[0,0,0,0]"
                                                 data-marginbottom="[0,0,0,0]"
@@ -234,7 +238,8 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                                 data-bg = "<?= get_the_post_thumbnail_url($el->ID, 'large') ?>"
                                                 style="z-index: <?= $zIndex ?>; display: block; width: 100%, height: 300px;">
                                         </div>
-                                        <?php $layerNo++; $zIndex++; ?>
+                                        <?php $layerNo++;
+                                        $zIndex++; ?>
                                         <div class="tp-caption   tp-resizeme" 
                                             id="slide-59-layer-<?= $layerNo ?>" 
                                             data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
@@ -246,7 +251,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-type="text" 
                                             data-basealign="slide" 
                                             data-responsive_offset="on" 
-                                            data-frames='[{"delay":"+<?=500*($currIndex+2)?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                            data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                             data-margintop="[0,0,0,0]"
                                             data-marginright="[0,0,0,0]"
                                             data-marginbottom="[0,0,0,0]"
@@ -258,7 +263,8 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-paddingleft="[50,50,50,50]"
                                             style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 24px; line-height: 30px; font-weight: 500; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= $el->post_title ?>
                                         </div>
-                                        <?php $layerNo++; $zIndex++; ?>
+                                        <?php $layerNo++;
+                                        $zIndex++; ?>
                                         <div class="tp-caption   tp-resizeme" 
                                             id="slide-59-layer-<?= $layerNo; ?>" 
                                             data-x="['left','left','left','left']" data-hoffset="['5','5','5','5']" 
@@ -270,7 +276,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-type="text" 
                                             data-basealign="slide" 
                                             data-responsive_offset="on" 
-                                            data-frames='[{"delay":"+<?=500*($currIndex+2)?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                            data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                             data-margintop="[0,0,0,0]"
                                             data-marginright="[0,0,0,0]"
                                             data-marginbottom="[0,0,0,0]"
@@ -282,7 +288,8 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-paddingleft="[20,20,20,20]"
                                             style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= $el->post_excerpt; ?>
                                         </div>
-                                        <?php $layerNo++; $zIndex++ ?>
+                                        <?php $layerNo++;
+                                        $zIndex++ ?>
                                         <a class="tp-caption rev-btn center-margin" 
                                             id="slide-59-layer-<?= $layerNo ?>" 
                                             data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
@@ -293,7 +300,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-type="button" 
                                             data-responsive_offset="on" 
                                             data-responsive="off"
-                                            data-frames='[{"delay":"+<?=500*($currIndex+2)?>","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(168,99,150);bw:0 0 0 0;"}]'
+                                            data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgb(255,255,255);bg:rgb(168,99,150);bw:0 0 0 0;"}]'
                                             data-margintop="[0,0,0,0]"
                                             data-marginright="['auto','auto','auto','auto']"
                                             data-marginbottom="[0,0,0,0]"
@@ -303,96 +310,109 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-paddingright="[20,20,20,20]"
                                             data-paddingbottom="[15,15,15,15]"
                                             data-paddingleft="[20,20,20,20]"
-                                            href="#" 
+                                            href="/projekty" 
                                             style="z-index: <?= $zIndex ?>; min-width: 180px; max-width: 180px; white-space: normal; font-size: 17px; line-height: 17px; font-weight: 500; color: #a86396; letter-spacing: px; display: block;font-family:Ubuntu;background-color:rgb(255,255,255);border-color:rgb(168,99,150);border-style:solid;border-width:2px 2px 2px 2px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">WIĘCEJ
                                         </a>
-                                        <?php $layerNo++; $zIndex++ ?>
+                                        <?php $layerNo++;
+                                        $zIndex++ ?>
                                     </div>
                                 <?php
-                                if ($currIndex%3 == 2): // koniec row?>
+                                if ($currIndex % 3 == 2) : // koniec row?>
                                     </div>        
-                                <?php endif;   
+                                <?php endif;
                                 $currIndex++;
-                            }?>
+                            } ?>
                     </div>
                     <!--- END ROWS -->
                 </li>
+                
             </ul>
         </div>
     </div><!-- END REVOLUTION SLIDER CO ROBIMY-->
-</div>
+
 <script type="text/javascript">
 			            var revapi41,
-			tpj;    
+			tpjc;    
     (function() {            
-    if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad)
+    if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoadc)
         else
-    onLoad();
+    onLoadc();
     
 	var templateUrl = "<?= get_template_directory_uri() ?>";
-    function onLoad() {                
-        if (tpj===undefined) {
-            tpj = jQuery;
+    function onLoadc() {  
+        
+        
+        if (tpjc===undefined) {
+            tpjc = jQuery;
 
-            if("off" == "on") tpj.noConflict();        
+            if("off" == "on") tpjc.noConflict();        
         }
-				if(tpj("#rev_slider_41_1").revolution == undefined){
+				if(tpjc("#rev_slider_41_1").revolution == undefined){
 					revslider_showDoubleJqueryError("#rev_slider_41_1");
 				}else{
-					revapi41 = tpj("#rev_slider_41_1").show().revolution({
-						sliderType:"hero",
+					revapi41 = tpjc("#rev_slider_41_1").show().revolution({
+						sliderType:"standard",
                         jsFileLocation:templateUrl+"/js/lib/revolution/js/",
-						sliderLayout:"auto",
+						sliderLayout:"fullscreen",
 						dottedOverlay:"none",
-						delay:9000,
+						delay:1000,
 						navigation: {
+							onHoverStop:"off",
+						},
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:false
 						},
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],
-						gridwidth:[1400,1024,778,480],
-						gridheight:[1800,768,960,720],
-                        lazyType:"none",
-                        viewPort: {
-                            enable: true,
-                            outof: 'wait',
-                            visible_area: '80%',
-                            presize: true
-                        },stopLoop: "on",
-                        stopAfterLoops: 0,
-                        stopAtSlide: 1,
-						shadow:1,
+						gridwidth:[1320,1024,778,480],
+						gridheight:[800,768,700,700],
+						lazyType:"single",
+						shadow:0,
 						spinner:"off",
-						autoHeight:"true",
+						stopLoop:"off",
+						stopAfterLoops:0,
+						stopAtSlide:1,
+						shuffle:"off",
+						autoHeight:"off",
+						fullScreenAutoWidth:"off",
+						fullScreenAlignForce:"off",
+						fullScreenOffsetContainer: "",
+						fullScreenOffset: "",
 						disableProgressBar:"on",
-						hideThumbsOnMobile:"on",
+						hideThumbsOnMobile:"off",
 						hideSliderAtLimit:0,
 						hideCaptionAtLimit:0,
 						hideAllCaptionAtLilmit:0,
 						debugMode:false,
 						fallbacks: {
 							simplifyAll:"off",
+							nextSlideOnWindowFocus:"off",
 							disableFocusListener:false,
-                        } ,
-                        waitForInit: true
-					});
+						}
+                    });
+ 
+  
+   
     }; /* END OF revapi call */
      }; /* END OF ON LOAD FUNCTION */
     }()); /* END OF WRAPPING FUNCTION */
         var coRobimyStarted = false;
-    jQuery(window).scroll(function() {
-    var top_of_element = jQuery("#rev_slider_41_1").offset().top;
-    var bottom_of_element = jQuery("#rev_slider_41_1").offset().top + jQuery("#rev_slider_41_1").outerHeight();
-    var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
-    var top_of_screen = jQuery(window).scrollTop();
+   
+        jQuery(window).scroll(function() {
+            var top_of_element = jQuery("#rev_slider_41_1").offset().top;
+            var bottom_of_element = jQuery("#rev_slider_41_1").offset().top + jQuery("#rev_slider_41_1").outerHeight();
+            var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
+            var top_of_screen = jQuery(window).scrollTop();
 
-    if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !coRobimyStarted){
-        // The element is visible, do something
-        console.log("STARTING - CR");
-        revapi41.revstart();
-        coRobimyStarted = true;
-    }
-    else {
-        // The element is not visible, do something else
-    }
-});
+            if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !coRobimyStarted){
+                // The element is visible, do something
+                console.log("STARTING - CR");
+                revapi41.revnext();
+                coRobimyStarted = true;
+            }
+    
+    });
 </script>

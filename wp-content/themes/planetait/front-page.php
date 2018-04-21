@@ -16,7 +16,6 @@ $slide = json_decode($slides)[0];
                 }
             }
 ?>
-<div class="row">
 	<div id="welcome_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="header-w-goodies" data-source="gallery" style="background:#2d3032;padding:0px;">
 	<!-- START REVOLUTION SLIDER 5.4.7 fullscreen mode -->
 		<div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7">
@@ -58,7 +57,7 @@ $slide = json_decode($slides)[0];
 					<div class="tp-caption   rs-parallaxlevel-4" 
 						id="slide-57-layer-1" 
 						data-x="['center','center','center','center']" data-hoffset="['0','0','0','1']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['-180','-180','-120','-240']" 
+						data-y="['middle','top','top','top']" data-voffset="['-180','0','0','0']" 
 						data-fontsize="['140','120','100','80']"
 						data-lineheight="['155','140','110','100']"
 						data-fontweight="['500','400','400','400']"
@@ -80,9 +79,9 @@ $slide = json_decode($slides)[0];
 					<div class="tp-caption   rs-parallaxlevel-4" 
 						id="slide-57-layer-2" 
 						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['-20','0','0','-100']" 
-						data-fontsize="['40','25','20','17']"
-						data-lineheight="['','30','25','25']"
+						data-y="['middle','top','top','top']" data-voffset="['-20','160','140','100']" 
+						data-fontsize="['40','32','20','17']"
+						data-lineheight="['60','40','25','25']"
 						data-width="['none','none','480','none']"
 						data-height="none"
 						data-whitespace="['nowrap','nowrap','normal','normal']"		
@@ -97,8 +96,66 @@ $slide = json_decode($slides)[0];
 						data-paddingleft="[0,0,0,0]"
 						style="z-index: 7; white-space: nowrap; font-size: 40px; line-height: px; font-weight: 400; color: #ffffff; letter-spacing: 10px;font-family:Ubuntu;"><?= $slide->Text ?>
 					</div>
+					<div class="tp-caption   tp-resizeme" 
+						id="slide-57-layer-9" 
+						data-x="['center','center','center','center']" data-hoffset="['0','-1','0','1']" 
+						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','100','80','50']" 
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"		
+						data-type="text" 		   
+						data-typewriter='{"lines":"OPTYMALIZACJA,&nbsp;INTEGRACJA&nbsp;,&nbsp;REVOLUCJA&nbsp;","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
+						data-responsive_offset="on"
+						data-frames='[{"delay":2520,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						style="z-index: 9; white-space: nowrap; font-size:32px; line-height: 60px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">&nbsp;&nbsp;ANALIZA&nbsp;&nbsp;
+					</div>
+					<!-- LAYER NR. 6 -->
+					<div class="tp-caption  tp-resizeme" 
+						id="slide-57-layer-11" 
+						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['200','240','200','160']" 
+						data-fontsize="['40','25','20','17']"
+						data-lineheight="['50','30','25','25']"
+						data-width="['none','none','none','100%']"
+						data-height="none"
+						data-whitespace="['nowrap','nowrap','nowrap','normal']"		
+						data-type="text" 
+						data-responsive_offset="off" 
+						data-responsive="off"
+						data-whiteboard='{"hand_function":"write","jitter_distance":"60","jitter_offset":"20","jitter_offset_horizontal":"0","hand_angle":"5","hand_angle_repeat":"5","goto_next_layer":"on"}'
+						data-frames='[{"from":"opacity:0;","speed":150,"to":"o:1;","delay":3500,"split":"chars","splitdelay":0.05,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0","ease":"Power3.easeIn"}]'data-textAlign="['center','center','center','center']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Gloria Hallelujah;">ROZWIJAJ SWÓJ BIZNES Z NAMI
+					</div>
+					<div class="tp-caption   tp-resizeme" 
+						id="slide-2919-layer-1" 
+						data-x="['center','center','center','center']" data-hoffset="['30','0','0','0']" 
+						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['210','220','180','215']" 
+						data-width="none"
+						data-height="none"
+						data-whitespace="nowrap"
+						data-type="image" 
+						data-whiteboard='{"hand_function":"draw","jitter_repeat":"0","jitter_distance":"60","jitter_offset":"0","hand_angle":"0","hand_angle_repeat":"0","goto_next_layer":"on"}'
+						data-responsive_offset="on" 
+						data-frames='[{"from":"x:[100%];","mask":"x:[-100%];y:0;rZ:-2deg;s:inherit;e:inherit;","speed":600,"to":"o:1;rZ:-2deg;","delay":6000,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0;","ease":"Power3.easeIn"}]'
+						data-textAlign="['left','left','left','left']"
+						data-paddingtop="[0,0,0,0]"
+						data-paddingright="[0,0,0,0]"
+						data-paddingbottom="[0,0,0,0]"
+						data-paddingleft="[0,0,0,0]"
+						style="z-index: 11;border-width:0px;"><img src="<?= get_template_directory_uri()?>/assets/images/underline.png" alt="" data-ww="['600px','220px','220px','150px']" data-hh="['20px','20px','10px','10px']" width="180" height="8" data-no-retina>
+					</div>
+					
 					<div class="tp-caption   tp-svg-layer" 
-						id="slide-57-layer-4" 
+						id="slide-2919-layer-13" 
 						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
 						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['79','40','40','40']" 
 						data-width="50"
@@ -118,69 +175,12 @@ $slide = json_decode($slides)[0];
 						data-paddingright="[5,5,5,5]"
 						data-paddingbottom="[5,5,5,5]"
 						data-paddingleft="[5,5,5,5]"
-						style="z-index: 8; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.65);font-family:Open Sans;border-radius:40px 40px 40px 40px;cursor:pointer;">
+						style="z-index: 12; min-width: 50px; max-width: 50px; max-width: 50px; max-width: 50px; color: rgba(255,255,255,0.65);font-family:Open Sans;border-radius:40px 40px 40px 40px;cursor:pointer;">
 					</div>
-					<div class="tp-caption   tp-resizeme" 
-						id="slide-57-layer-9" 
-						data-x="['center','center','center','center']" data-hoffset="['0','-1','0','1']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['140','140','100','50']" 
-						data-width="none"
-						data-height="none"
-						data-whitespace="nowrap"		
-						data-type="text" 		   
-						data-typewriter='{"lines":"OPTYMALIZACJA,&nbsp;INTEGRACJA&nbsp;,&nbsp;REVOLUCJA&nbsp;","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
-						data-responsive_offset="on"
-						data-frames='[{"delay":2520,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['inherit','inherit','inherit','inherit']"
-						data-paddingtop="[0,0,0,0]"
-						data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
-						style="z-index: 9; white-space: nowrap; font-size:32px; line-height: 60px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">&nbsp;&nbsp;ANALIZA&nbsp;&nbsp;
-					</div>
-					<!-- LAYER NR. 6 -->
-					<div class="tp-caption  tp-resizeme" 
-						id="slide-57-layer-11" 
-						data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['220','220','220','220']" 
-						data-fontsize="['40','25','20','17']"
-						data-lineheight="['50','30','25','25']"
-						data-width="none"
-						data-height="none"
-						data-whitespace="['nowrap','nowrap','normal','normal']"		
-						data-type="text" 
-						data-responsive_offset="off" 
-						data-responsive="off"
-						data-whiteboard='{"hand_function":"write","jitter_distance":"60","jitter_offset":"20","jitter_offset_horizontal":"0","hand_angle":"5","hand_angle_repeat":"5","goto_next_layer":"on"}'
-						data-frames='[{"from":"opacity:0;","speed":150,"to":"o:1;","delay":3500,"split":"chars","splitdelay":0.05,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0","ease":"Power3.easeIn"}]'data-textAlign="['center','center','center','center']"
-						data-paddingtop="[0,0,0,0]"
-						data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
-						style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Gloria Hallelujah;">ROZWIJAJ SWÓJ BIZNES Z NAMI
-					</div>
-					<div class="tp-caption   tp-resizeme" 
-						id="slide-2919-layer-5" 
-						data-x="['center','center','center','center']" data-hoffset="['30','0','0','0']" 
-						data-y="['middle','middle','middle','middle']" data-voffset="['470','460','460','460']" 
-						data-width="none"
-						data-height="none"
-						data-whitespace="nowrap"
-						data-type="image" 
-						data-whiteboard='{"hand_function":"draw","jitter_repeat":"0","jitter_distance":"60","jitter_offset":"0","hand_angle":"0","hand_angle_repeat":"0","goto_next_layer":"on"}'
-						data-responsive_offset="on" 
-						data-frames='[{"from":"x:[100%];","mask":"x:[-100%];y:0;rZ:-2deg;s:inherit;e:inherit;","speed":600,"to":"o:1;rZ:-2deg;","delay":6000,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0;","ease":"Power3.easeIn"}]'
-						data-textAlign="['left','left','left','left']"
-						data-paddingtop="[0,0,0,0]"
-						data-paddingright="[0,0,0,0]"
-						data-paddingbottom="[0,0,0,0]"
-						data-paddingleft="[0,0,0,0]"
-						style="z-index: 18;border-width:0px;"><img src="<?= get_template_directory_uri()?>/assets/images/underline.png" alt="" data-ww="['600px','220px','220px','150px']" data-hh="20px" width="180" height="8" data-no-retina> </div>
 				</li>
 			</ul>
 		</div>
 	</div>
-</div>
 <!-- END REVOLUTION SLIDER MAIN SLIDER -->
 <!-- SECTIONS -->
 <?php
@@ -199,6 +199,15 @@ $slide = json_decode($slides)[0];
 			case "osiagniecia":
 					include_once("templates/osiagniecia-template.php");
 					break;
+			case "jezyki-programowania":
+					include_once("templates/jezykiprogramowania-template.php");
+					break;
+				case "o-nas":
+						include_once("templates/onas-template.php");
+						break;
+				case "partnerzy":
+				include_once("templates/partnerzy-template.php");
+				break;
 				
 			}	
 		}

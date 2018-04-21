@@ -2,12 +2,22 @@
 // $using $section;=
 ?>
 
-<div id="rev_slider_45_1_wrapper" class="rev_slider_wrapper" data-alias="blendmodeheader36" data-source="gallery" style="background:transparent;padding:0px;">
+<div id="rev_slider_45_1_wrapper" class="rev_slider_wrapper" data-alias="blendmodeheader36" data-source="gallery" style="background:#2a2a2a;padding:0px;">
 	<div id="rev_slider_45_1" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
-		<ul>	<!-- SLIDE  -->
-			<li data-index="rs-63" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-delay="9000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+		<ul>
+		<li data-index="rs-62" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
+                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
+                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="<?= get_template_directory_uri()?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
+                        data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                </li>
+			<!-- SLIDE  -->
+			<li data-index="rs-63" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="100"  data-delay="1000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 				<!-- MAIN IMAGE -->
-				<img src="<?=get_the_post_thumbnail_url($section->ID, 'full')?>"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
+				<img src="<?= get_the_post_thumbnail_url($section->ID, 'full') ?>"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
 				<!-- LAYERS -->
 				<div id="rrzt_63" class="rev_row_zone rev_row_zone_top" style="z-index: 11;">
 
@@ -78,7 +88,7 @@
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
-								style="z-index: 13; white-space: nowrap; font-size: 96px; line-height: 120px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><span class="counter">1</span>
+								style="z-index: 13; white-space: nowrap; font-size: 96px; line-height: 120px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><span class="">1</span>
 							</div>
 
 							<!-- LAYER NR. 4 -->
@@ -101,6 +111,8 @@
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+								data-fontsize="['36','25','20','17']"
+								data-lineheight="['120','80','30','25']"
 								style="z-index: 14; white-space: nowrap; font-size: 36px; line-height: 120px; font-weight: 400; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">DOBRY WYBÓR
 							</div>
                         </div>	
@@ -171,6 +183,8 @@
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+								data-fontsize="['36','25','20','17']"
+								data-lineheight="['120','80','30','25']"
 								style="z-index: 17; white-space: nowrap; font-size: 36px; line-height: 120px; font-weight: 400; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">LAT DOŚWIADCZENIA
 							</div>
 						</div>
@@ -241,6 +255,8 @@
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
+								data-fontsize="['36','25','20','17']"
+								data-lineheight="['120','80','30','25']"
 								style="z-index: 30; white-space: nowrap; font-size: 36px; line-height: 120px; font-weight: 400; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">ZAANGAŻOWANIA
 							</div>
 						</div>
@@ -266,8 +282,8 @@
 					data-paddingright="[0,0,0,0]"
 					data-paddingbottom="[0,0,0,0]"
 					data-paddingleft="[0,0,0,0]"
-					data-blendmode="hard-light"
-					style="z-index: 5;background:linear-gradient(180deg, rgba(207,103,252,1) 0%, rgba(112,0,29,1) 100%);">
+					data-blendmode="overlay"
+					style="z-index: 5;background:linear-gradient(90deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);">
 				</div>
 			</li>
 		</ul>
@@ -275,49 +291,45 @@
 </div><!-- END REVOLUTION SLIDER -->
 <script type="text/javascript">
 			            var revapi45,
-			tpj;    
+			tpjo;    
 (function() {            
-    if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad)
+    if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoado)
         else
-    onLoad();
+    onLoado();
     
 	var templateUrl = "<?= get_template_directory_uri() ?>";
-    function onLoad() {                
-        if (tpj===undefined) {
-            tpj = jQuery;
+    function onLoado() {                
+        if (tpjo===undefined) {
+            tpjo = jQuery;
 
             if("off" == "on") tpj.noConflict();        
         }
-				if(tpj("#rev_slider_45_1").revolution == undefined){
+				if(tpjo("#rev_slider_45_1").revolution == undefined){
 					revslider_showDoubleJqueryError("#rev_slider_45_1");
 				}else{
-					revapi45 = tpj("#rev_slider_45_1").show().revolution({
-						sliderType:"hero",
+					revapi45 = tpjo("#rev_slider_45_1").show().revolution({
+						sliderType:"standard",
                         jsFileLocation:templateUrl+"/js/lib/revolution/js/",
 						sliderLayout:"fullwidth",
 						dottedOverlay:"none",
 						delay:9000,
-						navigation: {
-						},
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],
 						gridwidth:[1240,1024,778,480],
 						gridheight:[360,360,360,720],
-						lazyType:"none",
-						viewPort: {
-                            enable: true,
-                            outof: 'wait',
-                            visible_area: '80%',
-                            presize: true
-                        },stopLoop: "on",
-                        stopAfterLoops: 0,
-                        stopAtSlide: 1,
+						lazyType:"single",
+						
+						navigation: {
+							onHoverStop:"off",
+						},
 						shadow:1,
 						spinner:"off",
-						autoHeight:"true",
+						stopLoop:"on",
+						stopAfterLoops:0,
+						stopAtSlide:1,
 						disableProgressBar:"on",
 						hideThumbsOnMobile:"off",
-						hideSliderAtLimit:0,
+						hideSliderAtLimit:1000,
 						hideCaptionAtLimit:0,
 						hideAllCaptionAtLilmit:0,
 						debugMode:false,
@@ -325,41 +337,38 @@
 							simplifyAll:"off",
 							nextSlideOnWindowFocus:"off",
 							disableFocusListener:false,
-						},
-                        waitForInit: true
+						}
+						
+					});
+					tpjo(revapi45).one('revolution.slide.onloaded', function() {
+						jQuery(window).scroll(function(){osiagnieciaScroll()});
+
 					});
     }; /* END OF revapi call */
      }; /* END OF ON LOAD FUNCTION */
 }()); /* END OF WRAPPING FUNCTION */
+		var OsiagnieciaStarted = false;
+		var caction = false;
+		var osiagnieciaScroll = function() {
+			var top_of_element = jQuery("#rev_slider_45_1").offset().top;
+			var bottom_of_element = jQuery("#rev_slider_45_1").offset().top + jQuery("#rev_slider_45_1").outerHeight();
+			var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
+			var top_of_screen = jQuery(window).scrollTop();
 
-        var OsiagnieciaStarted = false;
-jQuery(window).scroll(function() {
-    var top_of_element = jQuery("#rev_slider_45_1").offset().top;
-    var bottom_of_element = jQuery("#rev_slider_45_1").offset().top + jQuery("#rev_slider_45_1").outerHeight();
-    var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
-    var top_of_screen = jQuery(window).scrollTop();
+				if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !OsiagnieciaStarted){
+					// The element is visible, do something
+					console.log("STARTING - O"); 				
+					revapi45.revnext();
+					OsiagnieciaStarted = true;
+					tpjo(revapi45).off("revolution.slide.onafterswap").on('revolution.slide.onafterswap', function(e,d) {
+						
+						if(jQuery(d.currentslide).data('index') == 'rs-63'){
+							caction = true;
+							console.log("STARTING - COUNTERS");
+							jQuery("#rev_slider_45_1 .counter").counterUp({delay: 15, time: 1500});
+						}
 
-    if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !OsiagnieciaStarted){
-        // The element is visible, do something
-        var pos = 1; 
-        console.log("STARTING - O");   
-    
-        revapi45.revstart();
-        OsiagnieciaStarted = true;
-        jQuery("#rev_slider_45_1 .counter").each(function(e){
-            var that = this;        
-            setTimeout(function() 
-                {
-
-                    console.log("COUNTER ");
-                    jQuery(that).counterUp({
-                        delay: 15,
-                        time: 3000
-                    });
-                },
-                1000*pos);
-            pos++;
-        });
-     }
-    });
+					});
+				}
+		};
 		</script>

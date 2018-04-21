@@ -15,9 +15,9 @@ class Project_MenuWalker extends Walker_Nav_Menu{
         $output .= 'data-x="[\'left\',\'left\',\'left\',\'left\']" data-hoffset="[\'0\',\'0\',\'0\',\'0\']"';
         $output .= 'data-y="[\'top\',\'top\',\'top\',\'top\']" data-voffset="[\'0\',\'0\',\'0\',\'0\']"';
         $output .= 'data-fontsize="[\'17\',\'17\',\'13\',\'15\']"';
-        if($isLast === true){
-            $output .= 'data-lineheight="[\'36\',\'36\',\'24\',\'24\']"';
-        }
+        //if($isLast === true){
+            $output .= 'data-lineheight="[\'36\',\'36\',\'36\',\'36\']"';
+        //}
         $output .= 'data-width="none"';
         $output .= 'data-height="none"';
         $output .= 'data-whitespace="normal"';        
@@ -33,7 +33,7 @@ class Project_MenuWalker extends Walker_Nav_Menu{
         }
         $output .= 'data-margintop="[3,3,0,0]"';        
         $output .= 'data-marginright="[15,10,10,5]"';        
-        $output .= 'data-marginbottom="[0,0,0,0]"';        
+        $output .= 'data-marginbottom="[0,0,10,10]"';        
         $output .= 'data-marginleft="[15,10,10,5]"';        
         $output .= 'data-textAlign="[\'inherit\',\'inherit\',\'inherit\',\'inherit\']"';        
         $output .= 'data-paddingtop="[0,0,0,0]"';
@@ -42,7 +42,7 @@ class Project_MenuWalker extends Walker_Nav_Menu{
         } else {
             $output .= 'data-paddingright="[0,0,0,0]"';        
         }
-        $output .= 'data-paddingbottom="[0,0,0,0]"';  
+        $output .= 'data-paddingbottom="[0,0,2,0]"';  
         if($isLast === true){     
             $output .= 'data-paddingleft="[20,20,10,10]"'; 
         } else {

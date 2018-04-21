@@ -20,7 +20,6 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		<link href="http://fonts.googleapis.com/css?family=Gloria+Hallelujah%3A400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" media="all">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
@@ -34,6 +33,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
             tests: {}
         });
         </script>
+<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.0/dist/loadingoverlay.min.js"></script>
 <script type="text/javascript">
 function setREVStartSize(e){
 			document.addEventListener("DOMContentLoaded", function() {
@@ -45,13 +45,12 @@ function setREVStartSize(e){
 		};</script>
 	</head>
 	<body <?php body_class(); ?> style="margin: 0; padding: 0; background-color:  #edf1f4;"> 
-		<!-- MENU -->			
-		<header>
-			<div id="menu_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+		<!-- MENU -->	
+			<div id="nav_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 				<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-				<div id="menu" class="rev_slider fullwidthabanner" style="display:none;     background-color: rgba(255,255,255,1);" data-version="5.4.7">
+				<div id="nav" class="rev_slider fullwidthabanner" style="display:none;     background-color: rgba(255,255,255,1);" data-version="5.4.7" data-height="['100px','100px','100px','100px']">
 					<ul>	<!-- SLIDE  -->
-						<li data-index="rs-30" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Menu" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+						<li data-index="rs-30" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-height="['100px','100px','100px','100px']" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Menu" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 							<!-- MAIN IMAGE -->
 							<img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
@@ -62,13 +61,13 @@ function setREVStartSize(e){
 									data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
 									data-y="['top','top','top','top']" data-voffset="['100','100','100','100']" 
 									data-width="none"
-									data-height="none"
 									data-whitespace="nowrap"
 									data-type="row" 
 									data-columnbreak="2" 
 									data-responsive_offset="on" 
 									data-responsive="off"
 									data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+									data-height="['100px','100px','100px','100px']"
 									data-margintop="[0,0,0,0]"
 									data-marginright="[0,0,0,0]"
 									data-marginbottom="[0,0,0,0]"
@@ -192,7 +191,5 @@ function setREVStartSize(e){
 			
 				<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	
 			</div>
-		</header>
-		<div class="container-fluid">
 		<!-- END MENU -->
 	<!--BODY-->

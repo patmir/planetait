@@ -22,7 +22,7 @@
                         jsFileLocation: templateUrl+"/js/lib/revolution/js/",
 						sliderLayout:"fullscreen",
 						dottedOverlay:"none",
-						fullScreenOffsetContainer: "#menu",
+						fullScreenOffsetContainer: "#nav",
 						delay:9000,
 						particles: {startSlide: "first", endSlide: "last", zIndex: "1",
 							particles: {
@@ -40,32 +40,24 @@
 								modes: {grab: {distance: 400, line_linked: {opacity: 0.5}}, bubble: {distance: 320, size: 25, opacity: 0.4}, repulse: {distance: 200}}
 							}
 						},
-						navigation: {
-						},
-						viewPort: {
-							enable:true,
-							outof:"wait",
-                            visible_area:"80%",
-                            presize:true
-						},
-						responsiveLevels:[1240,1024,778,480],
-						visibilityLevels:[1240,1024,778,480],
-						gridwidth:[1240,1024,778,480],
-						gridheight:[1800,768,960,720],
-						lazyType:"none",
-						viewPort: {
+                        viewPort: {
                             enable: true,
                             outof: 'wait',
                             visible_area: '80%',
                             presize: true
                         },
+						navigation: {
+						},
+						responsiveLevels:[1240,1024,778,480],
+						visibilityLevels:[1240,1024,778,480],
+						gridwidth:[1240,1024,778,480],
+						gridheight:[1024,768,720,720],
+						lazyType:"none",
 						shadow:0,
 						spinner:"spinner3",
-						autoHeight:"off",
+						autoHeight:"on",
 						fullScreenAutoWidth:"off",
 						fullScreenAlignForce:"off",
-						fullScreenOffsetContainer: "",
-						fullScreenOffset: "",
 						disableProgressBar:"on",
 						hideThumbsOnMobile:"off",
 						hideSliderAtLimit:0,
