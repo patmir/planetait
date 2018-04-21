@@ -189,8 +189,8 @@ background-image: url(<?= get_template_directory_uri() ?>/img/handshake.png);
 			jQuery('#partnerzy-slider').multislider({
 				continuous: true,
 				slideAll: false,  
-				interval: 1000, 
-				duration: 5000,      
+				interval: 3000, 
+				duration: 1500,      
 				hoverPause: false, 
 				pauseAbove: null,   
 				pauseBelow: null   
