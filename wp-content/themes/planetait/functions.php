@@ -684,6 +684,45 @@ require_once("settings-ajax.php");
                     )
                 )
             );
+            register_post_type(
+                'project',
+                array(
+                    'labels' => array(
+                        'name' => __('Projekty', 'html5blank'),
+                        'singular_name' => __('Projekt', 'html5blank'),
+                        'add_new' => __('Dodaj nowy Projekt', 'html5blank'),
+                        'add_new_item' => __('Dodaj nowy Projekt', 'html5blank'),
+                        'edit' => __('Edytuj', 'html5blank'),
+                        'edit_item' => __('Edytuj Projekt', 'html5blank'),
+                        'new_item' => __('Nowy Projekt', 'html5blank'),
+                        'view' => __('Zobacz', 'html5blank'),
+                        'view_item' => __('Zobacz Projekt', 'html5blank'),
+                        'search_items' => __('Szukaj', 'html5blank'),
+                        'not_found' => __('Nie znaleziono Projektu', 'html5blank'),
+                        'not_found_in_trash' => __('Nie znaleziono Projektu w koszu', 'html5blank'),
+                        'description' => __('Projekt', 'html5blank')
+                    ),
+                    'show_ui' => true,
+                    'show_in_nav_menus' => false,
+                    'show_in_menu' => GlobalConfig::get("project_slug_name"),
+                    'exclude_from_search' => false,
+                    'public' => true,
+                    'hierarchical' => true,
+                    'has_archive' => true,
+                    'supports' => array(
+                        'title',
+                        'editor',
+                        'excerpt',
+                        'thumbnail',
+                        'page-attributes'
+                    ),
+                    'can_export' => true,
+                    'taxonomies' => array(
+                        'post_tag',
+                        'category'
+                    )
+                )
+            );
         }
 
 /*------------------------------------*\
