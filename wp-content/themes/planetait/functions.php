@@ -399,29 +399,6 @@ function html5blankcomments($comment, $args, $depth)
 	<?php endif; ?>
 <?php 
 }
-/**
- * Slug goodies
- */
-function na_remove_slug( $post_link, $post, $leavename ) {
-
-    if ( 'sub_page' != $post->post_type || 'publish' != $post->post_status ) {
-        return $post_link;
-    }
-
-    $post_link = str_replace( '/' . $post->post_type . '/', '/', $post_link );
-
-    return $post_link;
-}
-function na_parse_request( $query ) {
-
-    if ( ! $query->is_main_query() || 2 != count( $query->query ) || ! isset( $query->query['page'] ) ) {
-        return;
-    }
-
-    if ( ! empty( $query->query['name'] ) ) {
-        $query->set( 'post_type', array( 'post', 'sub_page', 'page' ) );
-    }
-}
 /*------------------------------------*\
 	Actions + Filters + ShortCodes
 \*------------------------------------*/
@@ -436,7 +413,6 @@ add_action('admin_menu', 'register_html5_admin_menu'); // Add Admin Menu
 add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
-add_action( 'pre_get_posts', 'na_parse_request' );
 // Remove Actions
 remove_action('wp_head', 'feed_links_extra', 3); // Display the links to the extra feeds such as category feeds
 remove_action('wp_head', 'feed_links', 2); // Display the links to the general feeds: Post and Comment Feed
@@ -468,7 +444,6 @@ add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 add_filter('style_loader_tag', 'html5_style_remove'); // Remove 'text/css' from enqueued stylesheet
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to post images
-add_filter( 'post_type_link', 'na_remove_slug', 10, 3 );
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
@@ -524,9 +499,9 @@ require_once("settings-ajax.php");
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
         function create_post_type_html5()
         {
-            register_taxonomy_for_object_type('category', 'sub_page');
+            register_taxonomy_for_object_type('category', 'subpage');
             register_taxonomy_for_object_type('category', 'job_listing');
-            register_taxonomy_for_object_type('post_tag', 'sub_page');
+            register_taxonomy_for_object_type('post_tag', 'subpage');
             register_taxonomy_for_object_type('post_tag', 'job_listing');
 
             register_post_type(
@@ -570,7 +545,7 @@ require_once("settings-ajax.php");
             );
 
             register_post_type(
-                'sub_page',
+                'subpage',
                 array(
                     'labels' => array(
                         'name' => __('Podstrony', 'html5blank'),
@@ -740,3 +715,105 @@ require_once("settings-ajax.php");
         {
             return '<h2>' . $content . '</h2>';
         }
+        function cptTemplateMetaBox() {
+            add_meta_box(
+              'cpt-template-meta-box'
+              , __( 'Page Template', 'my-cpt-textdomain' )
+              , 'postTemplateMetaBoxMarkup'
+              , 'subpage'
+              , 'side'
+              , 'core'
+            );
+          }
+          add_action( 'add_meta_boxes', 'cptTemplateMetaBox' );
+
+          function postTemplateMetaBoxMarkup( $post ) {
+            // create a nonce for verification (not covered in this post)
+            wp_nonce_field( basename(__FILE__), 'cpt_template_meta_nonce' );
+      
+            // we get the cpt_page_template meta field from the database when we load
+            // the admin panel. We haven't saved on yet, but when we do it'll be here.
+            $current_template = get_post_meta( $post->ID, 'cpt_page_template', true);
+            // the get_page_templates() function retrieves all of the currently enabled
+            // templates.
+            $template_options = get_page_templates();
+      
+            // start creating our markup
+            // first we create a label, the 'for' attribute should match the 'name' of the <input> we
+            // want to save.
+            $box_label = '<label for="cpt_page_template">Page Template</label>';
+            // <select> wrapper around our options. notice the 'name' == 'for' from above
+            $box_select = '<select name="cpt_page_template">';
+      
+            // we give a Default option which will default to whatever the theme's default
+            // template is.
+            $box_default_option = '<option value="">Default Template</option>';
+            $box_options = '';
+      
+            // here's the meat. For EACH of the available templates, create an <option> for it,
+            // and put it in our <select> box.
+            foreach (  $template_options as $name=>$file ) {
+                if ( $current_template == $file ) {
+                    $box_options .= '<option value="' . $file . '" selected="selected">' . $name . '</option>';
+                } else {
+                    $box_options .= '<option value="' . $file . '">' . $name . '</option>';
+                }
+            }
+      
+            // echo our markup (you should return it, but we won't do that here).
+            echo $box_label;
+            echo $box_select;
+            echo $box_default_option;
+            echo $box_options;
+            echo '</select>';
+        }
+
+        function postTemplateMetaBoxSave( $post_id ) {
+            $current_nonce = $_POST['cpt_template_meta_nonce'];
+            $is_autosaving = wp_is_post_autosave( $post_id );
+            $is_revision   = wp_is_post_revision( $post_id );
+            $valid_nonce   = ( isset( $current_nonce ) && wp_verify_nonce( $current_nonce, basename( __FILE__ ) ) ) ? 'true' : 'false';
+      
+            // if the post is autosaving, a revision, or the nonce is not valid
+            // do not save any changed settings.
+            if ( $is_autosaving || $is_revision || !$valid_nonce ) {
+                return;
+            }
+      
+            // Find our 'cpt_page_template' field in the POST request, and save it
+            // when the post is updated. Note that the POST field matches the
+            // name of the select box in the markup.
+            $cpt_page_template = $_POST['cpt_page_template'];
+            update_post_meta( $post_id, 'cpt_page_template', $cpt_page_template );
+        }
+        add_action( 'save_post', 'postTemplateMetaBoxSave' );   
+
+        function loadMyCptPostTemplate() {
+            // get the queried object which contains the information we need to
+            // access our post meta data
+            $query_object = get_queried_object();
+            $page_template = get_post_meta( $query_object->ID, 'cpt_page_template', true );
+      
+            // the name of our custom post type for which we'll load a template
+            $my_post_type = 'my-cpt-name';
+      
+            // create an array of default templates
+            $default_templates    = array();
+            $default_templates[]  = 'single-{$query_object->post_type}-{$query_object->post_name}.php';
+            $default_templates[]  = 'single-{$query_object->post_type}.php';
+            $default_templates[]  = 'single.php';
+      
+            // only apply our template to our CPT pages.
+            if ( $query_object->post_type == $my_post_type ) {
+                // if the page_template isn't empty, set it as the default_template
+                if ( !empty( $page_template ) ) {
+                    echo 'need to load ' . $page_template;
+                    $default_templates = $page_template;
+                }
+            }
+      
+            // locate the template and return it
+            $new_template = locate_template( $default_templates, false );
+            return $new_template;
+        }
+        add_filter( 'single_template', 'loadMyCptPostTemplate' );
