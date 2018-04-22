@@ -166,8 +166,16 @@ var setMenuFixed = function(){
 	jQuery(window).off("scroll", setMenuFixed);
 
 };
+var adjustMenu = function(){
+	var nav = jQuery("#nav_forcefullwidth");
+	if(jQuery("body").css("padding-top") != nav.outerHeight() && nav.css("position") == "fixed"){
+	jQuery("body").css("padding-top", nav.outerHeight());
+	console.log("ADJUST MENU");
+	}
 
+};
 jQuery(window).on("scroll", setMenuFixed);
+jQuery(window).on("resize", adjustMenu);
 
 
 });

@@ -138,7 +138,8 @@ $slide = json_decode($slides)[0];
 					<div class="tp-caption   tp-resizeme" 
 						id="slide-2919-layer-1" 
 						data-x="['center','center','center','center']" data-hoffset="['30','0','0','0']" 
-						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['210','220','180','215']" 
+						data-y="['bottom','bottom','bottom','bottom']" data-voffset="['210','220','180','190']" 
+						data-visibility="['on', 'on', 'off', 'off']"
 						data-width="none"
 						data-height="none"
 						data-whitespace="nowrap"
@@ -151,7 +152,7 @@ $slide = json_decode($slides)[0];
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 11;border-width:0px;"><img src="<?= get_template_directory_uri()?>/assets/images/underline.png" alt="" data-ww="['600px','220px','220px','150px']" data-hh="['20px','20px','10px','10px']" width="180" height="8" data-no-retina>
+						style="z-index: 11;border-width:0px;"><img src="<?= get_template_directory_uri()?>/assets/images/underline.png" alt="" data-ww="['600px','220px','220px','1']" data-hh="['20px','20px','10px','0']" width="180" height="8" data-no-retina>
 					</div>
 					
 					<div class="tp-caption   tp-svg-layer" 

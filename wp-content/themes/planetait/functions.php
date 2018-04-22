@@ -564,7 +564,7 @@ require_once("settings-ajax.php");
                     ),
                     'public' => true,
                     'hierarchical' => true,
-                    'has_archive' => true,
+                    'has_archive' => false,
                     'supports' => array(
                         'title',
                         'editor',
@@ -606,7 +606,7 @@ require_once("settings-ajax.php");
                     'exclude_from_search' => false,
                     'public' => true,
                     'hierarchical' => true,
-                    'has_archive' => true,
+                    'has_archive' => false,
                     'supports' => array(
                         'title',
                         'editor',
@@ -644,7 +644,7 @@ require_once("settings-ajax.php");
                     'exclude_from_search' => false,
                     'public' => true,
                     'hierarchical' => true,
-                    'has_archive' => true,
+                    'has_archive' => false,
                     'supports' => array(
                         'title',
                         'editor',
@@ -683,7 +683,46 @@ require_once("settings-ajax.php");
                     'exclude_from_search' => false,
                     'public' => true,
                     'hierarchical' => true,
-                    'has_archive' => true,
+                    'has_archive' => false,
+                    'supports' => array(
+                        'title',
+                        'editor',
+                        'excerpt',
+                        'thumbnail',
+                        'page-attributes'
+                    ),
+                    'can_export' => true,
+                    'taxonomies' => array(
+                        'post_tag',
+                        'category'
+                    )
+                )
+            );
+            register_post_type(
+                'reference',
+                array(
+                    'labels' => array(
+                        'name' => __('Referencje', 'html5blank'),
+                        'singular_name' => __('Referencja', 'html5blank'),
+                        'add_new' => __('Dodaj nową Referencję', 'html5blank'),
+                        'add_new_item' => __('Dodaj nową Referencję', 'html5blank'),
+                        'edit' => __('Edytuj', 'html5blank'),
+                        'edit_item' => __('Edytuj Referencję', 'html5blank'),
+                        'new_item' => __('Nowy Referencja', 'html5blank'),
+                        'view' => __('Zobacz', 'html5blank'),
+                        'view_item' => __('Zobacz Referencję', 'html5blank'),
+                        'search_items' => __('Szukaj', 'html5blank'),
+                        'not_found' => __('Nie znaleziono Referencji', 'html5blank'),
+                        'not_found_in_trash' => __('Nie znaleziono Referencji w koszu', 'html5blank'),
+                        'description' => __('Referencja', 'html5blank')
+                    ),
+                    'show_ui' => true,
+                    'show_in_nav_menus' => false,
+                    'show_in_menu' => GlobalConfig::get("project_slug_name"),
+                    'exclude_from_search' => false,
+                    'public' => true,
+                    'hierarchical' => true,
+                    'has_archive' => false,
                     'supports' => array(
                         'title',
                         'editor',
@@ -715,105 +754,3 @@ require_once("settings-ajax.php");
         {
             return '<h2>' . $content . '</h2>';
         }
-        function cptTemplateMetaBox() {
-            add_meta_box(
-              'cpt-template-meta-box'
-              , __( 'Page Template', 'my-cpt-textdomain' )
-              , 'postTemplateMetaBoxMarkup'
-              , 'subpage'
-              , 'side'
-              , 'core'
-            );
-          }
-          add_action( 'add_meta_boxes', 'cptTemplateMetaBox' );
-
-          function postTemplateMetaBoxMarkup( $post ) {
-            // create a nonce for verification (not covered in this post)
-            wp_nonce_field( basename(__FILE__), 'cpt_template_meta_nonce' );
-      
-            // we get the cpt_page_template meta field from the database when we load
-            // the admin panel. We haven't saved on yet, but when we do it'll be here.
-            $current_template = get_post_meta( $post->ID, 'cpt_page_template', true);
-            // the get_page_templates() function retrieves all of the currently enabled
-            // templates.
-            $template_options = get_page_templates();
-      
-            // start creating our markup
-            // first we create a label, the 'for' attribute should match the 'name' of the <input> we
-            // want to save.
-            $box_label = '<label for="cpt_page_template">Page Template</label>';
-            // <select> wrapper around our options. notice the 'name' == 'for' from above
-            $box_select = '<select name="cpt_page_template">';
-      
-            // we give a Default option which will default to whatever the theme's default
-            // template is.
-            $box_default_option = '<option value="">Default Template</option>';
-            $box_options = '';
-      
-            // here's the meat. For EACH of the available templates, create an <option> for it,
-            // and put it in our <select> box.
-            foreach (  $template_options as $name=>$file ) {
-                if ( $current_template == $file ) {
-                    $box_options .= '<option value="' . $file . '" selected="selected">' . $name . '</option>';
-                } else {
-                    $box_options .= '<option value="' . $file . '">' . $name . '</option>';
-                }
-            }
-      
-            // echo our markup (you should return it, but we won't do that here).
-            echo $box_label;
-            echo $box_select;
-            echo $box_default_option;
-            echo $box_options;
-            echo '</select>';
-        }
-
-        function postTemplateMetaBoxSave( $post_id ) {
-            $current_nonce = $_POST['cpt_template_meta_nonce'];
-            $is_autosaving = wp_is_post_autosave( $post_id );
-            $is_revision   = wp_is_post_revision( $post_id );
-            $valid_nonce   = ( isset( $current_nonce ) && wp_verify_nonce( $current_nonce, basename( __FILE__ ) ) ) ? 'true' : 'false';
-      
-            // if the post is autosaving, a revision, or the nonce is not valid
-            // do not save any changed settings.
-            if ( $is_autosaving || $is_revision || !$valid_nonce ) {
-                return;
-            }
-      
-            // Find our 'cpt_page_template' field in the POST request, and save it
-            // when the post is updated. Note that the POST field matches the
-            // name of the select box in the markup.
-            $cpt_page_template = $_POST['cpt_page_template'];
-            update_post_meta( $post_id, 'cpt_page_template', $cpt_page_template );
-        }
-        add_action( 'save_post', 'postTemplateMetaBoxSave' );   
-
-        function loadMyCptPostTemplate() {
-            // get the queried object which contains the information we need to
-            // access our post meta data
-            $query_object = get_queried_object();
-            $page_template = get_post_meta( $query_object->ID, 'cpt_page_template', true );
-      
-            // the name of our custom post type for which we'll load a template
-            $my_post_type = 'my-cpt-name';
-      
-            // create an array of default templates
-            $default_templates    = array();
-            $default_templates[]  = 'single-{$query_object->post_type}-{$query_object->post_name}.php';
-            $default_templates[]  = 'single-{$query_object->post_type}.php';
-            $default_templates[]  = 'single.php';
-      
-            // only apply our template to our CPT pages.
-            if ( $query_object->post_type == $my_post_type ) {
-                // if the page_template isn't empty, set it as the default_template
-                if ( !empty( $page_template ) ) {
-                    echo 'need to load ' . $page_template;
-                    $default_templates = $page_template;
-                }
-            }
-      
-            // locate the template and return it
-            $new_template = locate_template( $default_templates, false );
-            return $new_template;
-        }
-        add_filter( 'single_template', 'loadMyCptPostTemplate' );
