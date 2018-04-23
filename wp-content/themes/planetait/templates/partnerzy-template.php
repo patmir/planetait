@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Partners
+Template Post Type: section_main
+*/
+?>
 <div id="#part-bg" style="
 width: 100%; 
 background-size: cover;

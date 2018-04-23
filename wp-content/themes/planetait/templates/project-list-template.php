@@ -1,3 +1,10 @@
+<?php
+/*
+Template Name: Project List
+Template Post Type: subpage
+*/
+get_header();
+?>
 <div id="rev_slider_projekty-header_wrapper" class="rev_slider_wrapper fullwidthcontainer" data-alias="blendmodeheader36" data-source="gallery" style="background:#2a2a2a;padding:0px;">
 	<div id="rev_slider_projekty-header" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
 		<ul>
@@ -338,8 +345,8 @@ $numRows = ceil(sizeof($projekty) / 3);
                                             data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
                                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
                                             data-width="none"
-                                            data-height="100px"
-                                            data-minheight="100px"
+                                            data-height="128px"
+                                            data-minheight="128px"
                                             data-whitespace="normal"                            
                                             data-type="text" 
                                             data-basealign="slide" 
@@ -519,3 +526,4 @@ $numRows = ceil(sizeof($projekty) / 3);
      }; /* END OF ON LOAD FUNCTION */
     }()); /* END OF WRAPPING FUNCTION */
 </script>
+<?php get_footer(); ?>

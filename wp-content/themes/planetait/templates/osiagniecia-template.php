@@ -1,5 +1,8 @@
 <?php
-// $using $section;=
+/*
+Template Name: Achievements
+Template Post Type: section_main
+*/
 ?>
 
 <div id="rev_slider_45_1_wrapper" class="rev_slider_wrapper" data-alias="blendmodeheader36" data-source="gallery" style="background:#2a2a2a;padding:0px;">

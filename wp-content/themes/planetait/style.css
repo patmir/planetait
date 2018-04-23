@@ -1,0 +1,415 @@
+/*
+	Theme Name: Planeta IT
+	Theme URI: http://planetait.eu
+	Description: Planeta IT Theme by Patryk Mirosław & Jacek Nogaj
+	Version: 1.0.0
+	Author: Patryk Mirosław
+	Author URI: http://patmir.com
+	Tags: HTML5, CSS3
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+/* global box-sizing */
+
+*, *:after, *:before {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* html element 62.5% font-size for REM use */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #444;
+}
+
+/* clear */
+
+.clear:before, .clear:after {
+	content: ' ';
+	display: table;
+}
+
+.clear:after {
+	clear: both;
+}
+
+.clear {
+	*zoom: 1;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+
+a {
+	color: #444;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #444;
+}
+
+a:focus {
+	outline: 0;
+}
+
+a:hover, a:active {
+	outline: 0;
+}
+
+input:focus {
+	outline: 0;
+	border: 1px solid #04A4CC;
+}
+
+/*------------------------------------*\
+    STRUCTURE
+\*------------------------------------*/
+
+/* wrapper */
+
+.wrapper {
+	max-width: 1280px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/*------------------------------------*\
+    PAGES
+\*------------------------------------*/
+
+/*------------------------------------*\
+    IMAGES
+\*------------------------------------*/
+
+/*------------------------------------*\
+	TYPOGRAPHY
+\*------------------------------------*/
+
+@font-face {
+	font-family: 'Font-Name';
+	src: url('fonts/font-name.eot');
+	src: url('fonts/font-name.eot?#iefix') format('embedded-opentype'), url('fonts/font-name.woff') format('woff'), url('fonts/font-name.ttf') format('truetype'), url('fonts/font-name.svg#font-name') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*------------------------------------*\
+    RESPONSIVE
+\*------------------------------------*/
+
+@media only screen and (min-width:320px) {}
+
+@media only screen and (min-width:480px) {}
+
+@media only screen and (min-width:768px) {}
+
+@media only screen and (min-width:1024px) {}
+
+@media only screen and (min-width:1140px) {}
+
+@media only screen and (min-width:1280px) {}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-resolution:144dpi) {}
+
+/*------------------------------------*\
+    MISC
+\*------------------------------------*/
+
+::selection {
+	background: #04A4CC;
+	color: #FFF;
+	text-shadow: none;
+}
+
+::-webkit-selection {
+	background: #04A4CC;
+	color: #FFF;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: #04A4CC;
+	color: #FFF;
+	text-shadow: none;
+}
+
+/*------------------------------------*\
+    WORDPRESS CORE
+\*------------------------------------*/
+
+.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption {
+	background: #FFF;
+	border: 1px solid #F0F0F0;
+	max-width: 96%;
+	padding: 5px 3px 10px;
+	text-align: center;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
+}
+
+.wp-caption .wp-caption-text, .gallery-caption {
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
+}
+
+/*------------------------------------*\
+    PRINT
+\*------------------------------------*/
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important;
+		box-shadow: none !important;
+		text-shadow: none !important;
+	}
+	a, a:visited {
+		text-decoration: underline;
+	}
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+		content: "";
+	}
+	pre, blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+	thead {
+		display: table-header-group;
+	}
+	tr, img {
+		page-break-inside: avoid;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	@page {
+		margin: 0.5cm;
+	}
+	p, h2, h3 {
+		orphans: 3;
+		widows: 3;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+}
+
+.rev_slider video {
+	pointer-events: none
+}
+
+.tp-video-play-button {
+	display: none !important
+}
+
+.tp-caption.niceclean_menu, .niceclean_menu {
+	font-size: 17px;
+	line-height: 40px;
+	font-weight: 400;
+	font-style: normal;
+	font-family: Ubuntu;
+	text-decoration: none;
+	background-color: transparent;
+	border-color: #f8c255;
+	border-style: solid;
+	border-radius: 0 0 0 0px
+}
+
+.tp-caption.niceclean_menu:hover, .niceclean_menu:hover {
+	color: rgba(255, 255, 255, 1.00);
+	text-decoration: none;
+	background-color: transparent;
+	border-color: rgba(255, 255, 255, 1.00);
+	border-style: solid;
+	border-radius: 0px 0px 0px 0px;
+	cursor: pointer
+}
+
+video::-webkit-media-controls-start-playback-button {
+	display: none !important
+}
+
+#welcome_wrapper .tp-loader.spinner3 {
+	background-color: #313437 !important;
+}
+/*
+#menu_forcefullwidth {
+	z-index: 5000;
+	position: fixed !important;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 0 !important
+}
+
+#menu_wrapper {
+	height: 0 !important
+}*/
+
+#tp-menubg {
+	opacity: 0
+}
+
+/** Nav styles **/
+
+.nav-element {
+	white-space: normal !important;
+	font-weight: 500 !important;
+	display: inline-block !important;
+	font-family: Ubuntu !important;
+	cursor: pointer !important;
+	text-decoration: none !important;
+}
+
+.last-nav-item {
+	border-color: rgba(0, 0, 0, 0);
+	border-radius: 5px 5px 5px 5px;
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+.responsive-img {
+	width: 100% !important;
+	height: auto !important;
+}
+.responsive-img-2 {
+	height: auto !important;
+}
+.force-absolutex {
+	position: absolute !important;
+}
+#partnerzy-slider { position: relative; }
+
+#partnerzy-slider .MS-content {
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 20px 0 20px;
+}
+
+#partnerzy-slider .MS-content .item {
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  vertical-align: top;
+  overflow: hidden;
+  height: 100%;
+  white-space: normal;
+  line-height: 50px;
+  vertical-align: middle;
+  max-height: 200px;
+}
+#partnerzy-slider .MS-content .item img{
+	max-height: 200px;
+}
+@media (max-width: 991px) {
+
+#partnerzy-slider .MS-content .item { width: 25%; }
+}
+@media (max-width: 767px) {
+
+#partnerzy-slider .MS-content .item { width: 35%; }
+}
+@media (max-width: 500px) {
+
+#partnerzy-slider .MS-content .item { width: 50%; }
+}
+
+#partnerzy-slider .MS-content .item a {
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+#partnerzy-slider .MS-controls button { position: absolute; }
+
+#partnerzy-slider .MS-controls .MS-left {
+  top: 35px;
+  left: 10px;
+}
+
+#partnerzy-slider .MS-controls .MS-right {
+  top: 35px;
+  right: 10px;
+}

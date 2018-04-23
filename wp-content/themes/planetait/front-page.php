@@ -192,25 +192,10 @@ $slide = json_decode($slides)[0];
 		'post_type' => 'section_main',
 		'post_status' => 'publish'
 	));
+	global $post;
 	foreach($sections as $section){
-		switch($section->post_name){
-			case "co-robimy":
-				include_once("templates/corobimy-template.php");
-				break;
-		case "osiagniecia":
-				include_once("templates/osiagniecia-template.php");
-				break;
-		case "jezyki-programowania":
-				include_once("templates/jezykiprogramowania-template.php");
-				break;
-			case "o-nas":
-					include_once("templates/onas-template.php");
-					break;
-			case "partnerzy":
-			include_once("templates/partnerzy-template.php");
-			break;
-			
-		}	
+		$template = get_page_template_slug( $section->ID );
+			include_once($template);		
 		}
 ?>
 <?php get_footer(); ?>

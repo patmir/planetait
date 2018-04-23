@@ -1,3 +1,10 @@
+<?php
+/*
+Template Name: References
+Template Post Type: subpage
+*/
+get_header();
+?>
 <div id="rev_slider_projekty-header_wrapper" class="rev_slider_wrapper fullwidthcontainer" data-alias="blendmodeheader36" data-source="gallery" style="background:#2a2a2a;padding:0px;">
 	<div id="rev_slider_projekty-header" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
 		<ul>
@@ -489,3 +496,4 @@ $numRows = sizeof($refs);
      }; /* END OF ON LOAD FUNCTION */
     }()); /* END OF WRAPPING FUNCTION */
 </script>
+<?php get_footer();?>

@@ -1,5 +1,8 @@
 <?php
-// $using $section;
+/*
+Template Name: Programming Languages
+Template Post Type: section_main
+*/
 $jezyk_post = get_posts(array(
     'numberposts' => 1,
     'order_by' => 'menu_order',

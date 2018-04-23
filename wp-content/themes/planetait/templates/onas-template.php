@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: About us
+Template Post Type: section_main
+*/
+?>
 <div id="rev_slider_47_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="o-nas" data-source="gallery"
 	 style="margin:0px auto;background:#ffffff;padding:0px;margin-top:0px;padding-bottom:50px;">
 		<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->

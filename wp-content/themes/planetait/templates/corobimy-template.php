@@ -1,8 +1,8 @@
-
 <?php
-/**
- * 
- */
+/*
+Template Name: What we do
+Template Post Type: section_main
+*/
 $co_robimy = get_posts(array(
     'posts_per_page' => 999999999,
     'order_by' => 'menu_order',
