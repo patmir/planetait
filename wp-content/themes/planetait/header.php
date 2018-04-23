@@ -20,6 +20,8 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 		<link href="http://fonts.googleapis.com/css?family=Poppins:700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet" property="stylesheet" type="text/css" media="all">
 		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">

@@ -416,3 +416,101 @@ video::-webkit-media-controls-start-playback-button {
   top: 35px;
   right: 10px;
 }
+/** kontakt **/
+.rev_slider .wpcf7-textarea {
+	height: 140px;
+}
+
+@media screen and (max-width:960px) {
+	.rev_slider .wpcf7-textarea {
+		height: 80px
+	}
+}
+
+.rev_slider .wpcf7 {
+	background: #fff;
+	padding: 0;
+}
+
+
+.rev_slider .wpcf7-text,
+.rev_slider .wpcf7-textarea {
+	color: #000;
+	font-family: inherit;
+	background: #ffffff;
+	border: 1px solid #d1d1d1;
+	border-radius: 3px;
+	padding: 12px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.rev_slider .wpcf7-text:focus,
+.rev_slider .wpcf7-textarea:focus {
+	color: #1a1a1a;
+	background-color: #fff;
+	border-color: #007acc;
+	outline: 0 none
+}
+
+.rev_slider .wpcf7-submit {
+	color: #fff;
+	background: #1a1a1a;
+	border: 0 none;
+	border-radius: 2px;
+	font-family: inherit;
+	padding: 12px;
+	text-transform: uppercase
+}
+
+.rev_slider .wpcf7-submit:focus {
+	background: #007acc
+}
+/** custom file input **/
+.custom-file-label-pl::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(calc(4 + 2px) - 1px * 2);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #ffffff;
+    content: "Dodaj";
+    background-color: #c11437;
+    border-left: 1px solid #c11437;
+	border-radius: 0 .25rem .25rem 0;
+	font-size: 14px;
+
+}
+.custom-file-label-pl {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(4rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.custom-file-pl {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(4 + 2px);
+    margin-bottom: 0;
+}
+
+.input-group>.custom-file-pl {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
