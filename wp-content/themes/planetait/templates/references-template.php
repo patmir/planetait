@@ -316,27 +316,6 @@ $numRows = sizeof($refs);
                                         <?php $layerNo++;
                                         $zIndex++ ?>
                                         <div class="tp-caption   tp-resizeme" 
-                                            id="slide-59-layer-<?= $layerNo ?>" 
-                                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-                                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
-                                            data-width="none"
-                                            data-whitespace="normal"                            
-                                            data-type="text" 
-                                            data-basealign="slide" 
-                                            data-responsive_offset="on" 
-                                            data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                            data-margintop="[0,0,0,0]"
-                                            data-marginright="[0,0,0,0]"
-                                            data-marginbottom="[0,0,0,0]"
-                                            data-marginleft="[0,0,0,0]"
-                                            data-textAlign="['left','left','left','left']"
-                                            data-paddingtop="[20,20,20,20]"
-                                            data-paddingright="[50,50,50,50]"
-                                            data-paddingbottom="[20,20,20,20]"
-                                            data-paddingleft="[50,50,50,50]"
-                                            style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 36px; line-height: 40px; font-weight: 600; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= $el->post_title ?>
-                                        </div>
-                                        <div class="tp-caption   tp-resizeme" 
                                             id="slide-59-layer-<?= $layerNo; ?>" 
                                             data-x="['left','left','left','left']" data-hoffset="['5','5','5','5']" 
                                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['5','5','5','5']" 
@@ -356,10 +335,31 @@ $numRows = sizeof($refs);
                                             data-paddingright="[20,20,20,20]"
                                             data-paddingbottom="[20,20,20,20]"
                                             data-paddingleft="[20,20,20,20]"
-                                            style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><i class="fa fa-icon-quote-left"></i> <?= $el->post_content; ?><i class="fa fa-icon-quote-right"></i>
+                                            style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 36px; line-height: 40px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><i class="fa fa-icon-quote-left"></i> <?= $el->post_content; ?><i class="fa fa-icon-quote-right"></i>
                                         </div>
                                         <?php $layerNo++;
                                         $zIndex++ ?>
+                                        <div class="tp-caption   tp-resizeme" 
+                                            id="slide-59-layer-<?= $layerNo ?>" 
+                                            data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
+                                            data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
+                                            data-width="none"
+                                            data-whitespace="normal"                            
+                                            data-type="text" 
+                                            data-basealign="slide" 
+                                            data-responsive_offset="on" 
+                                            data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                            data-margintop="[0,0,0,0]"
+                                            data-marginright="[0,0,0,0]"
+                                            data-marginbottom="[0,0,0,0]"
+                                            data-marginleft="[0,0,0,0]"
+                                            data-textAlign="['right','right','right','right']"
+                                            data-paddingtop="[20,20,20,20]"
+                                            data-paddingright="[50,50,50,50]"
+                                            data-paddingbottom="[20,20,20,20]"
+                                            data-paddingleft="[50,50,50,50]"
+                                            style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 16px; line-height: 20px; font-weight: 600; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= $el->post_title ?>
+                                        </div>
                                         <?php $layerNo++;
                                         $zIndex++; ?>
                                     </div>
