@@ -447,24 +447,40 @@ video::-webkit-media-controls-start-playback-button {
 
 .rev_slider .wpcf7-text:focus,
 .rev_slider .wpcf7-textarea:focus {
-	color: #1a1a1a;
+	color: #000;
 	background-color: #fff;
-	border-color: #007acc;
+	border-color: #c11437;
 	outline: 0 none
 }
-
-.rev_slider .wpcf7-submit {
-	color: #fff;
-	background: #1a1a1a;
-	border: 0 none;
-	border-radius: 2px;
-	font-family: inherit;
-	padding: 12px;
-	text-transform: uppercase
+.wpcf7-not-valid-tip {
+	margin-left: 10px;
+    font-size: 0.75em !important;
+	font-family: Ubuntu, sans-serif;
+	color: #c11437 !important;
 }
-
-.rev_slider .wpcf7-submit:focus {
-	background: #007acc
+.wpcf7-response-output {
+    border: 2px solid  #c11437 !important;
+}
+.wpcf7-submit {
+	padding: .5rem 1rem;
+    font-size: 1.em;
+    line-height: 1.5;
+	border-radius: .3rem;
+	color: #fff;
+    background-color: #c11437;
+	border-color: #c11437;
+	display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	user-select: none;
+	border: 1px solid transparent;
+	transition: color .15s;
+	margin-top: 10px;
+}
+.wpcf7-submit[disabled] {
+	background-color: #999999;
 }
 /** custom file input **/
 .custom-file-label-pl::after {
@@ -474,7 +490,7 @@ video::-webkit-media-controls-start-playback-button {
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(calc(4 + 2px) - 1px * 2);
+    height: calc(calc(4rem + 2px) - 1px * 2);
     padding: .375rem .75rem;
     line-height: 1.5;
     color: #ffffff;
@@ -482,7 +498,8 @@ video::-webkit-media-controls-start-playback-button {
     background-color: #c11437;
     border-left: 1px solid #c11437;
 	border-radius: 0 .25rem .25rem 0;
-	font-size: 14px;
+	font-size: 1em;
+    min-width: 80px;
 
 }
 .custom-file-label-pl {
@@ -498,14 +515,16 @@ video::-webkit-media-controls-start-playback-button {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: .25rem;
+    text-align: center;
 }
 
 .custom-file-pl {
     position: relative;
     display: inline-block;
     width: 100%;
-    height: calc(4 + 2px);
-    margin-bottom: 0;
+    height: calc(4rem + 2px);
+	margin-bottom: 0;	
+    margin-top: 10px;
 }
 
 .input-group>.custom-file-pl {
@@ -513,4 +532,58 @@ video::-webkit-media-controls-start-playback-button {
     display: flex;
     -ms-flex-align: center;
     align-items: center;
+}
+.wpcf7-list-item-label {
+	
+    font-size: 14px;
+    margin-left: 10px;
+}
+/** checkbox **/
+.wpcf7-acceptance, .radio {
+  display: block;
+  margin: 10px 0 0;
+}
+.wpcf7-acceptance .wpcf7-list-item, .radio .wpcf7-list-item {
+  display: block;
+}
+.wpcf7-acceptance .wpcf7-list-item input[type=checkbox], .wpcf7-acceptance .wpcf7-list-item input[type=radio], .radio .wpcf7-list-item input[type=checkbox], .radio .wpcf7-list-item input[type=radio] {
+  display: none;
+}
+.wpcf7-acceptance .wpcf7-list-item input[type=checkbox]:checked + .wpcf7-list-item-label::before, .wpcf7-acceptance .wpcf7-list-item input[type=radio]:checked + .wpcf7-list-item-label::before, .radio .wpcf7-list-item input[type=checkbox]:checked + .wpcf7-list-item-label::before, .radio .wpcf7-list-item input[type=radio]:checked + .wpcf7-list-item-label::before {
+  content: "\f00c";
+  color: #c11437;
+  font-size: 20px;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  text-decoration: inherit;
+  text-align: center;
+}
+.wpcf7-acceptance .wpcf7-list-item-label, .radio .wpcf7-list-item-label {
+  display: inline-block;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  left: 15px;
+  line-height: 14px;
+  margin: 0 0 15px;
+  position: relative;
+}
+.wpcf7-acceptance .wpcf7-list-item-label::before, .radio .wpcf7-list-item-label::before {
+  background: #ffffff;
+  border: 1px solid #d2d2d2;
+  border-radius: 3px;
+  content: "";
+  height: 26px;
+  left: -47px;
+  position: absolute;
+  width: 26px;
+}
+.wpcf7-acceptance .wpcf7-list-item-label:hover, .radio .wpcf7-list-item-label:hover {
+  cursor: pointer;
+}
+
+.radio .wpcf7-list-item-label::before {
+  border-radius: 100%;
 }

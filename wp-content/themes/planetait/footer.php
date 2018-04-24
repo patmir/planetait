@@ -30,7 +30,7 @@
                         <div class="tp-caption  " id="slide-109-layer-1" data-x="100" data-y="100" data-width="['auto']" data-height="['auto']" data-type="row"
                             data-columnbreak="3" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[100,0,0,0]" data-paddingright="[0,0,0,0]"
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[40,0,0,0]" data-paddingright="[0,0,0,0]"
                             data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption  " id="slide-109-layer-2" data-x="100" data-y="100" data-width="['auto']" data-height="['auto']" data-type="column"

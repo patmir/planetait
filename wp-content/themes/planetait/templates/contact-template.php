@@ -22,7 +22,7 @@ get_header();
 
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-111-layer-20" data-x="center" data-hoffset="" data-y="330"
-					 data-width="['960']" data-height="['640']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+					 data-width="['960']" data-height="['580']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"bytrigger","speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
 					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-lasttriggerstate="keep" style="z-index: 5;background-color:rgb(255,255,255);-webkit-box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.75);-moz-box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.75);box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.75);">
 					</div>
@@ -103,7 +103,9 @@ get_header();
 			</ul>
 			<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
 		</div>
-	</div>
+</div>
+
+
 	<!-- END REVOLUTION SLIDER -->
     <script type="text/javascript">
     var templateUrl = "<?= get_template_directory_uri() ?>";
@@ -134,7 +136,7 @@ get_header();
 						},
 						visibilityLevels: [1240, 1024, 778, 480],
 						gridwidth: 960,
-						gridheight: 868,
+						gridheight: 360,
 						lazyType: "none",
 						shadow: 0,
 						spinner: "spinner0",
@@ -158,5 +160,18 @@ get_header();
 				}; /* END OF revapi call */
 			}; /* END OF ON LOAD FUNCTION */
 		}()); /* END OF WRAPPING FUNCTION */
+        jQuery(document).ready(function(){
+jQuery("#slide-111-layer-19").click(function(){
+    console.log("redraw");
+   /* jQuery("#rev_slider_53_1_forcefullwidth").css("height", "1100px" );
+    jQuery("#rev_slider_53_1_wrapper").css("height", "1100px" );
+    jQuery("#rev_slider_53_1").css("height", "1100px" );
+    jQuery("#rev_slider_53_1_forcefullwidth").css("height", "1100px" );
+    jQuery("#rev_slider_53_1_forcefullwidth").css("height", "1100px" );*/
+    revapi53[0].opt.gridheight[0] = 1100
+    revapi53.revredraw();
+});
+
+        });
 	</script>
 <?php get_footer();?>

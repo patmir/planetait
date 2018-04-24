@@ -160,6 +160,8 @@ function html5blank_styles()
     wp_register_style('html5blank', get_template_directory_uri() . '/css/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
    
+    wp_register_style('fa', get_template_directory_uri() . '/css/lib/fonts/font-awesome/css/font-awesome-leg.css', array(), '1.0', 'all');
+    wp_enqueue_style('fa'); // Enqueue it!*/
         wp_register_style('sliderrev_pe_icon', get_template_directory_uri() . '/css/lib/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css', array(), '1.0', 'all');
         wp_enqueue_style('sliderrev_pe_icon'); // Enqueue it!*/
 
