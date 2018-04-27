@@ -90,7 +90,29 @@ function html5blank_nav()
         )
     );
 }
-
+function html5blank_nav_mobile()
+{
+    wp_nav_menu(
+        array(
+            'theme_location' => 'header-menu',
+            'menu' => GlobalConfig::get("project_slug_name")."_menu",
+            'container' => 'div',
+            'container_class' => 'menu-{menu slug}-container-mobile',
+            'container_id' => '',
+            'menu_class' => 'menu',
+            'menu_id' => '',
+            'echo' => true,
+            'fallback_cb' => 'wp_page_menu',
+            'before' => '',
+            'after' => '',
+            'link_before' => '',
+            'link_after' => '',
+            'items_wrap' => '%3$s',
+            'depth' => 0,
+            'walker' => new Project_MenuWalkerMobile()
+        )
+    );
+}
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {

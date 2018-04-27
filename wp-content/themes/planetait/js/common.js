@@ -43,93 +43,6 @@ var revapi20,tpj;
 				}
 			});
 
-			function sliderAnchors() {
-
-				var anchorarray = new Array;
-				lastknowheaderheight = 0; //jQuery('').height();
-
-				// ANCHOR AND ITS HIGHLITS
-				jQuery('.tp-rs-menulink').each(function (i) {
-					var a = jQuery(this),
-						obj = new Object();
-
-					obj.button = a;
-					obj.href = a.attr("href");
-					if (obj.href != undefined) {
-						obj.fakehref = obj.href.replace("#", "#!");
-
-						if (obj.href != undefined && obj.href.split("http").length < 2 && obj.href != "#wp-toolbar") {
-							obj.target = jQuery(obj.href);
-							obj.offset = obj.target.data('offset') == undefined ? 0 : obj.target.data('offset');
-						}
-
-						if (obj.target != undefined && obj.target.length > 0)
-							anchorarray.push(obj);
-					}
-				});
-
-				jQuery('.tp-rs-menulink').each(function (i) {
-					var a = jQuery(this);
-					a.click(function () {
-
-						var obj = new Object(),
-							ypos = 0;
-
-						if (a.attr('href') != undefined) {
-							obj.href = a.attr("href");
-							obj.target = jQuery(obj.href);
-							if (obj.href != undefined && obj.target != undefined && jQuery(obj.target).length > 0) {
-
-
-								//if (jQuery(this).hasClass("tp-rs-menu-selected")) return false;
-
-								obj.offset = obj.target.data('offset') == undefined ? 0 : obj.target.data('offset');
-								obj.top = jQuery(obj.target).offset().top;
-								ypos = obj.top + obj.offset;
-								var counter = { val: jQuery(document).scrollTop() };
-
-
-								if (jQuery('body').data('currenscrollanim') != undefined)
-									jQuery('body').data('currenscrollanim').pause();
-
-
-								var sanim = punchgs.TweenLite.to(counter, 1, {
-									val: ypos, ease: punchgs.Power4.easeOut,
-									onUpdate: function () {
-										forcescrolled = true;
-										punchgs.TweenLite.set(jQuery('body, html'), { scrollTop: counter.val - 90 });
-									},
-									onComplete: function () {
-										forcescrolled = false;
-										jQuery(window).trigger("scroll.tprsmenu");
-									}
-								});
-
-								forcescrolled = true;
-								jQuery.each(anchorarray, function (index, o) {
-									if (obj.href !== o.href) {
-										o.button.removeClass("tp-rs-menu-selected");
-									} else {
-										o.button.addClass("tp-rs-menu-selected");
-										window.history.pushState('', '', obj.href)
-									}
-								});
-
-
-								jQuery('body').data('currenscrollanim', sanim);
-								return false;
-							} else {
-								return true;
-							}
-						} else {
-							return true;
-						}
-					})
-				});
-
-			}
-
-			sliderAnchors();
 		}; /* END OF revapi call */
 	}; /* END OF ON LOAD FUNCTION */
 }()); /* END OF WRAPPING FUNCTION */
@@ -143,7 +56,7 @@ var imgsrc = jQuery(this).data('bg');
 jQuery(this).css("background-image", "url("+imgsrc+")");
 jQuery(this).css("background-size", "cover");
 jQuery(this).css("background-position", "center center");
-jQuery(this).css("background-repeat", "no-repat");
+jQuery(this).css("background-repeat", "no-repeat");
 });
 
 jQuery(".set-img-contain").each(function(e){
