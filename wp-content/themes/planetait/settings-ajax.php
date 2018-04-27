@@ -29,6 +29,24 @@ function ustawienia_ajax()
              jQuery("#project_settings_header_logo").val(JSON.stringify(jQuery("#logo_img").data("id")));
              jQuery("#general_settings").submit();
          });
+         /**
+          * Save tresc
+          */
+          jQuery("#save_tresc").on("click", function(e){
+             var toEncode = Array();
+                var AdresUlica = jQuery("input[data-name=adres_ulica]").val();
+                var AdresMiasto = jQuery("input[data-name=adres_miasto]").val();
+                 var BiuroTel = jQuery("input[data-name=biuro_tel]").val();
+                var BiuroEmail = jQuery("input[data-name=biuro_email]").val();
+                var WsparcieEmail = jQuery("input[data-name=wsparcie_email]").val();
+                var KsiegowoscEmail = jQuery("input[data-name=ksiegowosc_email]").val();
+                var HREmail = jQuery("input[data-name=hr_email]").val();
+                var BDevEmail = jQuery("input[data-name=bdev_email]").val();
+                var Stopka = {AdresUlica, AdresMiasto, BiuroTel, BiuroEmail, WsparcieEmail, KsiegowoscEmail,HREmail,BDevEmail };
+                toEncode.push(Stopka);
+             jQuery("#project_settings_tresc_stopka_dane").val(JSON.stringify(toEncode));
+             jQuery("#project_settings_tresc").submit();
+         });
         /**
         Save slides
          */
@@ -38,7 +56,9 @@ function ustawienia_ajax()
                  var ImgID = jQuery(this).children("td[data-id]").data("id");
                 var Header = jQuery(this).children("td[data-name=header]").children("input").val();
                 var Text = jQuery(this).children("td[data-name=text]").children("input").val();
-                var Slide = {ImgID, Header, Text};
+                var CTA = jQuery(this).children("td[data-name=cta]").children("input").val();
+                var Typer = jQuery(this).children("td[data-name=typer]").children("input").val();
+                var Slide = {ImgID, Header, Text, CTA, Typer};
                 toEncode.push(Slide);
              });
              jQuery("#project_settings_slider_slides_input_slides").val(JSON.stringify(toEncode));
@@ -81,6 +101,10 @@ function ustawienia_ajax()
             append += '<input type="text" name="header"></td>';
             append += '<td class="title column-title column-primary" data-name="text">';
             append += '<input type="text" name="header"></td>';
+            append += '<td class="title column-title column-primary" data-name="cta">';
+            append += '<input type="text" name="cta"></td>';
+            append += '<td class="title column-title column-primary" data-name="typer">';
+            append += '<input type="text" name="typer"></td>';
             append += '<td class="title column-title column-primary" data-name="text"><button type="button" class="button button-danger delete_slide">Usuń</button></td>';
             append += '</tr>';
             jQuery("#slides_list").append(append);
@@ -171,7 +195,6 @@ function ustawienia_ajax()
 	</script>
  <?php
 }
-add_action('wp_ajax_project_generate_content', 'project_generate_content');
 add_action('wp_ajax_project_get_media_thumb', 'project_get_media_thumb');
 function project_get_media_thumb(){
     global $wpdb;
@@ -181,182 +204,5 @@ function project_get_media_thumb(){
     return $media;
 
     wp_die();
-}
-function project_generate_content()
-{
-    global $wpdb; // generating content
-    $flush = filter_var( $_POST['flush'], FILTER_VALIDATE_BOOLEAN );
-    // Creating main sections
-    check_ajax_referer('ajax-generate-content-nonce', 'security');
-
-    // check for post existance
-    $page_projects = post_exists("Projekty");
-    $page_refferences= post_exists("Referencje");
-    $page_carrier= post_exists("Kariera");
-    $page_contact= post_exists("Kontakt");
-
-    $section_what_we_do = post_exists("Co Robimy");
-    $section_achievements = post_exists("Osiągnięcia");
-    $section_prog_languages = post_exists("Języki Programowania");
-    $section_about_us = post_exists("O Nas");
-    $section_partners = post_exists("Partnerzy");
-
-    if ($page_projects != 0 && $flush) {
-        wp_delete_post($page_projects, true);
-        $page_projects = 0;
-    }
-    if ($page_refferences != 0 && $flush) {
-        wp_delete_post($page_refferences, true);
-        $page_refferences = 0;
-    }
-    if ($page_carrier != 0 && $flush) {
-        wp_delete_post($page_carrier, true);
-        $page_carrier = 0;
-    }
-    if ($page_contact != 0 && $flush) {
-        wp_delete_post($page_contact, true);
-        $page_contact = 0;
-    }
-    if ($page_projects == 0) {
-        $page_projects = wp_insert_post(array(
-            "post_content" => "Projekty",
-            "post_title" => "Projekty",
-            "post_status" => "publish",
-            "post_type" => "sub_page",
-            "menu_order" => 1
-        ));
-    }
-    if ($page_refferences == 0) {
-        $page_refferences = wp_insert_post(array(
-            "post_content" => "Referencje",
-            "post_title" => "Referencje",
-            "post_status" => "publish",
-            "post_type" => "sub_page",
-            "menu_order" => 1
-        ));
-    }
-    if ($page_carrier == 0) {
-        $page_carrier = wp_insert_post(array(
-            "post_content" => "Kariera",
-            "post_title" => "Kariera",
-            "post_status" => "publish",
-            "post_type" => "sub_page",
-            "menu_order" => 1
-        ));
-    }
-    if ($page_contact == 0) {
-        $page_contact = wp_insert_post(array(
-            "post_content" => "Kontakt",
-            "post_title" => "Kontakt",
-            "post_status" => "publish",
-            "post_type" => "sub_page",
-            "menu_order" => 1
-        ));
-    }
-
-    if ($section_what_we_do != 0 && $flush) {
-        wp_delete_post($section_what_we_do, true);
-        $section_what_we_do = 0;
-    }
-    if ($section_achievements != 0 && $flush) {
-        wp_delete_post($section_achievements, true);
-        $section_achievements = 0;
-    }
-    if ($section_prog_languages != 0 && $flush) {
-        wp_delete_post($section_prog_languages, true);
-        $section_prog_languages = 0;
-    }
-    if ($section_about_us != 0 && $flush) {
-        wp_delete_post($section_about_us, true);
-        $section_about_us = 0;
-    }
-    if ($section_partners != 0 && $flush) {
-        wp_delete_post($section_partners, true);
-        $section_partners = 0;
-    }
-    if ($section_what_we_do == 0) {
-        $section_what_we_do = wp_insert_post(array(
-            "post_content" => "Co robimy",
-            "post_title" => "Co Robimy",
-            "post_status" => "publish",
-            "post_type" => "section_main",
-            "menu_order" => 1
-        ));
-    }
-    if ($section_achievements == 0) {
-        $section_achievements = wp_insert_post(array(
-            "post_content" => "Osiągnięcia",
-            "post_title" => "Osiągnięcia",
-            "post_status" => "publish",
-            "post_type" => "section_main",
-            "menu_order" => 2
-        ));
-    }
-    if ($section_prog_languages == 0) {
-
-        $section_prog_languages = wp_insert_post(array(
-            "post_content" => "Języki Programowania",
-            "post_title" => "Języki Programowania",
-            "post_status" => "publish",
-            "post_type" => "section_main",
-            "menu_order" => 3
-        ));
-    }
-    if ($section_about_us == 0) {
-        $section_about_us = wp_insert_post(array(
-            "post_content" => "O Nas",
-            "post_title" => "O Nas",
-            "post_status" => "publish",
-            "post_type" => "section_main",
-            "menu_order" => 4
-        ));
-    }
-    if ($section_partners == 0) {
-        $section_partners = wp_insert_post(array(
-            "post_content" => "Partnerzy",
-            "post_title" => "Partnerzy",
-            "post_status" => "publish",
-            "post_type" => "section_main",
-            "menu_order" => 5
-        ));
-    }
-    // create pages
-
-    // create menu
-    wp_delete_nav_menu(GlobalConfig::get("project_slug_name")."_menu");
-
-    $menu = wp_create_nav_menu( GlobalConfig::get("project_slug_name")."_menu");
-
-    wp_update_nav_menu_item($menu, 0, array(
-        "menu-item-title" => __("Strona Główna"),
-        "menu-item-classes" => "nav-home",
-        "menu-item-url" => home_url("/"),
-        "menu-item-status" => "publish"
-    ));
-    $pages = get_posts(array(
-        'posts_per_page' => 99999,
-        'orderby' => 'menu_order',
-        'order' => 'ASC',
-        'post_type' => 'sub_page',
-        'post_status' => 'publish'
-    
-    ));
-    foreach($pages as $page){
-        wp_update_nav_menu_item($menu, 0, array(
-            "menu-item-title" => $page->post_title,
-            "menu-item-classes" => "nav-item",
-            "menu-item-url" => get_permalink($page->ID),
-            "menu-item-status" => "publish"
-        ));
-    }
-    if((bool)GlobalConfig::get("menu_get_quote_enabled")){
-        wp_update_nav_menu_item($menu, 0, array(
-            "menu-item-title" => __("Zapytaj o Ofertę"),
-            "menu-item-classes" => "nav-quote",
-            "menu-item-url" => get_permalink($page_contact)."#contact-form",
-            "menu-item-status" => "publish"
-        ));
-    }
-    wp_die(); // this is required to terminate immediately and return a proper response
 }
 ?>

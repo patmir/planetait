@@ -3,9 +3,14 @@
 Template Name: Achievements
 Template Post Type: section_main
 */
+// prep sections
+$sectionData = explode("*",$section->post_content);
+
+
+
 ?>
 
-<div id="rev_slider_45_1_wrapper" class="rev_slider_wrapper" data-alias="blendmodeheader36" data-source="gallery" style="background:#2a2a2a;padding:0px;">
+<div id="rev_slider_45_1_wrapper" class="rev_slider_wrapper" data-alias="blendmodeheader36" data-source="gallery" style="background:#fff;padding:0px;">
 	<div id="rev_slider_45_1" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
 		<ul>
 		<li data-index="rs-62" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
@@ -13,12 +18,12 @@ Template Post Type: section_main
                     data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                     data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri()?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
+                    <img src="<?= get_template_directory_uri()?>/assets/images/transparent.png" data-bgcolor='#fff' style='background:#fff' alt="" data-bgposition="center center"
                         data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                     <!-- LAYERS -->
                 </li>
 			<!-- SLIDE  -->
-			<li data-index="rs-63" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="100"  data-delay="1000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+			<li data-index="rs-63" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="100"  data-delay="100"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 				<!-- MAIN IMAGE -->
 				<img src="<?= get_the_post_thumbnail_url($section->ID, 'full') ?>"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="5" class="rev-slidebg" data-no-retina>
 				<!-- LAYERS -->
@@ -36,7 +41,7 @@ Template Post Type: section_main
 						data-columnbreak="3" 
 						data-responsive_offset="on" 
 						data-responsive="off"
-						data-frames='[{"delay":850,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-frames='[{"delay":100,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 						data-margintop="[0,0,0,0]"
 						data-marginright="[0,0,0,0]"
 						data-marginbottom="[0,0,0,0]"
@@ -47,7 +52,14 @@ Template Post Type: section_main
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
 						style="z-index: 11; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
-						<!-- C1 -->
+						<!-- Columns -->
+						<?php for($i =0; $i < sizeof($sectionData); $i++):?>
+						<?php // prep single part
+							$parts = explode("|", $sectionData[$i]);
+							$number = (int) filter_var($parts[0], FILTER_SANITIZE_NUMBER_INT);
+							$additional = (strlen($number) < strlen($parts[0]))? substr($parts[0], strlen($number)) : "";
+							$title = $parts[1];
+						?>
 						<div class="tp-caption  " 
 							id="slide-63-layer-21" 
 							data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
@@ -59,7 +71,7 @@ Template Post Type: section_main
 							data-responsive_offset="on" 
 							data-responsive="off"
                             data-frames='[{"delay":"+100","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                            data-columnwidth="33%"
+                            data-columnwidth="<?= 100/sizeof($sectionData)?>%"
 							data-verticalalign="top"
 							data-margintop="[0,0,0,0]"
 							data-marginright="[0,0,0,0]"
@@ -87,11 +99,12 @@ Template Post Type: section_main
 								data-marginbottom="[0,0,0,0]"
 								data-marginleft="[0,0,0,0]"
 								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[80,80,80,80]"
+								data-paddingtop="[40,40,40,40]"
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
-								style="z-index: 13; white-space: nowrap; font-size: 96px; line-height: 120px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><span class="">1</span>
+								style="z-index: 13; white-space: nowrap; font-size: 64px; line-height: 70px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><span data-no="<?= $number ?>" class="<?= ($number < 2)?"":"counter"?>"><?= ($number < 2)?"1":"0"?></span>
+								<?= (strlen($additional) > 0)? "<span>".$additional."</span>" : ""?>
 							</div>
 
 							<!-- LAYER NR. 4 -->
@@ -114,155 +127,12 @@ Template Post Type: section_main
 								data-paddingright="[0,0,0,0]"
 								data-paddingbottom="[0,0,0,0]"
 								data-paddingleft="[0,0,0,0]"
-								data-fontsize="['36','25','20','17']"
-								data-lineheight="['120','80','30','25']"
-								style="z-index: 14; white-space: nowrap; font-size: 36px; line-height: 120px; font-weight: 400; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">DOBRY WYBÓR
+								data-fontsize="['24','24','20','17']"
+								data-lineheight="['30','30','30','25']"
+								style="z-index: 14; white-space: nowrap; font-size: 24px; line-height: 30px; font-weight: 400; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= strtoupper($title)?>
 							</div>
                         </div>	
-                        <!-- C2 -->
-                        <div class="tp-caption  " 
-							id="slide-63-layer-25" 
-							data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-							data-y="['top','top','top','top']" data-voffset="['100','100','100','100']" 
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap" 
-							data-type="column" 
-							data-responsive_offset="on" 
-							data-responsive="off"
-                            data-frames='[{"delay":"+100","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                            data-columnwidth="33%"
-							data-verticalalign="top"
-							data-margintop="[0,0,0,0]"
-							data-marginright="[0,0,0,0]"
-							data-marginbottom="[0,0,0,0]"
-							data-marginleft="[0,0,0,0]"
-							data-textAlign="['inherit','inherit','inherit','inherit']"
-							data-paddingtop="[0,0,0,0]"
-							data-paddingright="[0,0,0,0]"
-							data-paddingbottom="[0,0,0,0]"
-							data-paddingleft="[0,0,0,0]"
-							style="z-index: 15; width: 100%;">
-							<!-- LAYER NR. 3 -->
-							<div class="tp-caption   tp-resizeme" 
-								id="slide-63-layer-26" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-								data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-								data-width="none"
-								data-height="none"
-								data-whitespace="nowrap"			
-								data-type="text" 
-								data-responsive_offset="on" 
-                                data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                data-margintop="[0,0,0,0]"
-								data-marginright="[0,0,0,0]"
-								data-marginbottom="[0,0,0,0]"
-								data-marginleft="[0,0,0,0]"
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[80,80,80,80]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								style="z-index: 16; white-space: nowrap; font-size: 96px; line-height: 120px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><span class="counter">15</span>
-							</div>
-
-							<!-- LAYER NR. 4 -->
-							<div class="tp-caption   tp-resizeme" 
-								id="slide-63-layer-27" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-								data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-								data-width="none"
-								data-height="none"
-								data-whitespace="nowrap"			
-								data-type="text" 
-								data-responsive_offset="on" 
-                                data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                data-margintop="[0,0,0,0]"
-								data-marginright="[0,0,0,0]"
-								data-marginbottom="[0,0,0,0]"
-								data-marginleft="[0,0,0,0]"
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								data-fontsize="['36','25','20','17']"
-								data-lineheight="['120','80','30','25']"
-								style="z-index: 17; white-space: nowrap; font-size: 36px; line-height: 120px; font-weight: 400; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">LAT DOŚWIADCZENIA
-							</div>
-						</div>
-                        <!-- C3 -->
-                        <div class="tp-caption  " 
-							id="slide-63-layer-28" 
-							data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-							data-y="['top','top','top','top']" data-voffset="['100','100','100','100']" 
-							data-width="none"
-							data-height="none"
-							data-whitespace="nowrap" 
-							data-type="column" 
-							data-responsive_offset="on" 
-							data-responsive="off"
-                            data-frames='[{"delay":"+100","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                            data-columnwidth="33%"
-							data-verticalalign="top"
-							data-margintop="[0,0,0,0]"
-							data-marginright="[0,0,0,0]"
-							data-marginbottom="[0,0,0,0]"
-							data-marginleft="[0,0,0,0]"
-							data-textAlign="['inherit','inherit','inherit','inherit']"
-							data-paddingtop="[0,0,0,0]"
-							data-paddingright="[0,0,0,0]"
-							data-paddingbottom="[0,0,0,0]"
-							data-paddingleft="[0,0,0,0]"
-							style="z-index: 18; width: 100%;">
-							<!-- LAYER NR. 3 -->
-							<div class="tp-caption   tp-resizeme" 
-								id="slide-63-layer-29" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-								data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-								data-width="none"
-								data-height="none"
-								data-whitespace="nowrap"			
-								data-type="text" 
-								data-responsive_offset="on" 
-                                data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                data-margintop="[0,0,0,0]"
-								data-marginright="[0,0,0,0]"
-								data-marginbottom="[0,0,0,0]"
-								data-marginleft="[0,0,0,0]"
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[80,80,80,80]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								style="z-index: 19; white-space: nowrap; font-size: 96px; line-height: 120px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><span class="counter">100</span><span>%</span>
-							</div>
-
-							<!-- LAYER NR. 4 -->
-							<div class="tp-caption   tp-resizeme" 
-								id="slide-63-layer-30" 
-								data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
-								data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-								data-width="none"
-								data-height="none"
-								data-whitespace="nowrap"			
-								data-type="text" 
-								data-responsive_offset="on" 
-                                data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                data-margintop="[0,0,0,0]"
-								data-marginright="[0,0,0,0]"
-								data-marginbottom="[0,0,0,0]"
-								data-marginleft="[0,0,0,0]"
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[0,0,0,0]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[0,0,0,0]"
-								data-paddingleft="[0,0,0,0]"
-								data-fontsize="['36','25','20','17']"
-								data-lineheight="['120','80','30','25']"
-								style="z-index: 30; white-space: nowrap; font-size: 36px; line-height: 120px; font-weight: 400; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">ZAANGAŻOWANIA
-							</div>
-						</div>
+					<?php endfor; ?>
 					</div>
 				</div>
 
@@ -315,11 +185,11 @@ Template Post Type: section_main
                         jsFileLocation:templateUrl+"/js/lib/revolution/js/",
 						sliderLayout:"fullwidth",
 						dottedOverlay:"none",
-						delay:9000,
+						delay:100,
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],
 						gridwidth:[1240,1024,778,480],
-						gridheight:[360,360,360,720],
+						gridheight:[180,180,180,180],
 						lazyType:"single",
 						
 						navigation: {
@@ -363,10 +233,13 @@ Template Post Type: section_main
 					console.log("STARTING - O"); 				
 					revapi45.revnext();
 					OsiagnieciaStarted = true;
-					tpjo(revapi45).off("revolution.slide.onafterswap").on('revolution.slide.onafterswap', function(e,d) {
+					tpjo(revapi45).off("revolution.slide.layeraction").on('revolution.slide.onchange', function(e,d) {
 						
 						if(jQuery(d.currentslide).data('index') == 'rs-63'){
 							caction = true;
+							jQuery(".counter").each(function(){
+								jQuery(this).html(jQuery(this).data("no"));
+							});
 							console.log("STARTING - COUNTERS");
 							jQuery("#rev_slider_45_1 .counter").counterUp({delay: 15, time: 1500});
 						}

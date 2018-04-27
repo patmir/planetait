@@ -587,3 +587,4 @@ video::-webkit-media-controls-start-playback-button {
 .radio .wpcf7-list-item-label::before {
   border-radius: 100%;
 }
+.tp-select {user-select: text !important}

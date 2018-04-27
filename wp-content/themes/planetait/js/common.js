@@ -136,6 +136,8 @@ var revapi20,tpj;
 
 // common utils
 jQuery(document).ready(function(){
+
+window.scrollTo(0,0);
 jQuery(".set-img").each(function(e){
 var imgsrc = jQuery(this).data('bg');
 jQuery(this).css("background-image", "url("+imgsrc+")");

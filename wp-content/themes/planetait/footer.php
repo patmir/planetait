@@ -1,4 +1,8 @@
 <!-- footer -->
+<?php
+$options = get_option('project_settings_tresc');
+$decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
+    ?>
 <footer class="footer" role="contentinfo">
 <div id="rs-footer-footer_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="stopka" data-source="gallery"
         style="margin:0px;background:#2a2a2a;padding:0px;margin-top:0px;margin-bottom:0px;">
@@ -40,7 +44,7 @@
                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="z-index: 6; width: 100%;">
                                 <!-- LAYER NR. 3 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-7" data-x="" data-y="['middle','middle','middle','middle']" data-width="['none','none','none','none']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-7" data-x="" data-y="['middle','middle','middle','middle']" data-width="['none','none','none','none']"
                                     data-height="['none','none','none','none']" data-type="image" data-responsive_offset="on"
                                     data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[auto,auto,auto,auto]" data-marginbottom="[o,o,o,o]"
@@ -58,36 +62,36 @@
                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="z-index: 8; width: 100%;">
                                 <!-- LAYER NR. 5 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-15" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select tp-select" id="slide-109-layer-15" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 9; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">Adres </div>
+                                    style="z-index: 9; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Adres", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 6 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-16" data-x="5" data-y="5" data-width="['259']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-16" data-x="5" data-y="5" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+300","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">ul. Kalińska 3
-                                    <br>26-600 Radom </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->AdresUlica ?>
+                                    <br><?= $decodedOptions->AdresMiasto?></div>
 
                                 <!-- LAYER NR. 7 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-17" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-17" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+600","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[14,14,14,14]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 11; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">Biuro </div>
+                                    style="z-index: 11; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Biuro", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 8 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-18" data-x="" data-y="" data-width="['259']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-18" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+900","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;text-decoration:none;a    color:#ffffff;">tel.: +48 796 520 220
-                                    <br>info@planetait.eu </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;text-decoration:none;a    color:#ffffff;"><?= $decodedOptions->BiuroTel ?>
+                                    <br><?= $decodedOptions->BiuroEmail ?></div>
                             </div>
 
                             <!-- LAYER NR. 9 -->
@@ -98,34 +102,34 @@
                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="z-index: 13; width: 100%;">
                                 <!-- LAYER NR. 10 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-19" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-19" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 14; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">Wsparcie techniczne </div>
+                                    style="z-index: 14; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Wsparcie techniczne", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 11 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-20" data-x="" data-y="" data-width="['259']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-20" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+300","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">support@planetait.eu </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->WsparcieEmail ?> </div>
 
                                 <!-- LAYER NR. 12 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-21" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-21" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+600","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[44,44,44,44]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 16; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">Księgowość </div>
+                                    style="z-index: 16; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Księgowość", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 13 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-22" data-x="" data-y="" data-width="['259']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-22" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+890","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">ksiegowosc@planetait.eu </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->KsiegowoscEmail ?></div>
                             </div>
 
                             <!-- LAYER NR. 14 -->
@@ -136,34 +140,34 @@
                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="z-index: 18; width: 100%;">
                                 <!-- LAYER NR. 15 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-23" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-23" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 19; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">HR </div>
+                                    style="z-index: 19; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("HR", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 16 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-24" data-x="" data-y="" data-width="['259']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-24" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+300","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">hr@planetait.eu </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->HREmail ?> </div>
 
                              
                                 <!-- LAYER NR. 18 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-25" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-25" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+600","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[44,44,44,44]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 21; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;">Business Development </div>
+                                    style="z-index: 21; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Business Development", "html5blank")?> </div>
                               <!-- LAYER NR. 17 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-26" data-x="" data-y="" data-width="['259']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-26" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+900","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 22; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;">business@planetait.eu </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 22; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->BDevEmail ?> </div>
 
                             </div>
                         </div>
@@ -182,7 +186,7 @@
                                 data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 style="z-index: 24; width: 100%;">
                                 <!-- LAYER NR. 21 -->
-                                <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-109-layer-30" data-x="100" data-y="100" data-width="['full','full','full','full']"
+                                <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-select" id="slide-109-layer-30" data-x="100" data-y="100" data-width="['full','full','full','full']"
                                     data-height="['1']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:0px;z:-1000px;rX:90deg;rY:0deg;rZ:0deg;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[14,14,14,14]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
@@ -191,7 +195,7 @@
                                 </div>
 
                                 <!-- LAYER NR. 22 -->
-                                <div class="tp-caption   tp-resizeme" id="slide-109-layer-31" data-x="" data-y="" data-width="['100%']" data-height="['auto']"
+                                <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-31" data-x="" data-y="" data-width="['100%']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:-80px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="['auto','auto','auto','auto']" data-marginbottom="[0,0,0,0]" data-marginleft="['auto','auto','auto','auto']"
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
@@ -214,6 +218,7 @@
 
 <?php wp_footer(); ?>
 <script type="text/javascript">
+var scrollEnabled = false;
         var revapifooter,
             tpjfooter;
         (function () {
@@ -264,12 +269,12 @@
                         }
                     });
                     tpjfooter(revapifooter).on('revolution.slide.onloaded', function() {
+                        
                         if(jQuery("#rs-footer-footer").offset().top < jQuery(window).scrollTop() + window.innerHeight) { // el visible witholut scrolling
                             onScrollfooter();
                         } else {
                             jQuery(window).scroll(function(){onScrollfooter()});
                         }
-						
 
 					});
                 }; /* END OF revapi call */
@@ -277,6 +282,7 @@
 		}()); /* END OF WRAPPING FUNCTION */
 		var onStartedfooter = false;
 		var onScrollfooter = function() {
+            if(scrollEnabled){
 			var top_of_element = jQuery("#rs-footer-footer").offset().top;
 			var bottom_of_element = jQuery("#rs-footer-footer").offset().top + jQuery("#rs-footer-footer").outerHeight();
 			var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
@@ -288,6 +294,7 @@
 					revapifooter.revnext();
 					onStartedfooter = true;
 				}
+            }
 		};
 
     </script>
@@ -321,19 +328,23 @@ jQuery.LoadingOverlaySetup({
     progress: true
 });
 
+var loadedRevs = 0;
 jQuery.LoadingOverlay("show");
 jQuery(document).ready(function(){
-var totalRevs = jQuery(".rev_slider_wrapper").length;
-var loadedRevs = 0;
-jQuery(document).on('revolution.slide.onloaded', function() { 
- loadedRevs++;
- console.log("loaded "+loadedRevs+"/"+totalRevs);
- jQuery.LoadingOverlay("progress", totalRevs/loadedRevs*100)
-if(loadedRevs == totalRevs){
 
-jQuery(".loadingoverlay-placeholder").remove();
-	jQuery.LoadingOverlay("hide");
-}
+var totalRevs = jQuery(".rev_slider_wrapper").length;
+jQuery(document).on('revolution.slide.onloaded', function() { 
+
+
+        loadedRevs++;
+        console.log("loaded "+loadedRevs+"/"+totalRevs);
+        jQuery.LoadingOverlay("progress", totalRevs/loadedRevs*100)
+        if(loadedRevs == totalRevs){
+
+            jQuery(".loadingoverlay-placeholder").remove();
+            jQuery.LoadingOverlay("hide");
+            scrollEnabled = true;
+        }
 });
 
 });

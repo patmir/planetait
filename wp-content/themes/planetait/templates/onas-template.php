@@ -47,9 +47,9 @@ Template Post Type: section_main
 								<div class="tp-caption   tp-resizeme" id="slide-on-66-layer-2" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
 								 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="normal"
 								 data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+990","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-								 data-margintop="[50,50,50,50]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
+								 data-margintop="[10,10,10,10]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
 								 data-textAlign="['center','center','center','center']" data-paddingtop="[20,20,20,20]" data-paddingright="[20,20,20,20]"
-								 data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]" style="z-index: 7; white-space: normal; font-size: 36px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;">O NAS </div>
+								 data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]" style="z-index: 7; white-space: normal; font-size: 36px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=strtoupper($section->post_title)?></div>
 
 								<!-- LAYER NR. 4 -->
 								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-on-66-layer-6" data-x="['left','left','left','left']"
@@ -143,13 +143,7 @@ Template Post Type: section_main
 							data-paddingtop="[0,0,40,40]" 
 							data-paddingright="[30,20,20,20]" 
 							data-paddingbottom="[0,0,0,0]"
-							data-paddingleft="[20,20,20,20]" style="z-index: 17; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #000000; letter-spacing: 0px;font-family:Ubuntu;">PLANETA.IT to firma programistyczna złożona z ludzi, dla których programowanie to coś więcej niż praca - jest to realizowanie
-								naszej pasji i ciągłe poszukiwanie skuteczniejszych, lepszych rozwiązań w oparciu o najnowsze technologie.<br><br>Specjalizujemy się w wykonywaniu aplikacji systemowych z różnych dziedzin. Programowanie systemowe i niskopoziomowe
-								wymaga od programisty stosowania zupełnie innych technik niż programowanie wysokopoziomowe dlatego ważne jest doświadczenie
-								jak i duża wiedza.<br><br>Nasza kadra biegle posługuje się wieloma językami programowania oraz językami skryptowymi: C, C++, C#, Assembler, HTML,
-								CSS, ASP, PHP, Python, XML, Java, JavaScript. Biegle posługujemy się bogatą paletą specjalizowanych narzędzi programistycznych,
-								jak choćby: Microsoft Visual Studio, Microsoft Visual Source Safe, SVN, Scrum, Mantis, JIRA, Borland Delphi.<br><br>Dzięki temu, że nasi eksperci są doświadczeni i obeznani z różnorodnymi narzędziami programistycznymi, będą w stanie
-								sprostać wszelkim potrzebom Klientów, niezależnie od ich oczekiwań. </div>
+							data-paddingleft="[20,20,20,20]" style="z-index: 17; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #000000; letter-spacing: 0px;font-family:Ubuntu;"><?= $section->post_content ?></div>
 					</div>
 						</div>
 						</div>
@@ -188,6 +182,7 @@ Template Post Type: section_main
                         responsiveLevels: [1240, 1024, 778, 480],
                         visibilityLevels: [1240, 1024, 778, 480],
                         gridwidth: [1240, 1024, 778, 480],
+                        gridHeight: [600, 600, 600, 600],
                         lazyType: "none",
                         shadow: 1,
                         spinner: "off",
@@ -195,11 +190,7 @@ Template Post Type: section_main
                         stopAfterLoops: 0,
                         stopAtSlide: 1,
                         shuffle: "off",
-                        autoHeight: "on",
-                        fullScreenAutoWidth: "off",
-                        fullScreenAlignForce: "off",
-                        fullScreenOffsetContainer: "",
-                        fullScreenOffset: "",
+                        autoHeight: "off",
                         disableProgressBar: "on",
                         hideThumbsOnMobile: "on",
                         hideSliderAtLimit: 0,

@@ -380,10 +380,10 @@ function html5blankcomments($comment, $args, $depth)
 	<?php if ($args['avatar_size'] != 0) echo get_avatar($comment, $args['180']); ?>
 	<?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
 	</div>
-<?php if ($comment->comment_approved == '0') : ?>
-	<em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
-	<br />
-<?php endif; ?>
+    <?php if ($comment->comment_approved == '0') : ?>
+        <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.') ?></em>
+        <br />
+    <?php endif; ?>
 
 	<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>">
 		<?php
@@ -483,6 +483,8 @@ function register_theme_settings() {
     add_settings_field("project_settings_header_logo", "Logo", "project_settings_header_logo_display", "project_settings_page", "project_settings_header");
 
     register_setting("project_settings_tresc", "project_settings_tresc", "project_settings_tresc_validate");
+    add_settings_section("project_settings_tresc_stopka", "Ustawienia Stopki", "project_settings_tresc_stopka_display","project_settings_tresc_page");
+    add_settings_field("project_settings_tresc_stopka_dane", "Dane w stopce", "project_settings_tresc_stopka_dane_display", "project_settings_tresc_page", "project_settings_tresc_stopka");
 
     register_setting("project_settings_slider", "project_settings_slider", "project_settings_slider_validate");    
     add_settings_section("project_settings_slider_slides", "Slajdy", "project_settings_slider_slides_display","project_settings_slider_page");

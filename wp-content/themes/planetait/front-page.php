@@ -96,6 +96,25 @@ $slide = json_decode($slides)[0];
 						data-paddingleft="[0,0,0,0]"
 						style="z-index: 7; white-space: nowrap; font-size: 40px; line-height: px; font-weight: 400; color: #ffffff; letter-spacing: 10px;font-family:Ubuntu;"><?= $slide->Text ?>
 					</div>
+					<?php //prepare typer 
+					$typer = $slide->Typer;
+					$firstType = substr($typer, 0, strpos($typer, "|"));
+					
+					$carLength = strlen($firstType);
+					$restOfType = explode("|",substr($typer, strlen($firstType)+1));
+					foreach($restOfType as $rot){
+							if(strlen($rot) > $carLength){
+								$carLength = strlen($rot);
+							}
+					}
+					if($carLength > strlen($firstType)){
+						$spaces = floor(($carLength-strlen($firstType))/2);
+						for($i = 0; $i < $spaces; $i++){
+							$firstType = "&nbsp;".$firstType."&nbsp;";
+						}
+					}
+					$restOfTypeString = implode(",", $restOfType);
+					?>
 					<div class="tp-caption   tp-resizeme" 
 						id="slide-57-layer-9" 
 						data-x="['center','center','center','center']" data-hoffset="['0','-1','0','1']" 
@@ -104,15 +123,15 @@ $slide = json_decode($slides)[0];
 						data-height="none"
 						data-whitespace="nowrap"		
 						data-type="text" 		   
-						data-typewriter='{"lines":"OPTYMALIZACJA,&nbsp;INTEGRACJA&nbsp;,&nbsp;REVOLUCJA&nbsp;","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
+						data-typewriter='{"lines":"<?=$restOfTypeString?>","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
 						data-responsive_offset="on"
 						data-frames='[{"delay":2520,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-						data-textAlign="['inherit','inherit','inherit','inherit']"
+						data-textAlign="['center','center','center','center']"
 						data-paddingtop="[0,0,0,0]"
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 9; white-space: nowrap; font-size:32px; line-height: 60px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;">&nbsp;&nbsp;ANALIZA&nbsp;&nbsp;
+						style="z-index: 9; white-space: nowrap; font-size:32px; line-height: 60px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Ubuntu;"><?=$firstType?>
 					</div>
 					<!-- LAYER NR. 6 -->
 					<div class="tp-caption  tp-resizeme" 
@@ -133,7 +152,7 @@ $slide = json_decode($slides)[0];
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Gloria Hallelujah;">ROZWIJAJ SWÓJ BIZNES Z NAMI
+						style="z-index: 10; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 400; color: #ffffff; letter-spacing: 5px;font-family:Gloria Hallelujah;"><?= $slide->CTA ?>
 					</div>
 					<div class="tp-caption   tp-resizeme" 
 						id="slide-2919-layer-1" 

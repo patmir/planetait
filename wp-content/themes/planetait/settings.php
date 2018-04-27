@@ -34,7 +34,11 @@ global $wp;
  } else if ($action == 'tresc'){
      ?>
 
-<button id="ustawienia_generuj_tresci">Generuj Treści</button>
+ <form action="options.php" id="project_settings_tresc" method="POST">
+     <?php  settings_fields("project_settings_tresc");
+            do_settings_sections( "project_settings_tresc_page" ); ?>
+    <button id="save_tresc" name="Zapisz" type="button" class="button button-primary">Zapisz</button>
+     </form>
 
      <?php
  } else if ($action == 'slider') {
@@ -53,9 +57,35 @@ global $wp;
 
 <?php 
 /** Display Functions */
+function project_settings_tresc_stopka_display(){
+    ?>
+    <h4>Wpisz dane widoczne w stopce</h4>
+    <?php  
+}
+function project_settings_tresc_stopka_dane_display(){
+
+    $options = get_option('project_settings_tresc');
+    $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
+    ?>
+    <input 
+    id="project_settings_tresc_stopka_dane" 
+    name="project_settings_tresc[project_settings_tresc_stopka_dane]"
+    type="hidden" value="<?= $options["project_settings_tresc_stopka_dane"] ?>">    
+    <label>Adres Ulica</label><input type="text" data-name="adres_ulica" name="adres_ulica" value="<?=$decodedOptions->AdresUlica?>"><br>
+    <label>Adres Miasto i kod</label><input type="text" data-name="adres_miasto" name="adres_miasto" value="<?=$decodedOptions->AdresMiasto?>"><br>
+    <label>Biuro Tel.</label><input type="text" data-name="biuro_tel" name="biuro_tel" value="<?=$decodedOptions->BiuroTel?>"><br>
+    <label>Biuro Email</label><input type="text" data-name="biuro_email" name="biuro_email" value="<?=$decodedOptions->BiuroEmail?>"><br>
+    <label>Wsparcie techniczne Email</label><input type="text" data-name="wsparcie_email" name="wsparcie_email" value="<?=$decodedOptions->WsparcieEmail?>"><br>
+    <label>Księgowość Email</label><input type="text" data-name="ksiegowosc_email" name="ksiegowosc_email" value="<?=$decodedOptions->KsiegowoscEmail?>"><br>
+    <label>HR Email</label><input type="text" data-name="hr_email" name="hr_email" value="<?=$decodedOptions->HREmail?>"><br>
+    <label>Business Development Email</label><input type="text" data-name="bdev_email" name="bdev_email" value="<?=$decodedOptions->BDevEmail?>"><br>
+    <?php
+    
+}
+
 function project_settings_header_display(){
     ?>
-    <h4>Wybierz właściwości nagłówka strony</h3>
+    <h4>Ustawienia nagłówka</h4>
     <?php  
 }
 function project_settings_header_logo_display(){
@@ -98,6 +128,8 @@ function project_settings_slider_slides_input_display() {
                 <th scope="col" id="slide_img" class="manage-column column-name column-primary">Zdjęcie/Film</th>
                 <th scope="col" id="slide_header" class="manage-column column-name column-primary">Nagłówek</th>
                 <th scope="col" id="slide_text" class="manage-column column-name column-primary">Tekst</th>
+                <th scope="col" id="slide_cta" class="manage-column column-name column-primary">Call To Action</th>
+                <th scope="col" id="slide_typer" class="manage-column column-name column-primary">Typer (Słowa oddzielone |)</th>
                 <th scope="col" id="slide_delete" class="manage-column column-name column-primary">Akcja</th>
             </tr>
         </thead>
@@ -120,8 +152,6 @@ function project_settings_slider_slides_input_display() {
             ?>
                 <tr>
                     <td data-id="<?= $slide->ImgID;?>" class="image column-image column-primary">
-                    <script>
-            </script>
                         <img src="<?=$thumb?>"/>
                     </td>
                     <td class="title column-title column-primary" data-name="header">
@@ -130,7 +160,15 @@ function project_settings_slider_slides_input_display() {
                     <td class="title column-title column-primary" data-name="text">
                         <input type="text" name="text" value="<?=$slide->Text?>">
                         </td>
-                    <td class="title column-title column-primary" data-name="text"><button type="button" class="button button-danger delete_slide">Usuń</button>
+                        
+                    <td class="title column-title column-primary" data-name="cta">
+                        <input type="text" name="cta" value="<?=$slide->CTA?>">
+                        </td>
+                        
+                    <td class="title column-title column-primary" data-name="typer">
+                        <input type="text" name="typer" value="<?=$slide->Typer?>">
+                        </td>
+                    <td class="title column-title column-primary" data-name="button"><button type="button" class="button button-danger delete_slide">Usuń</button>
                         </td>
                 </tr>
             <?php
