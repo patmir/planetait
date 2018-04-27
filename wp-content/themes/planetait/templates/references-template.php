@@ -11,13 +11,13 @@ get_header();
 			<!-- SLIDE  -->
 			<li data-index="rs-63" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="100"  data-delay="1000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 				<!-- MAIN IMAGE -->
-				<img src="<?= get_template_directory_uri()?>/assets/custom/test-vid-bg.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+				<img src="<?= get_template_directory_uri()?>/img/vid_header_bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 					<div class="rs-background-video-layer" 
 						data-forcerewind="on" 
 						data-volume="mute" 
 						data-videowidth="100%" 
 						data-videoheight="100%" 
-						data-videomp4="<?= get_template_directory_uri()?>/assets/custom/header-vid.mp4" 
+						data-videomp4="<?= get_template_directory_uri()?>/vids/vid_header.mp4" 
 						data-videopreload="auto" 
 						data-videoloop="loop" 
 						data-forceCover="1" 

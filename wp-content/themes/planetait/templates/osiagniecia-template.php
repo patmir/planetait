@@ -202,7 +202,7 @@ $sectionData = explode("*",$section->post_content);
 						stopAtSlide:1,
 						disableProgressBar:"on",
 						hideThumbsOnMobile:"off",
-						hideSliderAtLimit:1000,
+						hideSliderAtLimit:0,
 						hideCaptionAtLimit:0,
 						hideAllCaptionAtLilmit:0,
 						debugMode:false,

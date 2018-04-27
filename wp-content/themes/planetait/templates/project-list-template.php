@@ -179,13 +179,13 @@ get_header();
             <ul>
                 <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="1000" data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                    <!-- MAIN IMAGE -->
-				<img src="<?= get_template_directory_uri()?>/assets/custom/test-vid-bg.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+				<img src="<?= get_template_directory_uri()?>/img/vid_header_bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 					<div class="rs-background-video-layer" 
 						data-forcerewind="on" 
 						data-volume="mute" 
 						data-videowidth="100%" 
 						data-videoheight="100%" 
-						data-videomp4="<?= get_template_directory_uri()?>/assets/custom/header-vid.mp4" 
+						data-videomp4="<?= get_template_directory_uri()?>/vids/vid_header.mp4" 
 						data-videopreload="auto" 
 						data-videoloop="loop" 
 						data-forceCover="1" 
@@ -421,7 +421,10 @@ $projekty = get_posts(array(
 			<ul>
                 <?php 
                 $num = 134;
-                foreach($projekty as $projekt): ?>
+				foreach($projekty as $projekt): ?>
+				<?php 
+				$tags = array_map(create_function('$o', 'return $o->name;'), wp_get_post_tags($projekt->ID));
+				?>
 				<!-- SLIDE  -->
 				<li data-index="rs-<?=$num?>" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
 				 data-easein="default" data-easeout="default" data-masterspeed="500" data-rotate="0" data-saveperformance="off" data-title="Workspace"
@@ -484,8 +487,9 @@ $projekty = get_posts(array(
                         {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-16","delay":"100"},
                         {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-17","delay":"200"},
                         {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-19","delay":"300"},
-                        {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-26","delay":"400"},
-                        {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-27","delay":"500"}]'
+                        {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-19-2","delay":"400"},
+                        {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-26","delay":"500"},
+                        {"event":"click","action":"startlayer","layer":"slide-<?=$num?>-layer-27","delay":"600"}]'
 					 data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":0,"ease":"Power1.easeInOut"},{"delay":"wait","speed":500,"to":"opacity:0;","ease":"Power1.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(111,124,130,1);"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]" data-paddingright="[10,10,10,10]" data-paddingbottom="[10,10,10,10]"
 					 data-paddingleft="[10,10,10,10]" style="z-index: 10; white-space: nowrap;text-transform:left;letter-spacing:2px;font-weight:500;cursor:pointer;">
@@ -535,21 +539,41 @@ $projekty = get_posts(array(
 					 data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 16; min-width: 585px; max-width: 585px; white-space: normal;text-transform:left;"><?= $projekt->post_content ?> </div>
+					
+					 <div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19-2" data-x="['left','left','center','center']"
+					 data-hoffset="['702','600','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['80','80','80','80']" data-fontsize="['17','15','15','13']"
+					 data-lineheight="['28','24','24','22']" data-width="['585','472','480','360']" data-height="['none','129','129','129']"
+					 data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 17; min-width: 585px; max-width: 585px; white-space: normal;text-transform:left;"><?=__("Technologies","html5blank")?>: <?=implode(", ", $tags)?> </div>
 
 					<!-- LAYER NR. 13 -->
 				<!--	<div class="tp-caption ContentZoom-Button rev-btn " id="slide-<?=$num?>-layer-26" data-x="['left','left','center','center']" data-hoffset="['703','602','0','0']"
 					 data-y="['top','top','top','top']" data-voffset="['513','492','382','341']" data-width="none" data-height="none" data-whitespace="nowrap"
 					 data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(41,46,49,1);bc:rgba(41,46,49,1);bw:1px 1px 1px 1px;"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[15,15,15,15]" data-paddingright="[50,50,50,50]" data-paddingbottom="[15,15,15,15]"
-					 data-paddingleft="[50,50,50,50]" data-lasttriggerstate="reset" style="z-index: 17; white-space: nowrap;text-transform:left;border-color:rgba(41,46,49,0.50);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">VISIT PROJECT </div>
+					 data-paddingleft="[50,50,50,50]" data-lasttriggerstate="reset" style="z-index: 18; white-space: nowrap;text-transform:left;border-color:rgba(41,46,49,0.50);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">VISIT PROJECT </div>
 -->
 					<!-- LAYER NR. 14 -->
 					<div class="tp-caption ContentZoom-ButtonClose rev-btn " id="slide-<?=$num?>-layer-27" data-x="['right','right','right','right']"
 					 data-hoffset="['40','40','40','40']" data-y="['top','top','top','top']" data-voffset="['40','40','40','40']" data-width="none"
-					 data-height="none" data-whitespace="nowrap" data-type="button" data-actions='[{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-26","delay":""},{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-19","delay":"50"},{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-17","delay":"100"},{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-16","delay":"150"},{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-15","delay":"200"},{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-27","delay":"250"},{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-14","delay":"300"}]'
-					 data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":700,"to":"opacity:0;","ease":"nothing"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(41,46,49,1);bc:rgba(41,46,49,1);bw:1px 1px 1px 1px;"}]'
+					 data-height="none" data-whitespace="nowrap" data-type="button"
+					 data-actions='[
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-26","delay":""},
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-19-2","delay":"50"},
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-19","delay":"100"},
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-17","delay":"150"},
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-16","delay":"200"},
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-15","delay":"250"},
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-27","delay":"300"},
+						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-14","delay":"350"}]'
+					 data-basealign="slide" data-responsive_offset="off" data-responsive="off"
+					 data-frames='[
+						{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},
+						{"delay":"bytrigger","speed":700,"to":"opacity:0;","ease":"nothing"},
+						{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(41,46,49,1);bc:rgba(41,46,49,1);bw:1px 1px 1px 1px;"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[14,14,14,14]" data-paddingright="[14,14,14,14]" data-paddingbottom="[14,14,14,14]"
-					 data-paddingleft="[16,16,16,16]" data-lasttriggerstate="reset" style="z-index: 18; white-space: nowrap;text-transform:left;border-color:rgba(41,46,49,0.50);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
+					 data-paddingleft="[16,16,16,16]" data-lasttriggerstate="reset" style="z-index: 19; white-space: nowrap;text-transform:left;border-color:rgba(41,46,49,0.50);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
 						<i class="fa-icon-remove"></i>
 					</div>
                 </li>

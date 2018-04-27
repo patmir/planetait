@@ -271,8 +271,11 @@ var scrollEnabled = false;
                     tpjfooter(revapifooter).on('revolution.slide.onloaded', function() {
                         
                         if(jQuery("#rs-footer-footer").offset().top < jQuery(window).scrollTop() + window.innerHeight) { // el visible witholut scrolling
-                            onScrollfooter();
+                            console.log("Footer already visible")
+					console.log("STARTING - FOOTER"); 				
+					revapifooter.revnext();
                         } else {
+                            console.log("Footer not visible. Waiting for scroll.")
                             jQuery(window).scroll(function(){onScrollfooter()});
                         }
 
@@ -316,6 +319,7 @@ ga('send', 'pageview');
 <?php if (!isset($_GET['debug'])) : ?>
 <script>
 	 logger.disableLogger();
+     
 </script>
 	<?php endif; ?>
 	<script>

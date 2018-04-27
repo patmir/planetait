@@ -11,13 +11,13 @@ get_header();
             <ul>
                 <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="1000" data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                    <!-- MAIN IMAGE -->
-				<img src="<?= get_template_directory_uri()?>/assets/custom/test-vid-bg.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+				<img src="<?= get_template_directory_uri()?>/img/vid_header_bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 					<div class="rs-background-video-layer" 
 						data-forcerewind="on" 
 						data-volume="mute" 
 						data-videowidth="100%" 
 						data-videoheight="100%" 
-						data-videomp4="<?= get_template_directory_uri()?>/assets/custom/header-vid.mp4" 
+						data-videomp4="<?= get_template_directory_uri()?>/vids/vid_header.mp4" 
 						data-videopreload="auto" 
 						data-videoloop="loop" 
 						data-forceCover="1" 
@@ -386,7 +386,7 @@ get_header();
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2100,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
 					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">Office
-						<br> tel.: XX XX XX XX
+						<br> tel.: 1-847-630-2994
 						<br> info@programming-planetait.com </div>
 
 					<!-- LAYER NR. 8 -->

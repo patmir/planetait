@@ -223,7 +223,10 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                         data-paddingright="[0,0,0,0]"
                                         data-paddingbottom="[0,0,0,0]"
                                         data-paddingleft="[0,0,0,0]"
-                                        style="z-index: <?= $zIndex ?>; width: 100%;">
+                                        style="z-index: <?= $zIndex ?>; width: 100%;
+                                            -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,0.75);
+                                            -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,0.75);
+                                            box-shadow: 0 0 10px 1px rgba(0,0,0,0.75);">
                                         <?php $layerNo++;
                                         $zIndex++ ?>
                                         <div class="tp-caption tp-resizeme set-img" 
@@ -231,7 +234,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                                 data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" 
                                                 data-y="['bottom','bottom','bottom','bottom']" data-voffset="['0','0','0','0']" 
                                                 data-width="100%"
-                                                data-height="160px"
+                                                data-height="220px"
                                                 data-whitespace="normal"                                
                                                 data-type="image" 
                                                 data-responsive_offset="on" 
@@ -246,7 +249,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                                 data-paddingbottom="[0,0,0,0]"
                                                 data-paddingleft="[0,0,0,0]"
                                                 data-bg = "<?= get_the_post_thumbnail_url($el->ID, 'large') ?>"
-                                                style="z-index: <?= $zIndex ?>; display: block; width: 100%, height: 160px;">
+                                                style="z-index: <?= $zIndex ?>; display: block; width: 100%, height: 220px;">
                                         </div>
                                         <?php $layerNo++;
                                         $zIndex++; ?>
@@ -277,19 +280,19 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-x="['left','left','left','left']" data-hoffset="['5','5','5','5']" 
                                             data-y="['bottom','bottom','bottom','bottom']" data-voffset="['5','5','5','5']" 
                                             data-width="none"
-                                            data-height="140px"
-                                            data-minheight="140px"
+                                            data-height="200px"
+                                            data-minheight="200px"
                                             data-whitespace="normal"                            
                                             data-type="text" 
                                             data-basealign="slide" 
                                             data-responsive_offset="on" 
                                             data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                             data-margintop="[0,0,0,0]"
-                                            data-marginright="[0,0,0,0]"
-                                            data-marginbottom="[0,0,0,0]"
-                                            data-marginleft="[0,0,0,0]"
+                                            data-marginright="[15,15,15,15]"
+                                            data-marginbottom="[10,10,10,10]"
+                                            data-marginleft="[15,15,15,15]"
                                             data-textAlign="['justify','justify','justify','justify']"
-                                            style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 14px; line-height: 18px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= $el->post_excerpt; ?>
+                                            style="z-index: <?= $zIndex ?>; white-space: normal; font-size: 16px; line-height: 20px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= $el->post_excerpt; ?>
                                         </div>
                                         <?php $layerNo++;
                                         $zIndex++ ?>

@@ -76,15 +76,7 @@ $files = array_diff(scandir($directory), array('..', '.'));
 		<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
 		<div id="rev_slider_partnerzy_2" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
 			<ul>
-			<li data-index="rs-120" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
-                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='transparent' style='background:transparent' alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-				</li>
+		
 				
 				<?php 
 				$num = 121;
@@ -207,12 +199,6 @@ $files = array_diff(scandir($directory), array('..', '.'));
 							easing: "Linear.easeNone",
 							speed: "1500"
 						},
-						viewPort: {
-							enable: true,
-							outof: "wait",
-							visible_area: "80%",
-							presize: false
-						},
 						responsiveLevels: [1240, 1024, 778, 480],
 						visibilityLevels: [1240, 1024, 778, 480],
 						gridwidth: [200, 200, 200, 200],
@@ -258,18 +244,4 @@ $files = array_diff(scandir($directory), array('..', '.'));
 				}
 		};
 
-		 var onStartedpar2 = false;
-		var onScrollpar2 = function() {
-			var top_of_element = jQuery("#rev_slider_partnerzy_2").offset().top;
-			var bottom_of_element = jQuery("#rev_slider_partnerzy_2").offset().top + jQuery("#rev_slider_partnerzy_2").outerHeight();
-			var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
-			var top_of_screen = jQuery(window).scrollTop();
-
-				if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !onStartedpar2){
-					// The element is visible, do something
-					console.log("STARTING - PAR - 2"); 				
-					revapipar2.revnext();
-					onStartedpar2 = true;
-				}
-		};
 	</script>

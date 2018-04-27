@@ -21,7 +21,7 @@ $slide = json_decode($slides)[0];
 		<div id="welcome" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7">
 			<ul>
 				<li data-index="rs-57" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="3000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-					<img src="<?= get_template_directory_uri()?>/assets/custom/test-vid-bg.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+					<img src="<?= get_template_directory_uri()?>/img/vid_main_bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 					<div class="rs-background-video-layer" 
 						data-forcerewind="on" 
 						data-volume="mute" 
