@@ -533,6 +533,57 @@ video::-webkit-media-controls-start-playback-button {
     -ms-flex-align: center;
     align-items: center;
 }
+
+.custom-file-label-en::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    height: calc(calc(4rem + 2px) - 1px * 2);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #ffffff;
+    content: "Add";
+    background-color: #c11437;
+    border-left: 1px solid #c11437;
+	border-radius: 0 .25rem .25rem 0;
+	font-size: 1em;
+    min-width: 80px;
+
+}
+.custom-file-label-en {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: calc(4rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    text-align: center;
+}
+
+.custom-file-en {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: calc(4rem + 2px);
+	margin-bottom: 0;	
+    margin-top: 10px;
+}
+
+.input-group>.custom-file-en {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
 .wpcf7-list-item-label {
 	
     font-size: 14px;
