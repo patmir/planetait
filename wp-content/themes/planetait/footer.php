@@ -67,7 +67,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 9; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Adres", "html5blank")?> </div>
+                                    style="z-index: 9; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Address", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 6 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-16" data-x="5" data-y="5" data-width="['259']" data-height="['auto']"
@@ -83,7 +83,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                     data-margintop="[14,14,14,14]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 11; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Biuro", "html5blank")?> </div>
+                                    style="z-index: 11; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Office", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 8 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-18" data-x="" data-y="" data-width="['259']" data-height="['auto']"
@@ -107,7 +107,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 14; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Wsparcie techniczne", "html5blank")?> </div>
+                                    style="z-index: 14; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Support", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 11 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-20" data-x="" data-y="" data-width="['259']" data-height="['auto']"
@@ -122,7 +122,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                     data-margintop="[44,44,44,44]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 16; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Księgowość", "html5blank")?> </div>
+                                    style="z-index: 16; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Accountancy", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 13 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-22" data-x="" data-y="" data-width="['259']" data-height="['auto']"

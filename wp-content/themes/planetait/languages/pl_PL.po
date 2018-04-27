@@ -1,0 +1,403 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Planeta IT\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-27 02:46+0000\n"
+"PO-Revision-Date: 2018-04-27 02:48+0000\n"
+"Last-Translator: Administracja <info@programming-planetait.com>\n"
+"Language-Team: Polish\n"
+"Language: pl-PL\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10 >= 2 && n%10<=4 "
+"&&(n%100<10||n%100 >= 20)? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: author.php:43 loop.php:23
+msgid "% Comments"
+msgstr ""
+
+#: search.php:7
+#, php-format
+msgid "%s Search Results for "
+msgstr ""
+
+#: author.php:43 loop.php:23
+msgid "1 Comment"
+msgstr ""
+
+#: author.php:15
+msgid "About "
+msgstr ""
+
+#. Name of the template
+msgid "About us"
+msgstr "O nas"
+
+#: footer.php:125
+msgid "Accountancy"
+msgstr "Księgowość"
+
+#. Name of the template
+msgid "Achievements"
+msgstr "Osiągnięcia"
+
+#: footer.php:70
+msgid "Address"
+msgstr "Adres"
+
+#: archive.php:7
+msgid "Archives"
+msgstr ""
+
+#: author.php:9
+msgid "Author Archives for "
+msgstr ""
+
+#: footer.php:164
+msgid "Business Development"
+msgstr ""
+
+#: category.php:7
+msgid "Categories for "
+msgstr ""
+
+#: functions.php:643
+msgid "Co Robimy"
+msgstr ""
+
+#: functions.php:631 functions.php:632
+msgid "Co robimy"
+msgstr ""
+
+#: comments.php:18
+msgid "Comments are closed here."
+msgstr ""
+
+#. Name of the template
+msgid "Contact"
+msgstr ""
+
+#: functions.php:244 functions.php:255
+msgid "Description for this widget-area..."
+msgstr ""
+
+#: functions.php:633 functions.php:634
+msgid "Dodaj nowe Co robimy"
+msgstr ""
+
+#: functions.php:672 functions.php:673
+msgid "Dodaj nowy Projekt"
+msgstr ""
+
+#: functions.php:595 functions.php:596
+msgid "Dodaj nową ofertę pracy"
+msgstr ""
+
+#: functions.php:557 functions.php:558
+msgid "Dodaj nową podstronę"
+msgstr ""
+
+#: functions.php:711 functions.php:712
+msgid "Dodaj nową Referencję"
+msgstr ""
+
+#: functions.php:517 functions.php:518
+msgid "Dodaj nową sekcję"
+msgstr ""
+
+#: functions.php:519 functions.php:559 functions.php:597 functions.php:635 
+#: functions.php:674 functions.php:713
+msgid "Edytuj"
+msgstr ""
+
+#: functions.php:636
+msgid "Edytuj Co robimy"
+msgstr ""
+
+#: functions.php:598
+msgid "Edytuj ofertę pracy"
+msgstr ""
+
+#: functions.php:560
+msgid "Edytuj podstronę"
+msgstr ""
+
+#: functions.php:675
+msgid "Edytuj Projekt"
+msgstr ""
+
+#: functions.php:714
+msgid "Edytuj Referencję"
+msgstr ""
+
+#: functions.php:520
+msgid "Edytuj sekcję"
+msgstr ""
+
+#: functions.php:198
+msgid "Extra Menu"
+msgstr ""
+
+#: functions.php:196
+msgid "Header Menu"
+msgstr ""
+
+#: footer.php:148
+msgid "HR"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://patmir.com"
+msgstr ""
+
+#. URI of the theme
+msgid "http://planetait.eu"
+msgstr ""
+
+#: index.php:22
+msgid "Latest Posts"
+msgstr ""
+
+#: author.php:43 loop.php:23
+msgid "Leave your thoughts"
+msgstr ""
+
+#: functions.php:641
+msgid "Nie znaleziono Co robimy"
+msgstr ""
+
+#: functions.php:642
+msgid "Nie znaleziono Co robimyw koszu"
+msgstr ""
+
+#: functions.php:603
+msgid "Nie znaleziono ofert pracy"
+msgstr ""
+
+#: functions.php:604
+msgid "Nie znaleziono ofert pracy w koszu"
+msgstr ""
+
+#: functions.php:565
+msgid "Nie znaleziono podstron"
+msgstr ""
+
+#: functions.php:566
+msgid "Nie znaleziono podstron w koszu"
+msgstr ""
+
+#: functions.php:680
+msgid "Nie znaleziono Projektu"
+msgstr ""
+
+#: functions.php:681
+msgid "Nie znaleziono Projektu w koszu"
+msgstr ""
+
+#: functions.php:719
+msgid "Nie znaleziono Referencji"
+msgstr ""
+
+#: functions.php:720
+msgid "Nie znaleziono Referencji w koszu"
+msgstr ""
+
+#: functions.php:525
+msgid "Nie znaleziono sekcji"
+msgstr ""
+
+#: functions.php:526
+msgid "Nie znaleziono sekcji w koszu"
+msgstr ""
+
+#: functions.php:599 functions.php:637
+msgid "Nowa oferta pracy"
+msgstr ""
+
+#: functions.php:561
+msgid "Nowa podstrona"
+msgstr ""
+
+#: functions.php:521
+msgid "Nowa sekcja"
+msgstr ""
+
+#: functions.php:676
+msgid "Nowy Projekt"
+msgstr ""
+
+#: functions.php:715
+msgid "Nowy Referencja"
+msgstr ""
+
+#: functions.php:594
+msgid "Oferta pracy"
+msgstr ""
+
+#: functions.php:605
+msgid "Oferty Pracy"
+msgstr ""
+
+#: functions.php:593
+msgid "Oferty pracy"
+msgstr ""
+
+#: footer.php:86
+msgid "Office"
+msgstr "Biuro"
+
+#: 404.php:10
+msgid "Page not found"
+msgstr ""
+
+#. Name of the template
+msgid "Partners"
+msgstr "Partnerzy"
+
+#. Author of the theme
+msgid "Patryk Mirosław"
+msgstr ""
+
+#. Name of the theme
+msgid "Planeta IT"
+msgstr ""
+
+#. Description of the theme
+msgid "Planeta IT Theme by Patryk Mirosław &amp; Jacek Nogaj"
+msgstr ""
+
+#: functions.php:556
+msgid "Podstrona"
+msgstr ""
+
+#: functions.php:555 functions.php:567
+msgid "Podstrony"
+msgstr ""
+
+#: comments.php:3
+msgid "Post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#. Name of the template
+msgid "Programming Languages"
+msgstr ""
+
+#. Name of the template
+msgid "Project List"
+msgstr ""
+
+#: functions.php:671 functions.php:682
+msgid "Projekt"
+msgstr ""
+
+#: functions.php:670
+msgid "Projekty"
+msgstr ""
+
+#: author.php:42 loop.php:22
+msgid "Published by"
+msgstr ""
+
+#. Name of the template
+msgid "References"
+msgstr ""
+
+#: functions.php:710 functions.php:721
+msgid "Referencja"
+msgstr ""
+
+#: functions.php:709
+msgid "Referencje"
+msgstr ""
+
+#: 404.php:12
+msgid "Return home?"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search"
+msgstr ""
+
+#: functions.php:516
+msgid "Sekcja strony głównej"
+msgstr ""
+
+#: functions.php:515
+msgid "Sekcje strony głównej"
+msgstr ""
+
+#: functions.php:527
+msgid "Sekcje widoczne na stronie głównej"
+msgstr ""
+
+#: functions.php:197
+msgid "Sidebar Menu"
+msgstr ""
+
+#: author.php:62 loop.php:39 page.php:31
+msgid "Sorry, nothing to display."
+msgstr ""
+
+#: footer.php:110
+msgid "Support"
+msgstr "Wsparcie techniczne"
+
+#: functions.php:524 functions.php:564 functions.php:602 functions.php:640 
+#: functions.php:679 functions.php:718
+msgid "Szukaj"
+msgstr ""
+
+#: tag.php:7
+msgid "Tag Archive: "
+msgstr ""
+
+#: searchform.php:3
+msgid "To search, type and hit enter."
+msgstr ""
+
+#: functions.php:320
+msgid "View Article"
+msgstr ""
+
+#. Name of the template
+msgid "What we do"
+msgstr ""
+
+#: functions.php:243
+msgid "Widget Area 1"
+msgstr ""
+
+#: functions.php:254
+msgid "Widget Area 2"
+msgstr ""
+
+#: functions.php:522 functions.php:562 functions.php:600 functions.php:638 
+#: functions.php:677 functions.php:716
+msgid "Zobacz"
+msgstr ""
+
+#: functions.php:639
+msgid "Zobacz Co robimy"
+msgstr ""
+
+#: functions.php:601
+msgid "Zobacz ofertę pracy"
+msgstr ""
+
+#: functions.php:563
+msgid "Zobacz podstronę"
+msgstr ""
+
+#: functions.php:678
+msgid "Zobacz Projekt"
+msgstr ""
+
+#: functions.php:717
+msgid "Zobacz Referencję"
+msgstr ""
+
+#: functions.php:523
+msgid "Zobacz sekcję"
+msgstr ""
