@@ -27,7 +27,7 @@ var revapi20,tpj;
 				gridwidth: [1240, 1024, 778, 480],
 				gridheight: [90, 90, 90, 90],
 				lazyType: "none",
-				minHeight: "90",
+				minHeight: "90px",
 				shadow: 0,
 				spinner: "off",
 				autoHeight: "off",
@@ -70,27 +70,6 @@ jQuery(this).css("background-repeat", "no-repeat");
 jQuery(".center-margin").each(function(e){
 jQuery(this).css("margin", "0 auto");
 });
-
-var setMenuFixed = function(){
-	var nav = jQuery("#nav_forcefullwidth");
-	nav.css("position","fixed");
-	nav.css("z-index","999");
-	nav.css("top","0");
-	jQuery("body").css("padding-top", nav.outerHeight());
-    console.log("SET MENU AS FIXED");
-	jQuery(window).off("scroll", setMenuFixed);
-
-};
-var adjustMenu = function(){
-	var nav = jQuery("#nav_forcefullwidth");
-	if(jQuery("body").css("padding-top") != nav.outerHeight() && nav.css("position") == "fixed"){
-	jQuery("body").css("padding-top", nav.outerHeight());
-	console.log("ADJUST MENU");
-	}
-
-};
-jQuery(window).on("scroll", setMenuFixed);
-jQuery(window).on("resize", adjustMenu);
 
 
 });

@@ -445,8 +445,8 @@ $projekty = get_posts(array(
 						 data-no-retina> </div>
 
 					<!-- LAYER NR. 2 -->
-					<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-<?=$num?>-layer-11" data-x="['left','center','center','center']"
-					 data-hoffset="['406','-1','-1','0']" data-y="['top','middle','middle','middle']" data-voffset="['81','-67','-107','-56']"
+					<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-<?=$num?>-layer-11" data-x="['center','center','center','center']"
+					 data-hoffset="['406','-1','-1','0']" data-y="['top','middle','middle','middle']" data-voffset="['0','-67','-107','-56']"
 					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" style="z-index: 6;text-transform:left;">
@@ -456,15 +456,16 @@ $projekty = get_posts(array(
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption ContentZoom-SmallTitle   tp-resizeme" id="slide-<?=$num?>-layer-7" data-x="['center','center','center','center']"
 					 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['124','124','85','105']"
-					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1100,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-					 data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;"><?= $projekt->post_title?> </div>
+					 data-width="none" data-height="none" data-whitespace="pre-line" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1100,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+					 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,20]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-fontsize="['28','28','28','14px']"
+					 data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: pre-line;text-transform:left;"><?= $projekt->post_title?> </div>
 
 					<!-- LAYER NR. 4 -->
 					<div class="tp-caption ContentZoom-SmallSubtitle   tp-resizeme" id="slide-<?=$num?>-layer-9" data-x="['center','center','center','center']"
-					 data-hoffset="['0','0','1','0']" data-y="['middle','middle','middle','middle']" data-voffset="['160','160','121','141']"
+					 data-hoffset="['0','0','1','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['160','40','240','80']"
 					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1150,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap;text-transform:left;"><?=__("Click the Zoom Icon for More Information", "html5blank")?> </div>
 
 					<!-- LAYER NR. 5 -->
@@ -472,7 +473,7 @@ $projekty = get_posts(array(
 					 data-hoffset="['-60','-60','-60','-60']" data-y="['middle','middle','middle','middle']" data-voffset="['224','224','184','205']"
 					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-actions='[{"event":"click","action":"jumptoslide","slide":"previous","delay":""}]'
 					 data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":0,"ease":"Power1.easeInOut"},{"delay":"wait","speed":500,"to":"opacity:0;","ease":"Power1.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(111,124,130,1);"}]'
-					 data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]" data-paddingright="[10,10,10,10]" data-paddingbottom="[10,10,10,10]"
+					 data-textAlign="['centerleft','center','center','center']" data-paddingtop="[10,10,10,10]" data-paddingright="[10,10,10,10]" data-paddingbottom="[10,10,10,10]"
 					 data-paddingleft="[10,10,10,10]" style="z-index: 9; white-space: nowrap; font-size: 30px; line-height: 30px;text-transform:left;letter-spacing:2px;font-weight:500;cursor:pointer;">
 						<i class="fa-icon-angle-left"></i>
 					</div>
@@ -516,35 +517,35 @@ $projekty = get_posts(array(
 					</div>
 
 					<!-- LAYER NR. 9 -->
-					<div class="tp-caption   tp-resizeme" id="slide-<?=$num?>-layer-15" data-x="['left','left','center','center']" data-hoffset="['-261','-50','0','0']"
-					 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','263','216']" data-width="none" data-height="none"
+					<div class="tp-caption   tp-resizeme set-img-contain" id="slide-<?=$num?>-layer-15" data-x="['left','center','center','center']" data-hoffset="['5','0','0','0']"
+					 data-y="['middle','top','top','top']" data-voffset="['0','40','40','140']" data-width="['500px','760px','480px','96%']" data-height="['600px','400px','533px','320px']"
 					 data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":700,"to":"x:left;","ease":"Power3.easeInOut"}]'
-					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 13;text-transform:left;">
-						<img src="<?= get_the_post_thumbnail_url( $projekt->ID, 'full')?>" alt="" data-ww="['900px','600px','800px','480px']" data-hh="['600px','400px','533','320px']"
-						 data-no-retina> </div>
-
+					 data-textAlign="['left','left','left','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 13;text-transform:left;"
+					 data-bg="<?= get_the_post_thumbnail_url( $projekt->ID, 'full')?>"
+					 >
+					 </div>
 					<!-- LAYER NR. 10 -->
-					<div class="tp-caption ContentZoom-DetailTitle   tp-resizeme" id="slide-<?=$num?>-layer-16" data-x="['left','left','center','center']"
-					 data-hoffset="['699','598','0','0']" data-y="['top','top','top','top']" data-voffset="['189','225','125','105']" data-fontsize="['36','36','36','36']"
-					 data-lineheight="['36','36','36','36']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
+					<div class="tp-caption ContentZoom-DetailTitle   tp-resizeme" id="slide-<?=$num?>-layer-16" data-x="['left','center','center','center']"
+					 data-hoffset="['699','40','40','0']" data-y="['top','top','top','top']" data-voffset="['189','725','125','60']" data-fontsize="['28','28','28','28']"
+					 data-lineheight="['36','36','36','36']" data-width="['100%','100%','100%','100%']" data-height="none" data-whitespace="pre-line" data-type="text"
 					 data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
-					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 14; white-space: nowrap;text-transform:left;"><?= $projekt->post_title?> </div>
+					 data-textAlign="['left','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 14; white-space: pre-line;text-transform:left;"><?= $projekt->post_title?> </div>
 
 					<!-- LAYER NR. 12 -->
-					<div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19" data-x="['left','left','center','center']"
-					 data-hoffset="['702','600','0','0']" data-y="['top','top','top','top']" data-voffset="['341','339','229','186']" data-fontsize="['17','15','15','13']"
-					 data-lineheight="['28','24','24','22']" data-width="['585','472','480','360']" data-height="['none','129','129','129']"
+					<div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19" data-x="['left','center','center','center']"
+					 data-hoffset="['702','0','0','0']" data-y="['top','top','top','top']" data-voffset="['341','779','779','546']" data-fontsize="['17','15','15','13']"
+					 data-lineheight="['28','24','24','22']" data-width="['585','90%','90%','90%']" data-height="['none','129','129','129']"
 					 data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
-					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-textAlign="['left','center','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 16; min-width: 585px; max-width: 585px; white-space: normal;text-transform:left;"><?= $projekt->post_content ?> </div>
 					
-					 <div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19-2" data-x="['left','left','center','center']"
-					 data-hoffset="['702','600','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['80','80','80','80']" data-fontsize="['17','15','15','13']"
-					 data-lineheight="['28','24','24','22']" data-width="['585','472','480','360']" data-height="['none','129','129','129']"
+					 <div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19-2" data-x="['left','center','center','center']"
+					 data-hoffset="['702','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['80','40','80','0']" data-fontsize="['17','15','15','13']"
+					 data-lineheight="['28','24','24','22']" data-width="['585','90%','90%','90%']" data-height="['none','129','129','129']"
 					 data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
-					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-textAlign="['left','center','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 17; min-width: 585px; max-width: 585px; white-space: normal;text-transform:left;"><?=__("Technologies","html5blank")?>: <?=implode(", ", $tags)?> </div>
 
 					<!-- LAYER NR. 13 -->
@@ -696,7 +697,7 @@ $projekty = get_posts(array(
 						},
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],
-						gridwidth:[1320,1024,778,480],
+						gridwidth:[1024,1024,778,480],
 						gridheight:[200,200,200,200],
 						lazyType:"single",
 						shadow:0,
@@ -762,7 +763,7 @@ $projekty = get_posts(array(
 						responsiveLevels: [1240, 1024, 778, 480],
 						visibilityLevels: [1240, 1024, 778, 480],
 						gridwidth: [1400, 1240, 778, 480],
-						gridheight: [768, 768, 960, 720],
+						gridheight: [768, 1200, 960, 720],
 						lazyType: "none",
 						parallax: {
 							type: "mouse+scroll",

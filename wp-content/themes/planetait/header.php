@@ -74,11 +74,20 @@ function setREVStartSize(e){
         <div class="loadingoverlay-placeholder" style="box-sizing: border-box; position: fixed; display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-around; background: rgb(42, 42, 42); top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1;">
         </div>
 		<!-- MENU -->	
-			<div id="nav_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+			<div id="nav_wrapper" class="rev_slider_wrapper fullwidth-container" data-alias="nice-and-clean-menu" data-source="gallery" style="margin:0px auto;background: transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
 				<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-				<div id="nav" class="rev_slider fullwidthabanner" style="display:none;     background-color: rgba(255,255,255,1);" data-version="5.4.7" data-height="['100px','100px','100px','100px']">
-					<ul>	<!-- SLIDE  -->
-						<li data-index="rs-30" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-height="['100px','100px','100px','100px']" data-easein="default" data-easeout="default" data-masterspeed="default"  data-rotate="0"  data-saveperformance="off"  data-title="Menu" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+				<div id="nav" class="rev_slider fullwidthbanner" style="display:none;     background-color: rgba(255,255,255,1); overflow: visible !important;" data-version="5.4.7" data-height="['100px','100px','100px','100px']">
+					<ul class="force-overflow">
+							<!-- SLIDE  -->
+						<li 
+						data-index="rs-30" data-transition="fade"
+						data-slotamount="default" data-hideafterloop="0" 
+						data-hideslideonmobile="off" data-height="['100px','100px','100px','100px']" 
+						data-easein="default" data-easeout="default" data-masterspeed="default"  
+						data-rotate="0"  data-saveperformance="off"  data-title="Menu" 
+						data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" 
+						data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" 
+						data-description=""class="force-overflow">
 							<!-- MAIN IMAGE -->
 							<img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
 							<!-- LAYERS -->
@@ -126,7 +135,7 @@ function setREVStartSize(e){
 											data-marginright="[0,0,0,0]"
 											data-marginbottom="[0,0,0,0]"
 											data-marginleft="[0,0,0,0]"
-											data-textAlign="['left','left','center','center']"
+											data-textAlign="['left','left','center','leftx']"
 											data-paddingtop="[5,5,5,5]"
 											data-paddingright="[0,0,0,0]"
 											data-paddingbottom="[5,5,5,5]"
@@ -140,7 +149,7 @@ function setREVStartSize(e){
 													data-hoffset="['0','0','0','0']" 
 													data-y="['top','top','top','top']"
 													data-voffset="['0','0','0','0']" 
-													data-width="100%"
+													data-width="['100%','100%','100%','150px']"
 													data-height="90px"
 													data-whitespace="normal" 
 													data-type="text"
@@ -151,12 +160,12 @@ function setREVStartSize(e){
 													data-marginright="[0,0,0,0]"
 													data-marginbottom="[0,0,0,0]"
 													data-marginleft="[0,0,0,0]"
-													data-textAlign="['inherit','inherit','inherit','inherit']"
+													data-textAlign="['inherit','inherit','inherit','left']"
 													data-paddingtop="[0,0,0,0]"
 													data-paddingright="[0,0,0,0]"
 													data-paddingbottom="[0,0,0,0]"
 													data-paddingleft="[0,0,0,0]"
-													data-bg="<?= $logo ?>"
+													data-bg="<?= get_template_directory_uri() ?>/img/logo.png"
 													style="z-index: 8; color: rgba(0,0,0,1); display: inline-block;font-family:Ubuntu;    background-color: rgba(255,255,255,1);"><a href="<?= home_url()?>"></a>
 												</div>
 										</div>
@@ -167,6 +176,7 @@ function setREVStartSize(e){
 										data-hoffset="['100','100','100','100']" 
 										data-y="['top','top','top','top']"
 										data-voffset="['100','100','100','100']" 
+										data-visibility="['on','on','off','off']" 
 										data-width="none"
 										data-height="none"
 										data-whitespace="nowrap"		
@@ -188,7 +198,161 @@ function setREVStartSize(e){
 										style="z-index: 10; width: 100%;    background-color: rgba(255,255,255,1);">
 										<!-- LAYER NAV LAYERS -->
 										<?php html5blank_nav(); ?>
-									</div>					
+									</div>	
+									<!-- MOBILE MENU STUFF -->
+									<!-- LAYER NR. 3 -->
+										<div class="tp-caption tp-shape tp-shapewrapper " 
+											id="slide-79-layer-44" 
+											data-x="['right','right','right','right']" data-hoffset="['60','60','40','30']" 
+											data-y="['top','top','top','top']" data-voffset="['30','30','30','20']" 
+														data-width="['60','60','50','50']"
+											data-height="['60','60','50','50']"
+											data-whitespace="nowrap"
+											data-visibility="['off','off','on','on']"
+											data-type="shape" 
+											data-basealign="slide" 
+											data-responsive_offset="off" 
+											data-responsive="off"
+											data-frames='[{"delay":200,"speed":1000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+											data-textAlign="['inherit','inherit','inherit','inherit']"
+											data-paddingtop="[0,0,0,0]"
+											data-paddingright="[0,0,0,0]"
+											data-paddingbottom="[0,0,0,0]"
+											data-paddingleft="[0,0,0,0]"
+
+											style="z-index: 7;background-color:rgb(255,255,255);cursor:pointer;"> </div>
+
+										<!-- LAYER NR. 4 -->
+										<div class="tp-caption tp-shape tp-shapewrapper " 
+											id="slide-79-layer-45" 
+											data-x="['right','right','right','right']" data-hoffset="['77','77','55','45']" 
+											data-y="['top','top','top','top']" data-voffset="['49','49','46','36']" 
+														data-width="['26','26','20','20']"
+											data-height="['4','4','3','3']"
+											data-whitespace="nowrap"
+											data-visibility="['off','off','on','on']"
+								
+											data-type="shape" 
+											data-basealign="slide" 
+											data-responsive_offset="off" 
+											data-responsive="off"
+											data-frames='[{"delay":250,"speed":1000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+											data-textAlign="['inherit','inherit','inherit','inherit']"
+											data-paddingtop="[0,0,0,0]"
+											data-paddingright="[0,0,0,0]"
+											data-paddingbottom="[0,0,0,0]"
+											data-paddingleft="[0,0,0,0]"
+
+											style="z-index: 8;background-color:rgb(0,0,0);"> </div>
+
+										<!-- LAYER NR. 5 -->
+										<div class="tp-caption tp-shape tp-shapewrapper " 
+											id="slide-79-layer-46" 
+											data-x="['right','right','right','right']" data-hoffset="['77','77','55','45']" 
+											data-y="['top','top','top','top']" data-voffset="['58','58','53','43']" 
+														data-width="['26','26','20','20']"
+											data-height="['4','4','3','3']"
+											data-whitespace="nowrap"
+											data-visibility="['off','off','on','on']"
+								
+											data-type="shape" 
+											data-basealign="slide" 
+											data-responsive_offset="off" 
+											data-responsive="off"
+											data-frames='[{"delay":270,"speed":1000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+											data-textAlign="['inherit','inherit','inherit','inherit']"
+											data-paddingtop="[0,0,0,0]"
+											data-paddingright="[0,0,0,0]"
+											data-paddingbottom="[0,0,0,0]"
+											data-paddingleft="[0,0,0,0]"
+
+											style="z-index: 9;background-color:rgb(0,0,0);"> </div>
+
+										<!-- LAYER NR. 6 -->
+										<div class="tp-caption tp-shape tp-shapewrapper " 
+											id="slide-79-layer-47" 
+											data-x="['right','right','right','right']" data-hoffset="['87','87','60','50']" 
+											data-y="['top','top','top','top']" data-voffset="['67','67','60','50']" 
+														data-width="['16','16','15','15']"
+											data-height="['4','4','3','3']"
+											data-whitespace="nowrap"
+											data-visibility="['off','off','on','on']"
+								
+											data-type="shape" 
+											data-basealign="slide" 
+											data-responsive_offset="off" 
+											data-responsive="off"
+											data-frames='[{"delay":290,"speed":1000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+											data-textAlign="['inherit','inherit','inherit','inherit']"
+											data-paddingtop="[0,0,0,0]"
+											data-paddingright="[0,0,0,0]"
+											data-paddingbottom="[0,0,0,0]"
+											data-paddingleft="[0,0,0,0]"
+
+											style="z-index: 10;background-color:rgb(0,0,0);"> </div>
+
+										<!-- LAYER NR. 7 -->
+										<div class="tp-caption   tp-svg-layer" 
+											id="slide-79-layer-52" 
+											data-x="['right','right','right','right']" data-hoffset="['70','70','45','35']" 
+											data-y="['top','top','top','top']" data-voffset="['40','40','35','25']" 
+														data-width="40"
+											data-height="40"
+											data-whitespace="nowrap"
+											data-visibility="['off','off','on','on']"
+								
+											data-type="svg" 
+											data-svg_src="<?= get_template_directory_uri()?>/assets/svg/navigation/ic_close_24px.svg" 
+											data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" 
+											data-basealign="slide" 
+											data-responsive_offset="off" 
+											data-responsive="off"
+											data-frames='[{"delay":"bytrigger","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"bytrigger","speed":150,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+											data-textAlign="['inherit','inherit','inherit','inherit']"
+											data-paddingtop="[0,0,0,0]"
+											data-paddingright="[0,0,0,0]"
+											data-paddingbottom="[0,0,0,0]"
+											data-paddingleft="[0,0,0,0]"
+											data-lasttriggerstate="reset"
+											style="z-index: 11; min-width: 40px; max-width: 40px; max-width: 40px; max-width: 40px; color: #000000;background-color:rgb(255,255,255);cursor:pointer;"> </div>
+
+										<?php 
+										// prepare layer actions
+											$layerActions = array();
+											foreach(wp_get_nav_menu_items(GlobalConfig::get("project_slug_name")."_menu") as $menu_item) {
+												array_push($layerActions, '{"event":"click","action":"togglelayer","layerstatus":"visible","layer":"slide-79-layer-mm-'.$menu_item->menu_order.'","delay":"50"}');
+											}
+										?>
+										<!-- LAYER NR. 8 -->
+										<div class="tp-caption tp-shape tp-shapewrapper   menutoggle" 
+											id="slide-79-layer-51" 
+											data-x="['right','right','right','right']" data-hoffset="['60','60','40','30']" 
+											data-y="['top','top','top','top']" data-voffset="['30','30','30','20']" 
+														data-width="['60','60','50','50']"
+											data-height="['60','60','50','50']"
+											data-whitespace="nowrap"
+											data-visibility="['off','off','on','on']"
+								
+											data-type="shape" 
+											data-actions='[
+												{"event":"click","action":"togglelayer","layerstatus":"visible","layer":"slide-79-layer-52","delay":""},<?= implode(",", $layerActions)?>
+												]' 
+											data-basealign="slide" 
+											data-responsive_offset="off" 
+											data-wrapper_class="menutoggle" 
+											data-responsive="off"
+											data-frames='[{"delay":10,"speed":1000,"frame":"0","from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+											data-textAlign="['inherit','inherit','inherit','inherit']"
+											data-paddingtop="[0,0,0,0]"
+											data-paddingright="[0,0,0,0]"
+											data-paddingbottom="[0,0,0,0]"
+											data-paddingleft="[0,0,0,0]"
+
+											style="z-index: 12;cursor:pointer;"> </div>
+
+										<!-- Menu Items -->
+				
+										<?php html5blank_nav_mobile(); ?>
 									<!-- LAYER NR. 12 -->
 									<div class="tp-caption tp-shape tp-shapewrapper " 
 										id="tp-menubg" 

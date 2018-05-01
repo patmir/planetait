@@ -29,7 +29,9 @@
 html {
 	font-size: 62.5%;
 }
-
+.force-overflow {
+	overflow: visible !important;
+}
 body {
 	font: 300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color: #444;
@@ -668,6 +670,13 @@ video::-webkit-media-controls-start-playback-button {
   
 [class^=col] div {
 	flex-grow: 1
+  }
+  .card .modal {
+	  
+    text-align: initial;
+    font-size: initial;
+    margin: initial;
+    padding: initial;
   }
   .card .modal-header {
 	  background: linear-gradient(rgb(193, 20, 55) 0%, rgb(146, 28, 121) 100%) !important;

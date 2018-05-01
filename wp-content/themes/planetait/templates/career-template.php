@@ -264,7 +264,7 @@ foreach($oferty as $oferta):
 									<span aria-hidden="true">&times;</span>
 									</button>
 								</div>
-								<div class="modal-body">
+								<div class="modal-body p-4">
 									<p><?= $oferta->post_content ?></p>
 								</div>
 							</div>
