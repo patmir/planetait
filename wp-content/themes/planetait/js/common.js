@@ -74,7 +74,7 @@ jQuery(this).css("margin", "0 auto");
 var setMenuFixed = function(){
 	var nav = jQuery("#nav_forcefullwidth");
 	nav.css("position","fixed");
-	nav.css("z-index","999999");
+	nav.css("z-index","999");
 	nav.css("top","0");
 	jQuery("body").css("padding-top", nav.outerHeight());
     console.log("SET MENU AS FIXED");

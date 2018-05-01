@@ -639,3 +639,46 @@ video::-webkit-media-controls-start-playback-button {
   border-radius: 100%;
 }
 .tp-select {user-select: text !important}
+
+
+.card {
+	font-family: "Ubuntu";
+	font-size: 1em;
+}
+.card-title {
+
+	font-size: 1.7em;
+	font-weight: 500;
+}
+.card-body > button {
+	font-size: 1.2em;
+	background: linear-gradient(rgb(193, 20, 55) 0%, rgb(146, 28, 121) 100%) !important;
+	border: none !important;
+}
+.card-body > button:focus {
+	box-shadow: 0 0 0 0.2rem rgba(146,28,121,0.5) !important;
+}
+.card-body > button:active:focus {
+	box-shadow: 0 0 0 0.2rem rgba(146,28,121,0.5) !important;
+}
+[class^=col] {
+	display: flex;
+	flex-direction: column;
+  }
+  
+[class^=col] div {
+	flex-grow: 1
+  }
+  .card .modal-header {
+	  background: linear-gradient(rgb(193, 20, 55) 0%, rgb(146, 28, 121) 100%) !important;
+	  color: #fff;
+	  text-align: center;
+  }
+  .card .modal-header > button {
+	  color: #fff;
+  }
+  .card .modal-title {
+	  font-size: 2em;
+	  font-weight: 500;
+	  color: #fff;
+  }

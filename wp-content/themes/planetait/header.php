@@ -69,7 +69,7 @@ function setREVStartSize(e){
 }();
 </script>
 	</head>
-	<body <?php body_class(); ?> style="margin: 0; padding: 0; background-color:  #edf1f4;"> 
+	<body <?php body_class(); ?> style="margin: 0; padding: 0; background-color:  #fff;"> 
 
         <div class="loadingoverlay-placeholder" style="box-sizing: border-box; position: fixed; display: flex; flex-flow: column nowrap; align-items: center; justify-content: space-around; background: rgb(42, 42, 42); top: 0px; left: 0px; width: 100%; height: 100%; z-index: 2147483647; opacity: 1;">
         </div>
