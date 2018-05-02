@@ -486,7 +486,7 @@ get_header();
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2100,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
 					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">Office
-						<br> tel.: +44 07548301948
+						<br> tel.: +44 07939968879
 						<br> info@programming-planetait.com </div>
 
 					<!-- LAYER NR. 8 -->
