@@ -257,7 +257,7 @@ get_header();
 						data-paddingright="[0,0,0,0]"
 						data-paddingbottom="[0,0,0,0]"
 						data-paddingleft="[0,0,0,0]"
-						style="z-index: 15; min-width: 600px; max-width: 600px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu; margin: 0 auto;"><div class="container-fluid" style="max-width: 960px;"><div class="row justify-content-center"><div class="col-sm"><?= do_shortcode('[contact-form-7 id="226" title="Form-PL"]')?></div></div></div></div>
+						style="z-index: 15; min-width: 600px; max-width: 600px; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu; margin: 0 auto;"><div class="container"><?= do_shortcode('[contact-form-7 id="226" title="Form-PL"]')?></div></div>
 					</li>
 				</ul>
 				<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>

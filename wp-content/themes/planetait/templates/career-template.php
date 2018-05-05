@@ -250,19 +250,20 @@ foreach($oferty as $oferta):
 	}
 	?>
 
-		<div class="col-md-4 cl-sm-6">
+		<div class="col-md-4 c0l-sm-6">
 			<div class="card text-center">
-				<div class="card-body p-5 d-flex flex-column">
-					<div class="card-title p-2 align-items-start"><?= $oferta->post_title;?></div>
-					<button type="button" class="btn btn-primary pl-3 pr-3 pt-2 pb-2 align-items-end" data-toggle="modal" data-target="#offer_<?=$count?>"><?= __("Details", "html5blank"); ?></button>
+				<div class="card-body">
+                   <div class="card-title p-2"><?= $oferta->post_title;?></div>
+                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#offer_<?=$count?>"><?= __("Details", "html5blank"); ?></button>					
+					
 					<div class="modal" tabindex="-1" role="dialog" id="offer_<?=$count?>">
 						<div class="modal-dialog modal-lg" role="document">
 							<div class="modal-content">
-								<div class="modal-header pl-4">
-									<h5 class="modal-title"><?= $oferta->post_title?></h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
-									</button>
+									</button>									
+									<h5 class="modal-title"><?= $oferta->post_title?></h5>
 								</div>
 								<div class="modal-body p-4">
 									<p><?= $oferta->post_content ?></p>

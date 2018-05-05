@@ -207,7 +207,7 @@ get_header();
                             data-type="row" 
                             data-columnbreak="1" 
                             data-responsive_offset="on" 
-                            data-responsive="off"
+                            data-responsive="on"
                             data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-margintop="[0,0,0,0]"
                             data-marginright="[0,0,0,0]"
@@ -231,7 +231,7 @@ get_header();
                     
                                 data-type="column" 
                                 data-responsive_offset="on" 
-                                data-responsive="off"
+                                data-responsive="on"
                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-columnwidth="100%"
                                 data-verticalalign="middle"
@@ -296,7 +296,7 @@ get_header();
                             data-type="row" 
                             data-columnbreak="1" 
                             data-responsive_offset="on" 
-                            data-responsive="off"
+                            data-responsive="on"
                             data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-margintop="[0,0,0,0]"
                             data-marginright="[0,0,0,0]"
@@ -320,7 +320,7 @@ get_header();
                     
                                 data-type="column" 
                                 data-responsive_offset="on" 
-                                data-responsive="off"
+                                data-responsive="on"
                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-columnwidth="100%"
                                 data-verticalalign="middle"
@@ -509,7 +509,7 @@ $projekty = get_posts(array(
 					<!-- LAYER NR. 8 -->
 					<div class="tp-caption tp-shape tp-shapewrapper tp-shape tp-shapewrapper " id="slide-<?=$num?>-layer-14" data-x="['center','center','center','center']"
 					 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full"
-					 data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off"
+					 data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="on"
 					 data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":700,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":1000,"to":"x:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 12;text-transform:left;background-color:rgba(255,255,255,1);">
@@ -517,7 +517,7 @@ $projekty = get_posts(array(
 
 					<!-- LAYER NR. 9 -->
 					<div class="tp-caption   tp-resizeme" id="slide-<?=$num?>-layer-15" data-x="['left','left','center','center']" data-hoffset="['-261','-50','0','0']"
-					 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','263','216']" data-width="none" data-height="none"
+					 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','263','216']" data-width="none" data-height="none" data-responsive="on"
 					 data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":700,"to":"x:left;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 13;text-transform:left;">
@@ -550,7 +550,7 @@ $projekty = get_posts(array(
 					<!-- LAYER NR. 13 -->
 				<!--	<div class="tp-caption ContentZoom-Button rev-btn " id="slide-<?=$num?>-layer-26" data-x="['left','left','center','center']" data-hoffset="['703','602','0','0']"
 					 data-y="['top','top','top','top']" data-voffset="['513','492','382','341']" data-width="none" data-height="none" data-whitespace="nowrap"
-					 data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(41,46,49,1);bc:rgba(41,46,49,1);bw:1px 1px 1px 1px;"}]'
+					 data-type="button" data-responsive_offset="on" data-responsive="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(41,46,49,1);bc:rgba(41,46,49,1);bw:1px 1px 1px 1px;"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[15,15,15,15]" data-paddingright="[50,50,50,50]" data-paddingbottom="[15,15,15,15]"
 					 data-paddingleft="[50,50,50,50]" data-lasttriggerstate="reset" style="z-index: 18; white-space: nowrap;text-transform:left;border-color:rgba(41,46,49,0.50);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">VISIT PROJECT </div>
 -->
@@ -567,7 +567,7 @@ $projekty = get_posts(array(
 						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-15","delay":"250"},
 						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-27","delay":"300"},
 						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-14","delay":"350"}]'
-					 data-basealign="slide" data-responsive_offset="off" data-responsive="off"
+					 data-basealign="slide" data-responsive_offset="off" data-responsive="on"
 					 data-frames='[
 						{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},
 						{"delay":"bytrigger","speed":700,"to":"opacity:0;","ease":"nothing"},
@@ -593,7 +593,7 @@ $projekty = get_posts(array(
                     {"event":"click","action":"togglelayer","layerstatus":"hidden","layer":"slider-59-layer-4","delay":"0"},
                     {"event":"click","action":"togglelayer","layerstatus":"hidden","layer":"slider-59-layer-5","delay":"0"},
                     {"event":"click","action":"togglelayer","layerstatus":"hidden","layer":"slider-59-layer-6","delay":"0"}]'
-				 data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0" data-endslide="2" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","ease":"nothing"}]'
+				 data-basealign="slide" data-responsive_offset="off" data-responsive="on" data-startslide="0" data-endslide="2" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","ease":"nothing"}]'
 				 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 				 data-paddingleft="[0,0,0,0]" style="z-index: 47; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);text-transform:left;">
 					<div id="rev-burger">

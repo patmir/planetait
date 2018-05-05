@@ -398,7 +398,11 @@ video::-webkit-media-controls-start-playback-button {
 #partnerzy-slider .MS-content .item { width: 35%; }
 }
 @media (max-width: 500px) {
-
+.tp-shadowbox {
+	box-shadow: unset !important;
+	-webkit-box-shadow: unset !important;
+	-moz-box-shadow: unset !important;
+}
 #partnerzy-slider .MS-content .item { width: 50%; }
 }
 
@@ -517,7 +521,6 @@ video::-webkit-media-controls-start-playback-button {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    text-align: center;
 }
 
 .custom-file-pl {
@@ -527,13 +530,6 @@ video::-webkit-media-controls-start-playback-button {
     height: calc(4rem + 2px);
 	margin-bottom: 0;	
     margin-top: 10px;
-}
-
-.input-group>.custom-file-pl {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
 }
 
 .custom-file-label-en::after {
@@ -568,7 +564,6 @@ video::-webkit-media-controls-start-playback-button {
     background-color: #fff;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    text-align: center;
 }
 
 .custom-file-en {
@@ -579,13 +574,9 @@ video::-webkit-media-controls-start-playback-button {
 	margin-bottom: 0;	
     margin-top: 10px;
 }
-
-.input-group>.custom-file-en {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-}
+ .tp-shadowbox {
+	-webkit-box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.75);-moz-box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.75);box-shadow:inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+ }
 .wpcf7-list-item-label {
 	
     font-size: 14px;
@@ -652,6 +643,9 @@ video::-webkit-media-controls-start-playback-button {
 	font-size: 1.7em;
 	font-weight: 500;
 }
+.card-body {
+	padding: 20px;
+}
 .card-body > button {
 	font-size: 1.2em;
 	background: linear-gradient(rgb(193, 20, 55) 0%, rgb(146, 28, 121) 100%) !important;
@@ -663,15 +657,10 @@ video::-webkit-media-controls-start-playback-button {
 .card-body > button:active:focus {
 	box-shadow: 0 0 0 0.2rem rgba(146,28,121,0.5) !important;
 }
-[class^=col] {
-	display: flex;
-	flex-direction: column;
-  }
-  
-[class^=col] div {
-	flex-grow: 1
-  }
-  .card .modal {
+.form-control-check > label {
+	white-space: normal;
+}
+.modal {
 	  
     text-align: initial;
     font-size: initial;
