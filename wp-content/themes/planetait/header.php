@@ -169,7 +169,7 @@ function setREVStartSize(e){
 												</div>
 										</div>
 									<!-- LAYER NR. 5 MENU -->
-									<div class="tp-caption  " 
+									<div class="tp-caption  menu-desktop" 
 										id="slide-30-layer-29" 
 										data-x="['left','left','left','left']"
 										data-hoffset="['100','100','100','100']" 

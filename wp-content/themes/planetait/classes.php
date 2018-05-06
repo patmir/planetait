@@ -14,7 +14,7 @@ class Project_MenuWalker extends Walker_Nav_Menu{
         $output .= 'href="'.$permalink.'" target="_self" id="slide-30-layer-'.$item->menu_order.'"';
         $output .= 'data-x="[\'left\',\'left\',\'left\',\'left\']" data-hoffset="[\'0\',\'0\',\'0\',\'0\']"';
         $output .= 'data-y="[\'top\',\'top\',\'top\',\'top\']" data-voffset="[\'0\',\'0\',\'0\',\'0\']"';
-        $output .= 'data-fontsize="[\'17\',\'17\',\'13\',\'15\']"';
+        $output .= 'data-fontsize="[\'16\',\'16\',\'16\',\'16\']"';
         //if($isLast === true){
             $output .= 'data-lineheight="[\'36\',\'36\',\'36\',\'36\']"';
         //}
@@ -86,8 +86,8 @@ class Project_MenuWalkerMobile extends Walker_Nav_Menu{
         $output .= 'href="'.$permalink.'" target="_self" id="slide-79-layer-mm-'.$item->menu_order.'"';
         $output .= 'data-x="[\'left\',\'left\',\'left\',\'left\']" data-hoffset="[\'0\',\'0\',\'0\',\'0\']"';
         $output .= 'data-y="[\'top\',\'top\',\'top\',\'top\']" data-voffset="[\''.(140+(40*$item->menu_order)).'\',\''.(140+(40*$item->menu_order)).'\',\''.(60+(40*$item->menu_order)).'\',\''.(60+(40*$item->menu_order)).'\']"'; // +40 +40 +40 +30
-        $output .= 'data-fontsize="[\'23\',\'23\',\'23\',\'20\']"';
-        $output .= 'data-lineheight="[\'23\',\'23\',\'23\',\'20\']"';
+        $output .= 'data-fontsize="[\'28\',\'28\',\'28\',\'28\']"';
+        $output .= 'data-lineheight="[\'42\',\'42\',\'42\',\'42\']"';
         $output .= 'data-width="[\'340\',\'340\',\'100%\',\'100%\']"';
         $output .= 'data-height="none"';
         $output .= 'data-whitespace="nowrap"';       

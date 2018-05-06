@@ -432,7 +432,11 @@ video::-webkit-media-controls-start-playback-button {
 		height: 80px
 	}
 }
-
+@media screen and (max-width:768px) {
+	.menu-desktop {
+		display: none !important;
+	}
+}
 .rev_slider .wpcf7 {
 	background: #fff;
 	padding: 0;

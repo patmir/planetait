@@ -34,8 +34,8 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                         <div class="tp-caption  " id="slide-109-layer-1" data-x="100" data-y="100" data-width="['auto']" data-height="['auto']" data-type="row"
                             data-columnbreak="3" data-responsive_offset="on" data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
-                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[40,0,0,0]" data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[20,0,0,0]" data-paddingright="[0,0,0,0]"
+                            data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 16px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
                             <!-- LAYER NR. 2 -->
                             <div class="tp-caption  " id="slide-109-layer-2" data-x="100" data-y="100" data-width="['auto']" data-height="['auto']" data-type="column"
                                 data-responsive_offset="on" data-frames='[{"delay":"+1000","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -64,33 +64,33 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                 <!-- LAYER NR. 5 -->
                                 <div class="tp-caption   tp-resizeme  tp-select tp-select" id="slide-109-layer-15" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
+                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[5,5,5,5]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 9; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Address", "html5blank")?> </div>
+                                    style="z-index: 9; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Address", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 6 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-16" data-x="5" data-y="5" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+300","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->AdresUlica ?>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; min-width: 259px; max-width: 259px; white-space: normal; font-size: 16px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->AdresUlica ?>
                                     <br><?= $decodedOptions->AdresMiasto?></div>
 
                                 <!-- LAYER NR. 7 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-17" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+600","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[14,14,14,14]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
+                                    data-margintop="[14,14,14,14]" data-marginright="[0,0,0,0]" data-marginbottom="[5,5,5,5]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 11; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Office", "html5blank")?> </div>
+                                    style="z-index: 11; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Office", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 8 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-18" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+900","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;text-decoration:none;a    color:#ffffff;"><?= $decodedOptions->BiuroTel ?>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; min-width: 259px; max-width: 259px; white-space: normal; font-size: 16px; line-height: 26px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;text-decoration:none;a    color:#ffffff;"><?= $decodedOptions->BiuroTel ?>
                                     <br><?= $decodedOptions->BiuroEmail ?></div>
                             </div>
 
@@ -104,32 +104,32 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                 <!-- LAYER NR. 10 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-19" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
+                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[5,5,5,5]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 14; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Support", "html5blank")?> </div>
+                                    style="z-index: 14; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Support", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 11 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-20" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+300","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->WsparcieEmail ?> </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 15; min-width: 259px; max-width: 259px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->WsparcieEmail ?> </div>
 
                                 <!-- LAYER NR. 12 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-21" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+600","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[44,44,44,44]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
+                                    data-margintop="[44,44,44,44]" data-marginright="[0,0,0,0]" data-marginbottom="[5,5,5,5]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 16; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Accountancy", "html5blank")?> </div>
+                                    style="z-index: 16; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Accountancy", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 13 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-22" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+890","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->KsiegowoscEmail ?></div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 17; min-width: 259px; max-width: 259px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->KsiegowoscEmail ?></div>
                             </div>
 
                             <!-- LAYER NR. 14 -->
@@ -142,32 +142,32 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                 <!-- LAYER NR. 15 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-23" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
+                                    data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[5,5,5,5]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 19; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("HR", "html5blank")?> </div>
+                                    style="z-index: 19; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("HR", "html5blank")?> </div>
 
                                 <!-- LAYER NR. 16 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-24" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+300","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->HREmail ?> </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 20; min-width: 259px; max-width: 259px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->HREmail ?> </div>
 
                              
                                 <!-- LAYER NR. 18 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-25" data-x="" data-y="" data-width="['auto']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+600","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[44,44,44,44]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
+                                    data-margintop="[44,44,44,44]" data-marginright="[0,0,0,0]" data-marginbottom="[5,5,5,5]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 21; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Business Development", "html5blank")?> </div>
+                                    style="z-index: 21; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=__("Business Development", "html5blank")?> </div>
                               <!-- LAYER NR. 17 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-26" data-x="" data-y="" data-width="['259']" data-height="['auto']"
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+900","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                                     data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 22; min-width: 259px; max-width: 259px; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->BDevEmail ?> </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 22; min-width: 259px; max-width: 259px; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;"><?= $decodedOptions->BDevEmail ?> </div>
 
                             </div>
                         </div>
@@ -177,7 +177,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                             data-type="row" data-columnbreak="3" data-responsive_offset="on" data-frames='[{"delay":5000,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[50,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 23; white-space: normal; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
+                            data-paddingbottom="[10,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 23; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
                             <!-- LAYER NR. 20 -->
                             <div class="tp-caption  " id="slide-109-layer-28" data-x="100" data-y="100" data-width="['auto']" data-height="['auto']"
                                 data-type="column" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":"+0","speed":300,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
@@ -188,7 +188,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                 <!-- LAYER NR. 21 -->
                                 <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme  tp-select" id="slide-109-layer-30" data-x="100" data-y="100" data-width="['full','full','full','full']"
                                     data-height="['1']" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+0","speed":1000,"frame":"0","from":"y:0px;z:-1000px;rX:90deg;rY:0deg;rZ:0deg;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-margintop="[14,14,14,14]" data-marginright="[0,0,0,0]" data-marginbottom="[14,14,14,14]"
+                                    data-margintop="[14,14,14,14]" data-marginright="[0,0,0,0]" data-marginbottom="[5,5,5,5]"
                                     data-marginleft="[0,0,0,0]" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                     style="z-index: 25; display: inline-block;background-color:rgb(255,255,255);border-color:rgb(255,255,255);border-style:solid;border-width:1px 1px 1px 1px;">
@@ -199,7 +199,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
                                     data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:-80px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="['auto','auto','auto','auto']" data-marginbottom="[0,0,0,0]" data-marginleft="['auto','auto','auto','auto']"
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 26; white-space: normal; font-size: 24px; line-height: 40px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;margin: 0 auto;">&copy; PLANETA.IT 2018 </div>
+                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 26; white-space: normal; font-size: 18px; line-height: 28px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;margin: 0 auto;">&copy; PLANETA.IT 2018 </div>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@ var scrollEnabled = false;
                         },
                         visibilityLevels: [1240, 1024, 778, 480],
                         gridwidth: 1240,
-                        gridheight: 280,
+                        gridheight: 240,
                         lazyType: "none",
                         shadow: 0,
                         spinner: "off",
