@@ -225,8 +225,6 @@ var scrollEnabled = false;
             if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoadfooter)
             else
                 onLoadfooter();
-
-	var templateUrl = "<?= get_template_directory_uri() ?>";
             function onLoadfooter() {
                 if (tpjfooter === undefined) {
                     tpjfooter = jQuery;
@@ -306,16 +304,25 @@ var scrollEnabled = false;
 
 
 <!-- analytics -->
-<script>
+<script>/*
 (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
 (f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
 l=i.getElementsByTagName(r)[0];h.async=1;h.src=e;l.parentNode.insertBefore(h,l)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-XXXXXXXX-XX', 'yourdomain.com');
-ga('send', 'pageview');
+ga('send', 'pageview');*/
 </script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 
+<script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/js/lib/overlay.js"></script>
+<script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.enablelog.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.tools.min.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/tp-color-picker.min.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/particles/js/revolution.addon.particles.min.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/whiteboard/js/revolution.addon.whiteboard.min.js'></script>
+<script type='text/javascript' src="<?= get_template_directory_uri()?>/js/lib/waypoints.js"></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/jquery.counterup.min.js'></script>
 <?php if (!isset($_GET['debug'])) : ?>
 <script>
 	 logger.disableLogger();
@@ -323,17 +330,17 @@ ga('send', 'pageview');
 </script>
 	<?php endif; ?>
 	<script>
-jQuery.LoadingOverlaySetup({
-	background      : "rgba(42, 42, 42, 1)",
-	textColor : "#ffffff",
-	fontawesomeColor : "#ffffff",
-    imageColor: "#ffffff",
-    progressColor: "#ffffff",
-    progress: true
-});
+            jQuery.LoadingOverlaySetup({
+                background      : "rgba(42, 42, 42, 1)",
+                textColor : "#ffffff",
+                fontawesomeColor : "#ffffff",
+                imageColor: "#ffffff",
+                progressColor: "#ffffff",
+                progress: true
+            });
 
-var loadedRevs = 0;
-jQuery.LoadingOverlay("show");
+            var loadedRevs = 0;
+            jQuery.LoadingOverlay("show");
 jQuery(document).ready(function(){
 
 var totalRevs = jQuery(".rev_slider_wrapper").length;
@@ -374,7 +381,7 @@ var adjustMenu = function(){
 jQuery(window).on("scroll", setMenuFixed);
 jQuery(window).on("resize", adjustMenu);
         </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="<?= get_template_directory_uri()?>/js/lib/popper.js"</script>
+<script src="<?= get_template_directory_uri()?>/js/lib/bootstrap.js" defer></script>
 	</body>
 </html>

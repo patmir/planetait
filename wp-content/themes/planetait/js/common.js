@@ -1,4 +1,3 @@
-var templateUrl = global_object.templateUrl;
 var revapi20,tpj;
 (function () {
 	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded", onLoadHead)

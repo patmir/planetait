@@ -17,8 +17,8 @@ $numRows = ceil(sizeof($co_robimy) / 3);
         <div id="rev_slider_41_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7">
             <ul>
                 <!-- SLIDE  -->
-                <li data-index="rs-58" data-transition="fade" data-slotamount="default" data-delay="100" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
+                <li data-index="rs-58" data-transition="fade" data-slotamount="default" data-delay="10" data-hideafterloop="0" data-hideslideonmobile="off"
+                    data-easein="default" data-easeout="default" data-masterspeed="3000" data-rotate="0" data-saveperformance="off"
                     data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
                     data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
@@ -181,7 +181,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-columnbreak="1" 
                                     data-responsive_offset="on" 
                                     data-responsive="off"
-                                    data-frames='[{"delay":"2000","speed":300,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-frames='[{"delay":"+2000","speed":300,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]"
                                     data-marginright="[0,0,0,0]"
                                     data-marginbottom="[0,0,0,0]"
@@ -211,7 +211,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                         data-type="column" 
                                         data-responsive_offset="on" 
                                         data-responsive="off"
-                                        data-frames='[{"delay":"+100","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                        data-frames='[{"delay":"+1000","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                         data-columnwidth="33.33%"
                                         data-verticalalign="top"
                                         data-margintop="[5,5,5,5]"
@@ -364,12 +364,6 @@ $numRows = ceil(sizeof($co_robimy) / 3);
 						delay:100,
 						navigation: {
 							onHoverStop:"off",
-						},
-						viewPort: {
-							enable:true,
-							outof:"wait",
-							visible_area:"80%",
-							presize:false
 						},
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],

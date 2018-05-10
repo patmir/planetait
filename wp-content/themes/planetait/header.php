@@ -8,65 +8,83 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?><?php if (wp_title('', false)) {
-																															echo ' :';
-																														} ?> <?php bloginfo('name'); ?></title>
-
+		<title><?php wp_title(''); ?><?php if (wp_title('', false)) {echo ' :';} ?> <?php bloginfo('name'); ?></title>
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
+		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/lib/overlay.js" as="script">
+		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/jquery/jquery.js" as="script">
+		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/jquery/jquery-migrate.min.js" as="script">
+		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.revolution.min.js" as="script">
+		   <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/lib/fonts/Gloria_Hallelujah/gloria.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		   <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/lib/fonts/Ubuntu/Ubuntu-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+		   <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/lib/fonts/Ubuntu/Ubuntu-Bold.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+
+<!-- External Styling -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lib/normalize.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lib/fonts/font-awesome/css/font-awesome-leg.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lib/fonts/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lib/revolution/settings.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lib/revolution/layers.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lib/revolution/navigation.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/typewriter/css/typewriter.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/particles/css/revolution.addon.particles.css">
+<!-- INLINE SCRIPT-->
+
+<script type="text/javascript">
+
+
+var templateUrl = "<?= get_template_directory_uri() ?>";
+</script>
+<!-- EXTERNAL SCRIPTS -->
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/modernizr-2.7.1.min.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/scripts.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/common.js'></script>
+<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/frontpage_script.js'></script>
+<!-- INLINE SCRIPTS -->
+<script type="text/javascript">
+	function setREVStartSize(e){
+				document.addEventListener("DOMContentLoaded", function() {
+					try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+						if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})                    
+					}catch(d){console.log("Failure at Presize of Slider:"+d)}
+				});
+
+			};</script>
+			<script>
+			var logger = function()
+	{
+		var oldConsoleLog = null;
+		var pub = {};
+
+		pub.enableLogger =  function enableLogger()  
+							{
+								if(oldConsoleLog == null)
+									return;
+
+								window['console']['log'] = oldConsoleLog;
+							};
+
+		pub.disableLogger = function disableLogger()
+							{
+								oldConsoleLog = console.log;
+								window['console']['log'] = function() {};
+							};
+
+		return pub;
+	}();
+</script>
+<!-- OTHER -->
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
-		<link href="http://fonts.googleapis.com/css?family=Lato%3A700%2C400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-		<link href="http://fonts.googleapis.com/css?family=Roboto%3A700%2C300" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
-		<link href="http://fonts.googleapis.com/css?family=Poppins:700%2C400%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
-		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&amp;subset=latin-ext" rel="stylesheet" property="stylesheet" type="text/css" media="all">
-		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet" media="all">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
-
 		<?php wp_head(); ?>
-		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
-<script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.0/dist/loadingoverlay.min.js"></script>
-<script type="text/javascript">
-function setREVStartSize(e){
-			document.addEventListener("DOMContentLoaded", function() {
-				try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
-					if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})                    
-				}catch(d){console.log("Failure at Presize of Slider:"+d)}
-			});
+		
 
-		};</script>
-		<script>
-		var logger = function()
-{
-    var oldConsoleLog = null;
-    var pub = {};
-
-    pub.enableLogger =  function enableLogger()  
-                        {
-                            if(oldConsoleLog == null)
-                                return;
-
-                            window['console']['log'] = oldConsoleLog;
-                        };
-
-    pub.disableLogger = function disableLogger()
-                        {
-                            oldConsoleLog = console.log;
-                            window['console']['log'] = function() {};
-                        };
-
-    return pub;
-}();
-</script>
 	</head>
 	<body <?php body_class(); ?> style="margin: 0; padding: 0; background-color:  #fff;"> 
 
