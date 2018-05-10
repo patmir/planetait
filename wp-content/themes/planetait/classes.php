@@ -86,8 +86,8 @@ class Project_MenuWalkerMobile extends Walker_Nav_Menu{
         $output .= 'href="'.$permalink.'" target="_self" id="slide-79-layer-mm-'.$item->menu_order.'"';
         $output .= 'data-x="[\'left\',\'left\',\'left\',\'left\']" data-hoffset="[\'0\',\'0\',\'0\',\'0\']"';
         $output .= 'data-y="[\'top\',\'top\',\'top\',\'top\']" data-voffset="[\''.(140+(40*$item->menu_order)).'\',\''.(140+(40*$item->menu_order)).'\',\''.(60+(40*$item->menu_order)).'\',\''.(60+(40*$item->menu_order)).'\']"'; // +40 +40 +40 +30
-        $output .= 'data-fontsize="[\'28\',\'28\',\'28\',\'28\']"';
-        $output .= 'data-lineheight="[\'42\',\'42\',\'42\',\'42\']"';
+        $output .= 'data-fontsize="[\'24\',\'24\',\'24\',\'24\']"';
+        $output .= 'data-lineheight="[\'32\',\'32\',\'23\',\'32\']"';
         $output .= 'data-width="[\'340\',\'340\',\'100%\',\'100%\']"';
         $output .= 'data-height="none"';
         $output .= 'data-whitespace="nowrap"';       
@@ -107,7 +107,7 @@ class Project_MenuWalkerMobile extends Walker_Nav_Menu{
         $output .= 'data-paddingleft="[10,10,10,10]"';   
         $output .= 'data-basealign="slide"';  
         $output .= 'data-lasttriggerstate="reset" ';          
-        $output .= 'style="z-index: '.(10+$item->menu_order).'; min-width: 340px; max-width: 340px; white-space: nowrap; font-size: 23px; line-height: 32px; font-weight: 600; color: #000000; letter-spacing: 0px;font-family:Source Sans Pro;cursor:pointer;text-decoration: none; background: #fff';
+        $output .= 'style="z-index: '.(10+$item->menu_order).'; min-width: 340px; max-width: 340px; white-space: nowrap; font-size: 24px; line-height: 32px; font-weight: 600; color: #000000; letter-spacing: 0px;font-family:Source Sans Pro;cursor:pointer;text-decoration: none; background: #fff';
         $output .= '">';   
         $output .= $title;
         $output .= "</a>";      
