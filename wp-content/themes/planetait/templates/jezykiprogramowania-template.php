@@ -69,7 +69,7 @@ $numRows = ceil(sizeof($jezyki) / 6);
                                     data-paddingright="[20,20,20,20]"
                                     data-paddingbottom="[20,20,20,20]"
                                     data-paddingleft="[20,20,20,20]"
-                                    style="z-index: 7; white-space: normal; font-size: 36px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=mb_strtoupper($section->post_title)?> </div>
+                                    style="z-index: 7; white-space: normal; font-size: 36px; line-height: 44px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=mb_strtoupper($section->post_title)?> </div>
 
                                 <!-- LAYER NR. 4 -->
                                 <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-64-layer-6" data-x="['center','center','center','center']"

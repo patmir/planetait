@@ -177,7 +177,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-111-layer-15" data-x="700" data-y="26" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":1200,"speed":300,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu;">PLANETA IT Radom
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu;">PLANETA IT Radom
 						<br> Kalińska 3
 						<br> 26-600 Radom </div>
 
@@ -185,7 +185,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-111-layer-16" data-x="500" data-y="106" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2100,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Office", "html5blank")?>
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Office", "html5blank")?>
 						<br> tel.: +48 796 520 220
 						<br> info@planetait.eu </div>
 
@@ -193,7 +193,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-111-layer-17" data-x="500" data-y="182" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2400,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Support", "html5blank")?> :
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Support", "html5blank")?> :
 						<br> <?=__("Accountancy", "html5blank")?>:
 						<br> <?=__("HR", "html5blank")?>:
 						<br> <?=__("Business Development", "html5blank")?>: </div>
@@ -202,7 +202,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-111-layer-18" data-x="700" data-y="182" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":3000,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">support@planetait.eu
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">support@planetait.eu
 						<br> ksiegowosc@planetait.eu
 						<br> hr@planetait.eu
 						<br> business@planetait.eu </div>
@@ -212,7 +212,7 @@ get_template_part("content", "head");
 					 data-type="button" data-actions='[{"event":"click","action":"startlayer","layer":"slide-111-layer-20","delay":"100"},{"event":"click","action":"startlayer","layer":"slide-111-layer-21","delay":"1000"}]'
 					 data-responsive_offset="on" data-responsive="on" data-frames='[{"delay":3400,"speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(255,255,255);bg:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);bs:solid;bw:0 0 0 0;"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[10,10,10,10]" data-paddingright="[30,30,30,30]"
-					 data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 14; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Ubuntu;background:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
+					 data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 14; white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Ubuntu;background:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
 					 <?= __("Write to us", "html5blank");?></div>
 
 					<!-- LAYER NR. 11 -->
@@ -281,7 +281,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-chicago-111-layer-15" data-x="700" data-y="26" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":1200,"speed":300,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu;">PROGRAMMING PLANET IT Dunlap
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu;">PROGRAMMING PLANET IT Dunlap
 						<br> 2002 W Miners Dr
 						<br> Dunlap, IL </div>
 
@@ -289,7 +289,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-chicago-111-layer-16" data-x="500" data-y="106" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2100,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Office", "html5blank")?>
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Office", "html5blank")?>
 						<br> tel.: 1-847-630-2994
 						<br> info@programming-planetait.com </div>
 
@@ -297,7 +297,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-chicago-111-layer-17" data-x="500" data-y="182" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2400,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Support", "html5blank")?>:
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Support", "html5blank")?>:
 						<br> <?=__("Accountancy", "html5blank")?>:
 						<br> <?=__("HR", "html5blank")?>:
 						<br> <?=__("Business Development", "html5blank")?>: </div>
@@ -306,7 +306,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-chicago-111-layer-18" data-x="700" data-y="182" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":3000,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">support@programming-planetait.com
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">support@programming-planetait.com
 						<br> accountancy@programming-planetait.com
 						<br> hr@programming-planetait.com
 						<br> business@programming-planetait.com </div>
@@ -316,7 +316,7 @@ get_template_part("content", "head");
 					 data-type="button" data-actions='[{"event":"click","action":"startlayer","layer":"slide-chicago-111-layer-20","delay":"100"},{"event":"click","action":"startlayer","layer":"slide-chicago-111-layer-21","delay":"1000"}]'
 					 data-responsive_offset="on" data-responsive="on" data-frames='[{"delay":3400,"speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(255,255,255);bg:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);bs:solid;bw:0 0 0 0;"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[10,10,10,10]" data-paddingright="[30,30,30,30]"
-					 data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 14; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Ubuntu;background:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><?= __("Write to us", "html5blank");?></div>
+					 data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 14; white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Ubuntu;background:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><?= __("Write to us", "html5blank");?></div>
 
 					<!-- LAYER NR. 11 -->
 					<div class="tp-caption  tp-select  " id="slide-chicago-111-layer-21" data-x="0" data-y="352" data-width="['960','960','778','480']" data-height="['auto']" data-type="text"
@@ -384,7 +384,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-london-111-layer-15" data-x="700" data-y="26" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":1200,"speed":300,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu;">PROGRAMMING PLANET IT Dunlap
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 400; color: #4d4b4b; letter-spacing: 0px;font-family:Ubuntu;">PROGRAMMING PLANET IT Dunlap
 						<br> 1 Great Auger St
 						<br> Harlow CM17 9HW </div>
 
@@ -392,7 +392,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-london-111-layer-16" data-x="500" data-y="106" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2100,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Office", "html5blank")?>
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Office", "html5blank")?>
 						<br> tel.: +44 07939968879
 						<br> info@programming-planetait.uk </div>
 
@@ -400,7 +400,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-london-111-layer-17" data-x="500" data-y="182" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":2400,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Support", "html5blank")?>:
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;"><?=__("Support", "html5blank")?>:
 						<br> <?=__("Accountancy", "html5blank")?>:
 						<br> <?=__("HR", "html5blank")?>:
 						<br> <?=__("Business Development", "html5blank")?>: </div>
@@ -409,7 +409,7 @@ get_template_part("content", "head");
 					<div class="tp-caption  tp-select   tp-resizeme" id="slide-london-111-layer-18" data-x="700" data-y="182" data-width="['auto']" data-height="['auto']"
 					 data-type="text" data-responsive_offset="on" data-frames='[{"delay":3000,"split":"lines","splitdelay":0.2,"speed":2000,"split_direction":"forward","frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 14px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">support@programming-planetait.uk
+					 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13; white-space: nowrap; font-size: 13px; line-height: 20px; font-weight: 500; color: #0a0a0a; letter-spacing: 0px;font-family:Ubuntu;">support@programming-planetait.uk
 						<br> accountancy@programming-planetait.uk
 						<br> hr@programming-planetait.uk
 						<br> business@programming-planetait.uk </div>
@@ -419,7 +419,7 @@ get_template_part("content", "head");
 					 data-type="button" data-actions='[{"event":"click","action":"startlayer","layer":"slide-london-111-layer-20","delay":"100"},{"event":"click","action":"startlayer","layer":"slide-london-111-layer-21","delay":"1000"}]'
 					 data-responsive_offset="on" data-responsive="on" data-frames='[{"delay":3400,"speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgb(255,255,255);bg:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);bs:solid;bw:0 0 0 0;"}]'
 					 data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[10,10,10,10]" data-paddingright="[30,30,30,30]"
-					 data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 14; white-space: nowrap; font-size: 14px; line-height: 14px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Ubuntu;background:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><?= __("Write to us", "html5blank");?> </div>
+					 data-paddingbottom="[10,10,10,10]" data-paddingleft="[30,30,30,30]" style="z-index: 14; white-space: nowrap; font-size: 13px; line-height: 13px; font-weight: 500; color: rgba(255,255,255,1); letter-spacing: px;font-family:Ubuntu;background:linear-gradient(180deg, rgba(193,20,55,1) 0%, rgba(146,28,121,1) 100%);border-color:rgba(0,0,0,1);border-radius:3px 3px 3px 3px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;"><?= __("Write to us", "html5blank");?> </div>
 
 					<!-- LAYER NR. 11 -->
 					<div class="tp-caption  tp-select  " id="slide-london-111-layer-21"

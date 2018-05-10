@@ -107,7 +107,7 @@ class Project_MenuWalkerMobile extends Walker_Nav_Menu{
         $output .= 'data-paddingleft="[10,10,10,10]"';   
         $output .= 'data-basealign="slide"';  
         $output .= 'data-lasttriggerstate="reset" ';          
-        $output .= 'style="z-index: '.(10+$item->menu_order).'; min-width: 340px; max-width: 340px; white-space: nowrap; font-size: 23px; line-height: 23px; font-weight: 600; color: #000000; letter-spacing: 0px;font-family:Source Sans Pro;cursor:pointer;text-decoration: none; background: #fff';
+        $output .= 'style="z-index: '.(10+$item->menu_order).'; min-width: 340px; max-width: 340px; white-space: nowrap; font-size: 23px; line-height: 32px; font-weight: 600; color: #000000; letter-spacing: 0px;font-family:Source Sans Pro;cursor:pointer;text-decoration: none; background: #fff';
         $output .= '">';   
         $output .= $title;
         $output .= "</a>";      
