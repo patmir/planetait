@@ -50,6 +50,7 @@
 						visibilityLevels:[1240,1024,778,480],
 						gridwidth:[1240,1024,778,480],
 						gridheight:[1024,768,720,720],
+						lazyLoad: "off",
 						lazyType:"none",
 						shadow:0,
 						spinner:"spinner3",

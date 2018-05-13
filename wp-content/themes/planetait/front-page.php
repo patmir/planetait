@@ -22,11 +22,15 @@ $slide = json_decode($slides)[0];
 			<ul>
 				<li data-index="rs-57" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="3000"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 					<img 
-					srcset="<?= get_template_directory_uri()?>/img/vid_main_bg.jpg 1080w,
-							<?= get_template_directory_uri()?>/img/vid_main_bg@768.jpg 768w,
-							<?= get_template_directory_uri()?>/img/vid_main_bg@420.jpg 480w,
-							<?= get_template_directory_uri()?>/img/vid_main_bg@320.jpg 320w"
-					src="<?= get_template_directory_uri()?>/img/vid_main_bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
+					srcset="<?= get_template_directory_uri()?>/img/vid_main_bg-1080w.jpg 1080w,
+							<?= get_template_directory_uri()?>/img/vid_main_bg-768w.jpg 768w,
+							<?= get_template_directory_uri()?>/img/vid_main_bg-420w.jpg 480w,
+							<?= get_template_directory_uri()?>/img/vid_main_bg-320w.jpg 320w"
+					sizes="(max-width: 320px) 320px,
+					(max-width: 480px) 480px,
+					(max-width: 768px) 768px,
+					1080px"
+					src="<?= get_template_directory_uri()?>/img/vid_main_bg-1080w.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
 					<div class="rs-background-video-layer" 
 						data-forcerewind="on" 
 						data-volume="mute" 
