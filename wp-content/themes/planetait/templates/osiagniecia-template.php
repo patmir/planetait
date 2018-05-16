@@ -13,15 +13,6 @@ $sectionData = explode("*",$section->post_content);
 <div id="rev_slider_45_1_wrapper" class="rev_slider_wrapper" data-alias="blendmodeheader36" data-source="gallery" style="background:#fff;padding:0px;">
 	<div id="rev_slider_45_1" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
 		<ul>
-		<li data-index="rs-62" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
-                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri()?>/assets/images/transparent.png" data-bgcolor='#fff' style='background:#fff' alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                </li>
 			<!-- SLIDE  -->
 			<li data-index="rs-63" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="100"  data-delay="100"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 				<!-- MAIN IMAGE -->
@@ -190,16 +181,16 @@ $sectionData = explode("*",$section->post_content);
 						visibilityLevels:[1240,1024,778,480],
 						gridwidth:[1240,1024,778,480],
 						gridheight:[180,180,180,180],
-						lazyType:"single",
-						
-						navigation: {
-							onHoverStop:"off",
-						},
-						shadow:1,
+						lazyType:"off",
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:true
+						},						
+						navigation: {},
+						shadow:0,
 						spinner:"off",
-						stopLoop:"on",
-						stopAfterLoops:0,
-						stopAtSlide:1,
 						disableProgressBar:"on",
 						hideThumbsOnMobile:"off",
 						hideSliderAtLimit:0,
@@ -214,37 +205,14 @@ $sectionData = explode("*",$section->post_content);
 						
 					});
 					tpjo(revapi45).one('revolution.slide.onloaded', function() {
-						jQuery(window).scroll(function(){osiagnieciaScroll()});
+						jQuery(".counter").each(function(){
+								jQuery(this).html(jQuery(this).data("no"));
+							});
+							console.log("STARTING - COUNTERS");
+							jQuery("#rev_slider_45_1 .counter").counterUp({delay: 15, time: 1500});
 
 					});
     }; /* END OF revapi call */
      }; /* END OF ON LOAD FUNCTION */
 }()); /* END OF WRAPPING FUNCTION */
-		var OsiagnieciaStarted = false;
-		var caction = false;
-		var osiagnieciaScroll = function() {
-			var top_of_element = jQuery("#rev_slider_45_1").offset().top;
-			var bottom_of_element = jQuery("#rev_slider_45_1").offset().top + jQuery("#rev_slider_45_1").outerHeight();
-			var bottom_of_screen = jQuery(window).scrollTop() + window.innerHeight;
-			var top_of_screen = jQuery(window).scrollTop();
-
-				if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !OsiagnieciaStarted){
-					// The element is visible, do something
-					console.log("STARTING - O"); 				
-					revapi45.revnext();
-					OsiagnieciaStarted = true;
-					tpjo(revapi45).off("revolution.slide.layeraction").on('revolution.slide.onchange', function(e,d) {
-						
-						if(jQuery(d.currentslide).data('index') == 'rs-63'){
-							caction = true;
-							jQuery(".counter").each(function(){
-								jQuery(this).html(jQuery(this).data("no"));
-							});
-							console.log("STARTING - COUNTERS");
-							jQuery("#rev_slider_45_1 .counter").counterUp({delay: 15, time: 1500});
-						}
-
-					});
-				}
-		};
 		</script>
