@@ -21,10 +21,16 @@
 						sliderLayout:"fullscreen",
 						dottedOverlay:"none",
 						fullScreenOffsetContainer: "#nav",
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:true
+						},
 						delay:9000,
 						particles: {startSlide: "first", endSlide: "last", zIndex: "1",
 							particles: {
-								number: {value: 110}, color: {value: "#bd1664"},
+								number: {value: 40}, color: {value: "#bd1664"},
 								shape: {
 									type: "triangle", stroke: {width: 1, color: "#f77e4f", opacity: 1},
 									image: {src: ""}
@@ -38,12 +44,15 @@
 								modes: {grab: {distance: 400, line_linked: {opacity: 0.5}}, bubble: {distance: 320, size: 25, opacity: 0.4}, repulse: {distance: 200}}
 							}
 						},
-                        viewPort: {
-                            enable: true,
-                            outof: 'wait',
-                            visible_area: '80%',
-                            presize: true
-                        },
+						parallax: {
+							type:"scroll",
+							origo:"slidercenter",
+							speed:400,
+							speedbg:0,
+							speedls:0,
+							levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,55],
+						},
+						shadow:0,
 						navigation: {
 						},
 						responsiveLevels:[1240,1024,778,480],
@@ -54,7 +63,7 @@
 						lazyType:"none",
 						shadow:0,
 						spinner:"spinner3",
-						autoHeight:"on",
+						autoHeight:"off",
 						fullScreenAutoWidth:"off",
 						fullScreenAlignForce:"off",
 						disableProgressBar:"on",

@@ -7,23 +7,17 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
 <div id="rs-footer-footer_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="stopka" data-source="gallery"
         style="margin:0px;background:#2a2a2a;padding:0px;margin-top:0px;margin-bottom:0px;">
         <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-        <div id="rs-footer-footer" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
+        <div id="rs-footer-footer" class="rev_slider fullwidthabanner" style="display:none;"
+             data-version="5.4.7">
             <ul>
                 <!-- SLIDE  -->
-                <li data-index="rs-footer-108" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
-                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                </li>
-                <!-- SLIDE  -->
-                <li data-index="rs-footer-109" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
-                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                <li data-index="rs-footer-109" data-transition="fade" data-slotamount="default"
+                    data-hideafterloop="0" data-hideslideonmobile="off"
+                    data-easein="default" data-easeout="default" data-masterspeed="300"
+                    data-rotate="0" data-saveperformance="off"data-title="Slide"
+                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
+                    data-param6="" data-param7="" data-param8="" data-param9="" data-param10=""
+                    data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='#2a2a2a' style='background:#2a2a2a' alt="" data-bgposition="center center"
                         data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
@@ -196,7 +190,7 @@ $decodedOptions = json_decode($options["project_settings_tresc_stopka_dane"])[0]
 
                                 <!-- LAYER NR. 22 -->
                                 <div class="tp-caption   tp-resizeme  tp-select" id="slide-109-layer-31" data-x="" data-y="" data-width="['100%']" data-height="['auto']"
-                                    data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:-80px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                    data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+500","speed":1000,"frame":"0","from":"y:-80px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]" data-marginright="['auto','auto','auto','auto']" data-marginbottom="[0,0,0,0]" data-marginleft="['auto','auto','auto','auto']"
                                     data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 26; white-space: normal; font-size: 18px; line-height: 28px; font-weight: 300; color: #ffffff; letter-spacing: 0px; display: inline-block;font-family:Ubuntu;margin: 0 auto;">&copy; PLANETA.IT 2018 </div>
@@ -243,15 +237,18 @@ var scrollEnabled = false;
                         navigation: {
                             onHoverStop: "off",
                         },
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:true
+						},
                         visibilityLevels: [1240, 1024, 778, 480],
                         gridwidth: 1240,
                         gridheight: 240,
                         lazyType: "none",
                         shadow: 0,
                         spinner: "off",
-                        stopLoop: "on",
-                        stopAfterLoops: 0,
-                        stopAtSlide: 1,
                         shuffle: "off",
                         autoHeight: "off",
                         disableProgressBar: "on",
@@ -266,7 +263,7 @@ var scrollEnabled = false;
                             disableFocusListener: false,
                         }
                     });
-                    tpjfooter(revapifooter).on('revolution.slide.onloaded', function() {
+                 /*   tpjfooter(revapifooter).on('revolution.slide.onloaded', function() {
                         
                         if(jQuery("#rs-footer-footer").offset().top < jQuery(window).scrollTop() + window.innerHeight) { // el visible witholut scrolling
                             console.log("Footer already visible")
@@ -277,11 +274,11 @@ var scrollEnabled = false;
                             jQuery(window).scroll(function(){onScrollfooter()});
                         }
 
-					});
+					});*/
                 }; /* END OF revapi call */
             }; /* END OF ON LOAD FUNCTION */
 		}()); /* END OF WRAPPING FUNCTION */
-		var onStartedfooter = false;
+	/*	var onStartedfooter = false;
 		var onScrollfooter = function() {
             if(scrollEnabled){
 			var top_of_element = jQuery("#rs-footer-footer").offset().top;
@@ -290,13 +287,12 @@ var scrollEnabled = false;
 			var top_of_screen = jQuery(window).scrollTop();
 
 				if((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !onStartedfooter){
-					// The element is visible, do something
 					console.log("STARTING - FOOTER"); 				
 					revapifooter.revnext();
 					onStartedfooter = true;
 				}
             }
-		};
+        };*/
 
     </script>
 

@@ -16,16 +16,6 @@ $numRows = ceil(sizeof($co_robimy) / 3);
     <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
         <div id="rev_slider_41_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.7">
             <ul>
-                <!-- SLIDE  -->
-                <li data-index="rs-58" data-transition="fade" data-slotamount="default" data-delay="10" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="3000" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
-                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff' alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                </li>
                 <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="100" data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                     <!-- MAIN IMAGE -->
                     <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png"  data-bgcolor='#ffffff' style='background:#ffffff' alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
@@ -45,7 +35,9 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                             data-columnbreak="1" 
                             data-responsive_offset="on" 
                             data-responsive="off"
-                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-frames='[
+                                {"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-margintop="[0,0,0,0]"
                             data-marginright="[0,0,0,0]"
                             data-marginbottom="[0,0,0,0]"
@@ -69,7 +61,9 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                 data-type="column" 
                                 data-responsive_offset="on" 
                                 data-responsive="off"
-                                data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                data-frames='[
+                                    {"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},
+                                    {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-columnwidth="100%"
                                 data-verticalalign="middle"
                                 data-margintop="[0,0,0,0]"
@@ -94,7 +88,9 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-type="text" 
                                     data-responsive_offset="on" 
 
-                                    data-frames='[{"delay":"+100","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                    data-frames='[
+                                        {"delay":"+490","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},
+                                        {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]"
                                     data-marginright="[0,0,0,0]"
                                     data-marginbottom="[0,0,0,0]"
@@ -121,7 +117,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-basealign="slide" 
                                     data-responsive_offset="on" 
 
-                                    data-frames='[{"delay":"+1490","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                    data-frames='[{"delay":"+690","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]"
                                     data-marginright="[0,0,0,0]"
                                     data-marginbottom="[0,0,0,0]"
@@ -147,7 +143,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-type="shape" 
                                     data-responsive_offset="on" 
 
-                                    data-frames='[{"delay":"+1990","speed":2000,"frame":"0","from":"rY:90deg;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-frames='[{"delay":"+890","speed":1000,"frame":"0","from":"rY:90deg;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]"
                                     data-marginright="['auto','auto','auto','auto']"
                                     data-marginbottom="[0,0,0,0]"
@@ -181,7 +177,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                     data-columnbreak="1" 
                                     data-responsive_offset="on" 
                                     data-responsive="off"
-                                    data-frames='[{"delay":"+2000","speed":300,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                                    data-frames='[{"delay":"+0","speed":1000,"frame":"0","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                     data-margintop="[0,0,0,0]"
                                     data-marginright="[0,0,0,0]"
                                     data-marginbottom="[0,0,0,0]"
@@ -211,7 +207,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                         data-type="column" 
                                         data-responsive_offset="on" 
                                         data-responsive="off"
-                                        data-frames='[{"delay":"+1000","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                        data-frames='[{"delay":"+<?=1090+($currIndex*200)?>","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                         data-columnwidth="33.33%"
                                         data-verticalalign="top"
                                         data-margintop="[5,5,5,5]"
@@ -238,7 +234,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                                 data-whitespace="normal"                                
                                                 data-type="image" 
                                                 data-responsive_offset="on" 
-                                                data-frames='[{"delay":"<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:0px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:1;fb:0;","ease":"Power3.easeInOut"}]'
+                                                data-frames='[{"delay":"<?=490+($currIndex*200)?>","speed":1000,"frame":"0","from":"y:0px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:1;fb:0;","ease":"Power3.easeInOut"}]'
                                                 data-margintop="[0,0,0,0]"
                                                 data-marginright="[0,0,0,0]"
                                                 data-marginbottom="[0,0,0,0]"
@@ -261,7 +257,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-type="text" 
                                             data-basealign="slide" 
                                             data-responsive_offset="on" 
-                                            data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                            data-frames='[{"delay":"+<?=490+($currIndex*200)?>","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                             data-margintop="[0,0,0,0]"
                                             data-marginright="[0,0,0,0]"
                                             data-marginbottom="[0,0,0,0]"
@@ -286,7 +282,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                                             data-type="text" 
                                             data-basealign="slide" 
                                             data-responsive_offset="on" 
-                                            data-frames='[{"delay":"+<?= 500 * ($currIndex + 2) ?>","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+                                            data-frames='[{"delay":"+<?=490+($currIndex*200)?>","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
                                             data-margintop="[0,0,0,0]"
                                             data-marginright="[15,15,15,15]"
                                             data-marginbottom="[10,10,10,10]"
@@ -357,11 +353,11 @@ $numRows = ceil(sizeof($co_robimy) / 3);
 					revslider_showDoubleJqueryError("#rev_slider_41_1");
 				}else{
 					revapi41 = tpjc("#rev_slider_41_1").show().revolution({
-						sliderType:"standard",
+						sliderType:"hero",
                         jsFileLocation:templateUrl+"/js/lib/revolution/js/",
-						sliderLayout:"fullscreen",
+						sliderLayout:"fullwidth",
 						dottedOverlay:"none",
-						delay:100,
+						delay:9000,
 						navigation: {
 							onHoverStop:"off",
 						},
@@ -369,12 +365,15 @@ $numRows = ceil(sizeof($co_robimy) / 3);
 						visibilityLevels:[1240,1024,778,480],
 						gridwidth:[1320,1024,778,480],
 						gridheight:[800,768,700,700],
-						lazyType:"single",
+						lazyType:"none",
 						shadow:0,
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:true
+						},
 						spinner:"off",
-						stopLoop:"on",
-						stopAfterLoops:0,
-						stopAtSlide:1,
 						shuffle:"off",
 						autoHeight:"off",
 						fullScreenAutoWidth:"off",
@@ -389,7 +388,6 @@ $numRows = ceil(sizeof($co_robimy) / 3);
 						debugMode:false,
 						fallbacks: {
 							simplifyAll:"off",
-							nextSlideOnWindowFocus:"off",
 							disableFocusListener:false,
 						}
                     });
@@ -399,7 +397,7 @@ $numRows = ceil(sizeof($co_robimy) / 3);
     }; /* END OF revapi call */
      }; /* END OF ON LOAD FUNCTION */
     }()); /* END OF WRAPPING FUNCTION */
-        var coRobimyStarted = false;
+     /*   var coRobimyStarted = false;
    
         jQuery(window).scroll(function() {
             if(scrollEnabled){
@@ -415,5 +413,5 @@ $numRows = ceil(sizeof($co_robimy) / 3);
                 coRobimyStarted = true;
             }
             }
-    });
+    });*/
 </script>
