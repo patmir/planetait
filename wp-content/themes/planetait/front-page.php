@@ -134,7 +134,7 @@ $slide = json_decode($slides)[0];
 						data-type="text" 		   
 						data-typewriter='{"lines":"<?=$restOfTypeString?>","enabled":"on","speed":"30","delays":"1%7C100","looped":"on","cursorType":"two","blinking":"on","word_delay":"off","sequenced":"on","hide_cursor":"off","start_delay":"1000","newline_delay":"1000","deletion_speed":"20","deletion_delay":"1000","blinking_speed":"500","linebreak_delay":"60","cursor_type":"two","background":"off"}'
 						data-responsive_offset="on"
-						data-frames='[{"delay":2520,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+						data-frames='[{"delay":"+2520","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 						data-textAlign="['center','center','center','center']"
 						data-paddingtop="[0,0,0,0]"
 						data-paddingright="[0,0,0,0]"
@@ -174,7 +174,7 @@ $slide = json_decode($slides)[0];
 						data-type="image" 
 						data-whiteboard='{"hand_function":"draw","jitter_repeat":"0","jitter_distance":"60","jitter_offset":"0","hand_angle":"0","hand_angle_repeat":"0","goto_next_layer":"on"}'
 						data-responsive_offset="on" 
-						data-frames='[{"from":"x:[100%];","mask":"x:[-100%];y:0;rZ:-2deg;s:inherit;e:inherit;","speed":600,"to":"o:1;rZ:-2deg;","delay":6000,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0;","ease":"Power3.easeIn"}]'
+						data-frames='[{"from":"x:[100%];","mask":"x:[-100%];y:0;rZ:-2deg;s:inherit;e:inherit;","speed":600,"to":"o:1;rZ:-2deg;","delay":1000,"ease":"Power4.easeOut"},{"delay":"wait","speed":3000,"to":"opacity:0;","ease":"Power3.easeIn"}]'
 						data-textAlign="['left','left','left','left']"
 						data-paddingtop="[0,0,0,0]"
 						data-paddingright="[0,0,0,0]"
@@ -191,14 +191,14 @@ $slide = json_decode($slides)[0];
 						data-height="50"
 						data-whitespace="nowrap"		
 						data-type="svg" 
-						data-actions='[{"event":"click","action":"scrollbelow","offset":"-90px","delay":"","speed":"300","ease":"Linear.easeNone"}]'
+						data-actions='[{"event":"click","action":"scrollbelow","offset":"-90px","delay":"+100","speed":"300","ease":"Linear.easeNone"}]'
 						data-svg_src="<?php echo get_template_directory_uri(); ?>/assets/svg/hardware/ic_keyboard_arrow_down_24px.svg" 
 						data-svg_idle="sc:transparent;sw:0;sda:0;sdo:0;" 
 						data-svg_hover="sc:transparent;sw:0;sda:0;sdo:0;" 
 						data-basealign="slide" 
 						data-responsive_offset="off" 
 						data-responsive="off"
-						data-frames='[{"delay":1500,"speed":1000,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
+						data-frames='[{"delay":"+1500","speed":1000,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"150","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);"}]'
 						data-textAlign="['center','center','center','center']"
 						data-paddingtop="[7,7,7,7]"
 						data-paddingright="[5,5,5,5]"
@@ -223,7 +223,7 @@ $slide = json_decode($slides)[0];
 	global $post;
 	foreach($sections as $section){
 		$template = get_page_template_slug( $section->ID );
-			include_once($template);		
+			  include_once($template);
 		}
 ?>
 <?php get_footer(); ?>

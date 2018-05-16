@@ -9,16 +9,6 @@ Template Post Type: section_main
 		<!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
 		<div id="rev_slider_47_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.7">
 			<ul>
-                <!-- SLIDE  -->
-                <li data-index="rs-on-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
-                    data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off"
-                    data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
-                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                    <!-- MAIN IMAGE -->
-                    <img src="<?= get_template_directory_uri() ?>/assets/images/transparent.png" data-bgcolor='#ffffff' style='background:#ffffff' alt="" data-bgposition="center center"
-                        data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-                    <!-- LAYERS -->
-                </li>
 				<li data-index="rs-on-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"
 				 data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="" data-rotate="0" data-saveperformance="off"
 				 data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
@@ -46,7 +36,7 @@ Template Post Type: section_main
 								<!-- LAYER NR. 3 -->
 								<div class="tp-caption   tp-resizeme" id="slide-on-66-layer-2" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
 								 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="normal"
-								 data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+990","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+								 data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+990","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 								 data-margintop="[10,10,10,10]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
 								 data-textAlign="['center','center','center','center']" data-paddingtop="[20,20,20,20]" data-paddingright="[20,20,20,20]"
 								 data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]" style="z-index: 7; white-space: normal; font-size: 36px; line-height: 22px; font-weight: 400; color: #000000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?=strtoupper($section->post_title)?></div>
@@ -54,7 +44,7 @@ Template Post Type: section_main
 								<!-- LAYER NR. 4 -->
 								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-on-66-layer-6" data-x="['left','left','left','left']"
 								 data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="100"
-								 data-height="2" data-whitespace="normal" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+1990","speed":2000,"frame":"0","from":"rY:90deg;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+								 data-height="2" data-whitespace="normal" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+1990","speed":1000,"frame":"0","from":"rY:90deg;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 								 data-margintop="[0,0,0,0]" data-marginright="[auto,auto,auto,auto]" data-marginbottom="[50,50,50,50]" data-marginleft="[auto,auto,auto,auto]"
 								 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
 								 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; display: block;background-color:rgb(198,178,192); margin: 0 auto;">
@@ -138,7 +128,7 @@ Template Post Type: section_main
 							data-voffset="['0','0','0','0']"
 							data-whitespace="normal"
 							data-type="text" data-responsive_offset="on" 
-							data-frames='[{"delay":"+990","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+							data-frames='[{"delay":"+990","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 							data-textAlign="['left','left','center','center']"
 							data-paddingtop="[0,0,40,40]" 
 							data-paddingright="[30,20,20,20]" 
@@ -176,19 +166,20 @@ Template Post Type: section_main
                         sliderLayout: "fullwidth",
                         dottedOverlay: "none",
                         delay: 9000,
-                        navigation: {
-                            onHoverStop: "off",
-                        },
+                        navigation: {},
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:true
+						},
                         responsiveLevels: [1240, 1024, 778, 480],
                         visibilityLevels: [1240, 1024, 778, 480],
                         gridwidth: [1240, 1024, 778, 480],
                         gridHeight: [600, 600, 600, 600],
                         lazyType: "none",
-                        shadow: 1,
+                        shadow: 0,
                         spinner: "off",
-                        stopLoop: "on",
-                        stopAfterLoops: 0,
-                        stopAtSlide: 1,
                         shuffle: "off",
                         autoHeight: "off",
                         disableProgressBar: "on",
@@ -199,18 +190,17 @@ Template Post Type: section_main
                         debugMode: false,
                         fallbacks: {
                             simplifyAll: "off",
-                            nextSlideOnWindowFocus: "off",
                             disableFocusListener: false,
                         }
 					});
-                    tpjon(revapijp).on('revolution.slide.onloaded', function() {
+                  /*  tpjon(revapijp).on('revolution.slide.onloaded', function() {
 						jQuery(window).scroll(function(){onScroll()});
 
-					});
+					});*/
 				}; /* END OF revapi call */
 			}; /* END OF ON LOAD FUNCTION */
 		}()); /* END OF WRAPPING FUNCTION */
-        var onStarted = false;
+      /*  var onStarted = false;
         var caction = false;
 		var onScroll = function() {
 			var top_of_element = jQuery("#rev_slider_47_1").offset().top;
@@ -224,5 +214,5 @@ Template Post Type: section_main
 					revapi47.revnext();
 					onStarted = true;
 				}
-		};
+		};*/
 	</script>

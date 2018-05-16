@@ -124,11 +124,11 @@
 					});
                 }; /* END OF revapi call */
     
-                RsTypewriterAddOn(tpj, revapi39);
+                //RsTypewriterAddOn(tpj, revapi39);
 
-				RsParticlesAddOn(revapi39);
+				//RsParticlesAddOn(revapi39);
 				
-				tpj("#welcome").rsWhiteBoard();
+				//tpj("#welcome").rsWhiteBoard();
  /* END MAIN SLIDER */
 
 

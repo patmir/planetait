@@ -12,7 +12,6 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
 		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/lib/overlay.js" as="script">
 		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/jquery/jquery.js" as="script">
-		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/jquery/jquery-migrate.min.js" as="script">
 		 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.revolution.min.js" as="script">
 		   <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/lib/fonts/Gloria_Hallelujah/gloria.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		   <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/lib/fonts/Ubuntu/Ubuntu-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
@@ -54,9 +53,7 @@ $logo = wp_get_attachment_image_src($logo, "full")[0];
 var templateUrl = "<?= get_template_directory_uri() ?>";
 </script>
 <!-- EXTERNAL SCRIPTS -->
-<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/modernizr-2.7.1.min.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/jquery/jquery.js'></script>
-<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/jquery/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/scripts.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/common.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/frontpage_script.js'></script>
@@ -71,7 +68,7 @@ var templateUrl = "<?= get_template_directory_uri() ?>";
 
 			};</script>
 			<script>
-			var logger = function()
+		/*	var logger = function()
 	{
 		var oldConsoleLog = null;
 		var pub = {};
@@ -91,7 +88,7 @@ var templateUrl = "<?= get_template_directory_uri() ?>";
 							};
 
 		return pub;
-	}();
+	}();*/
 </script>
 <!-- OTHER -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

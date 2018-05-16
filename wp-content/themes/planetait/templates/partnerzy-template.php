@@ -48,7 +48,7 @@ $files = array_diff(scandir($directory), array('..', '.'));
 								<!-- LAYER NR. 3 -->
 								<div class="tp-caption   tp-resizeme" id="slide-par-1-66-layer-2" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']"
 								 data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="normal"
-								 data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+990","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+								 data-type="text" data-responsive_offset="on" data-frames='[{"delay":"+990","speed":1000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 								 data-margintop="[50,50,50,50]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]"
 								 data-textAlign="['center','center','center','center']" data-paddingtop="[20,20,20,20]" data-paddingright="[20,20,20,20]"
 								 data-paddingbottom="[20,20,20,20]" data-paddingleft="[20,20,20,20]" style="z-index: 7; white-space: normal; font-size: 36px; line-height: 22px; font-weight: 400; color: #000; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= strtoupper($section->post_title)?></div>
@@ -56,7 +56,7 @@ $files = array_diff(scandir($directory), array('..', '.'));
 								<!-- LAYER NR. 4 -->
 								<div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-par-1-66-layer-6" data-x="['left','left','left','left']"
 								 data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="100"
-								 data-height="2" data-whitespace="normal" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+1990","speed":2000,"frame":"0","from":"rY:90deg;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+								 data-height="2" data-whitespace="normal" data-type="shape" data-responsive_offset="on" data-frames='[{"delay":"+1990","speed":1000,"frame":"0","from":"rY:90deg;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
 								 data-margintop="[0,0,0,0]" data-marginright="[auto,auto,auto,auto]" data-marginbottom="[50,50,50,50]" data-marginleft="[auto,auto,auto,auto]"
 								 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
 								 data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; display: block;background-color:rgb(198,178,192); margin: 0 auto;">
@@ -123,9 +123,7 @@ $files = array_diff(scandir($directory), array('..', '.'));
                         sliderLayout: "fullwidth",
                         dottedOverlay: "none",
                         delay: 9000,
-                        navigation: {
-                            onHoverStop: "off",
-                        },
+                        navigation: {},
                         responsiveLevels: [1240, 1024, 778, 480],
                         visibilityLevels: [1240, 1024, 778, 480],
                         gridwidth: [1400, 1024, 778, 480],
@@ -133,9 +131,6 @@ $files = array_diff(scandir($directory), array('..', '.'));
                         lazyType: "none",
                         shadow: 0,
                         spinner: "off",
-                        stopLoop: "on",
-                        stopAfterLoops: 0,
-                        stopAtSlide: 1,
                         shuffle: "off",
                         autoHeight: "off",
                         fullScreenAutoWidth: "off",
@@ -148,19 +143,24 @@ $files = array_diff(scandir($directory), array('..', '.'));
                         hideCaptionAtLimit: 0,
                         hideAllCaptionAtLilmit: 0,
                         debugMode: false,
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:true
+						},
                         fallbacks: {
                             simplifyAll: "off",
-                            nextSlideOnWindowFocus: "off",
                             disableFocusListener: false,
                         }
 					});
-                    tpjpar1(revapipar1).on('revolution.slide.onloaded', function() {
+                  /*  tpjpar1(revapipar1).on('revolution.slide.onloaded', function() {
 						if(jQuery("#rev_slider_partnerzy_1").offset().top < jQuery(window).scrollTop() + window.innerHeight) { // el visible witholut scrolling
 
 						}
 						jQuery(window).scroll(function(){onScrollpar1()});
 
-					});
+					});*/
 				}; /* END OF revapi call */
 			}; /* END OF ON LOAD FUNCTION */
 		}()); /* END OF WRAPPING FUNCTION */
@@ -183,10 +183,8 @@ $files = array_diff(scandir($directory), array('..', '.'));
                         jsFileLocation: templateUrl+"/js/lib/revolution/js/",
 						sliderLayout: "fullwidth",
 						dottedOverlay: "none",
-						delay: 1,
-						navigation: {
-							onHoverStop: "off",
-						},
+						delay: 9000,
+						navigation: {},
 						carousel: {
 							horizontal_align: "center",
 							vertical_align: "center",
@@ -198,6 +196,12 @@ $files = array_diff(scandir($directory), array('..', '.'));
 							showLayersAllTime: "off",
 							easing: "Linear.easeNone",
 							speed: "1500"
+						},
+						viewPort: {
+							enable:true,
+							outof:"wait",
+							visible_area:"80%",
+							presize:true
 						},
 						responsiveLevels: [1240, 1024, 778, 480],
 						visibilityLevels: [1240, 1024, 778, 480],
@@ -219,7 +223,6 @@ $files = array_diff(scandir($directory), array('..', '.'));
 						debugMode: false,
 						fallbacks: {
 							simplifyAll: "off",
-							nextSlideOnWindowFocus: "off",
 							disableFocusListener: false,
 						}
 					});
@@ -229,7 +232,7 @@ $files = array_diff(scandir($directory), array('..', '.'));
 
 
 
-        var onStartedpar1 = false;
+       /* var onStartedpar1 = false;
 		var onScrollpar1 = function() {
 			var top_of_element = jQuery("#rev_slider_partnerzy_1").offset().top;
 			var bottom_of_element = jQuery("#rev_slider_partnerzy_1").offset().top + jQuery("#rev_slider_partnerzy_1").outerHeight();
@@ -242,6 +245,6 @@ $files = array_diff(scandir($directory), array('..', '.'));
 					revapipar1.revnext();
 					onStartedpar1 = true;
 				}
-		};
+		};*/
 
 	</script>

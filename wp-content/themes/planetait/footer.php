@@ -311,22 +311,14 @@ ga('send', 'pageview');*/
 
 <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/js/lib/overlay.js"></script>
 <script type='text/javascript' src="<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.enablelog.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/jquery.themepunch.tools.min.js'></script>
-<script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution/js/tp-color-picker.min.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/particles/js/revolution.addon.particles.min.js'></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/revolution-addons/whiteboard/js/revolution.addon.whiteboard.min.js'></script>
 <script type='text/javascript' src="<?= get_template_directory_uri()?>/js/lib/waypoints.js"></script>
 <script type='text/javascript' src='<?php echo get_template_directory_uri(); ?>/js/lib/jquery.counterup.min.js'></script>
-<?php if (!isset($_GET['debug'])) : ?>
-<script>
-	 logger.disableLogger();
-     
-</script>
-	<?php endif; ?>
 	<script>
-            jQuery.LoadingOverlaySetup({
+          jQuery.LoadingOverlaySetup({
                 background      : "rgba(42, 42, 42, 1)",
                 textColor : "#ffffff",
                 fontawesomeColor : "#ffffff",
@@ -370,7 +362,9 @@ var adjustMenu = function(){
 	var nav = jQuery("#nav_forcefullwidth");
 	if(jQuery("body").css("padding-top") != nav.outerHeight() && nav.css("position") == "fixed"){
 	jQuery("body").css("padding-top", "90px");
-	console.log("ADJUST MENU");
+    console.log("ADJUST MENU");
+jQuery(window).off("resize", adjustMenu);
+    
 	}
 
 };
