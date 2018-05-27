@@ -4,12 +4,13 @@ Template Name: Project List
 Template Post Type: subpage
 */
 get_header();
+get_template_part("content", "head");
 ?>
 
 	<style>
 		.tp-caption.ContentZoom-SmallTitle,
 		.ContentZoom-SmallTitle {
-			color: rgba(41, 46, 49, 1.00);
+			color: #000000;
 			font-size: 33px;
 			line-height: 45px;
 			font-weight: 600;
@@ -25,7 +26,7 @@ get_header();
 
 		.tp-caption.ContentZoom-SmallSubtitle,
 		.ContentZoom-SmallSubtitle {
-			color: rgba(111, 124, 130, 1.00);
+			color: #000000;
 			font-size: 16px;
 			line-height: 24px;
 			font-weight: 600;
@@ -41,7 +42,7 @@ get_header();
 
 		.tp-caption.ContentZoom-SmallIcon,
 		.ContentZoom-SmallIcon {
-			color: rgba(41, 46, 49, 1.00);
+			color: #000000;
 			font-size: 20px;
 			line-height: 20px;
 			font-weight: 400;
@@ -57,7 +58,7 @@ get_header();
 
 		.tp-caption.ContentZoom-SmallIcon:hover,
 		.ContentZoom-SmallIcon:hover {
-			color: rgba(111, 124, 130, 1.00);
+			color: #000000;
 			text-decoration: none;
 			background-color: transparent;
 			border-color: transparent;
@@ -69,7 +70,7 @@ get_header();
 
 		.tp-caption.ContentZoom-DetailTitle,
 		.ContentZoom-DetailTitle {
-			color: rgba(41, 46, 49, 1.00);
+			color: #000000;
 			font-size: 36px;
 			line-height: 40px;
 			font-weight: 500;
@@ -85,7 +86,7 @@ get_header();
 
 		.tp-caption.ContentZoom-DetailSubTitle,
 		.ContentZoom-DetailSubTitle {
-			color: rgba(111, 124, 130, 1.00);
+			color: #000000;
 			font-size: 25px;
 			line-height: 25px;
 			font-weight: 500;
@@ -101,7 +102,7 @@ get_header();
 
 		.tp-caption.ContentZoom-DetailContent,
 		.ContentZoom-DetailContent {
-			color: rgba(111, 124, 130, 1.00);
+			color: #000000;
 			font-size: 17px;
 			line-height: 28px;
 			font-weight: 500;
@@ -117,7 +118,7 @@ get_header();
 
 		.tp-caption.ContentZoom-Button,
 		.ContentZoom-Button {
-			color: rgba(41, 46, 49, 1.00);
+			color: #000000;
 			font-size: 13px;
 			line-height: 13px;
 			font-weight: 700;
@@ -134,7 +135,7 @@ get_header();
 
 		.tp-caption.ContentZoom-Button:hover,
 		.ContentZoom-Button:hover {
-			color: rgba(255, 255, 255, 1.00);
+			color: #000000;
 			text-decoration: none;
 			background-color: rgba(41, 46, 49, 1.00);
 			border-color: rgba(41, 46, 49, 1.00);
@@ -146,7 +147,7 @@ get_header();
 
 		.tp-caption.ContentZoom-ButtonClose,
 		.ContentZoom-ButtonClose {
-			color: rgba(41, 46, 49, 1.00);
+			color: #000000;
 			font-size: 13px;
 			line-height: 13px;
 			font-weight: 700;
@@ -163,7 +164,7 @@ get_header();
 
 		.tp-caption.ContentZoom-ButtonClose:hover,
 		.ContentZoom-ButtonClose:hover {
-			color: rgba(255, 255, 255, 1.00);
+			color: #000000;
 			text-decoration: none;
 			background-color: rgba(41, 46, 49, 1.00);
 			border-color: rgba(41, 46, 49, 1.00);
@@ -173,108 +174,7 @@ get_header();
 			cursor: pointer
 		}
 	</style>
- <div id="rev_slider_projekty-header_wrapper" class="rev_slider_wrapper fullwidth-container" data-alias="co-robimy-header" data-source="gallery" style="background:#ffffff; padding-bottom: 100px;">
-    <!-- START REVOLUTION SLIDER 5.4.7 fullwidth mode -->
-        <div id="rev_slider_projekty-header" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
-            <ul>
-                <li data-index="rs-59" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300" data-delay="1000" data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                   <!-- MAIN IMAGE -->
-				<img src="<?= get_template_directory_uri()?>/img/vid_header_bg.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina>
-					<div class="rs-background-video-layer" 
-						data-forcerewind="on" 
-						data-volume="mute" 
-						data-videowidth="100%" 
-						data-videoheight="100%" 
-						data-videomp4="<?= get_template_directory_uri()?>/vids/vid_header.mp4" 
-						data-videopreload="auto" 
-						data-videoloop="loop" 
-						data-forceCover="1" 
-						data-aspectratio="16:9" 
-						data-autoplay="true" 
-						data-autoplayonlyfirsttime="false">
-					</div><!-- LAYERS --> <!-- LAYERS -->
-                    <div id="rrzt_59" class="rev_row_zone rev_row_zone_top" style="z-index: 9;">
-
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption  tp-select  " 
-                            id="slide-59-layer-7" 
-                            data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                            data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-                                        data-width="none"
-                            data-height="none"
-                            data-whitespace="nowrap"
-                
-                            data-type="row" 
-                            data-columnbreak="1" 
-                            data-responsive_offset="on" 
-                            data-responsive="off"
-                            data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                            data-margintop="[0,0,0,0]"
-                            data-marginright="[0,0,0,0]"
-                            data-marginbottom="[0,0,0,0]"
-                            data-marginleft="[0,0,0,0]"
-                            data-textAlign="['inherit','inherit','inherit','inherit']"
-                            data-paddingtop="[0,0,0,0]"
-                            data-paddingright="[0,0,0,0]"
-                            data-paddingbottom="[0,0,0,0]"
-                            data-paddingleft="[0,0,0,0]"
-
-                            style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #ffffff; letter-spacing: 0px;">
-                            <!-- LAYER NR. 2 -->
-                            <div class="tp-caption  tp-select  " 
-                                id="slide-59-layer-8" 
-                                data-x="['left','left','left','left']" data-hoffset="['100','100','100','100']" 
-                                data-y="['top','top','top','top']" data-voffset="['100','100','100','100']" 
-                                            data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                    
-                                data-type="column" 
-                                data-responsive_offset="on" 
-                                data-responsive="off"
-                                data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
-                                data-columnwidth="100%"
-                                data-verticalalign="middle"
-                                data-margintop="[0,0,0,0]"
-                                data-marginright="[0,0,0,0]"
-                                data-marginbottom="[0,0,0,0]"
-                                data-marginleft="[0,0,0,0]"
-                                data-textAlign="['center','center','center','center']"
-                                data-paddingtop="[0,0,0,0]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[0,0,0,0]"
-                                data-paddingleft="[0,0,0,0]"
-                                style="z-index: 6; width: 100%;">
-                                <!-- LAYER NR. 3 -->
-                                <div class="tp-caption  tp-select   tp-resizeme" 
-                                    id="slide-59-layer-2" 
-								data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-								data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" 
-								data-whitespace="normal"			
-								data-type="text" 
-								data-responsive_offset="on" 
-                                data-frames='[{"delay":"+500","speed":2000,"frame":"0","from":"y:50px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-                                data-margintop="[0,0,0,0]"
-								data-marginright="[0,0,0,0]"
-								data-marginbottom="[0,0,0,0]"
-								data-marginleft="[0,0,0,0]"
-								data-textAlign="['center','center','center','center']"
-								data-paddingtop="[80,60,80,80]"
-								data-paddingright="[0,0,0,0]"
-								data-paddingbottom="[80,60,80,80]"
-								data-paddingleft="[0,0,0,0]"
-					            data-fontsize="[64,36,36,36]"
-					            data-lineheight="[96,60,60,60]"
-                                    style="z-index: 7; white-space: nowrap; font-size: 72px; line-height: 96px; font-weight: 500; color: #ffffff; letter-spacing: 0px; display: block;font-family:Ubuntu;"><?= the_title(); ?>
-                                </div>
-
-                            </div>
-                        </div>
-                </li>
-                
-            </ul>
-        </div>
-	</div><!-- END REVOLUTION SLIDER PH-->
+ 
 	<div id="rev_slider_projekty-header_2_wrapper" class="rev_slider_wrapper fullwidth-container" data-alias="co-robimy-header" data-source="gallery" style="background:#ffffff; padding-bottom: 20px;">
     <!-- START REVOLUTION SLIDER PH 2 -->
         <div id="rev_slider_projekty-header_2" class="rev_slider fullwidthbanner" style="display:none;" data-version="5.4.7">
@@ -296,7 +196,7 @@ get_header();
                             data-type="row" 
                             data-columnbreak="1" 
                             data-responsive_offset="on" 
-                            data-responsive="off"
+                            data-responsive="on"
                             data-frames='[{"delay":10,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                             data-margintop="[0,0,0,0]"
                             data-marginright="[0,0,0,0]"
@@ -320,7 +220,7 @@ get_header();
                     
                                 data-type="column" 
                                 data-responsive_offset="on" 
-                                data-responsive="off"
+                                data-responsive="on"
                                 data-frames='[{"delay":"+0","speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
                                 data-columnwidth="100%"
                                 data-verticalalign="middle"
@@ -445,8 +345,8 @@ $projekty = get_posts(array(
 						 data-no-retina> </div>
 
 					<!-- LAYER NR. 2 -->
-					<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-<?=$num?>-layer-11" data-x="['center','center','center','center']"
-					 data-hoffset="['406','-1','-1','0']" data-y="['top','middle','middle','middle']" data-voffset="['0','-67','-107','-56']"
+					<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-<?=$num?>-layer-11" data-x="['left','center','center','center']"
+					 data-hoffset="['406','-1','-1','0']" data-y="['top','middle','middle','middle']" data-voffset="['81','-67','-107','-56']"
 					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1000,"to":"o:1;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":500,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" style="z-index: 6;text-transform:left;">
@@ -456,16 +356,15 @@ $projekty = get_posts(array(
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption ContentZoom-SmallTitle   tp-resizeme" id="slide-<?=$num?>-layer-7" data-x="['center','center','center','center']"
 					 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['124','124','85','105']"
-					 data-width="none" data-height="none" data-whitespace="pre-line" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1100,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-					 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,20]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-					 data-fontsize="['28','28','28','14px']"
-					 data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: pre-line;text-transform:left;"><?= $projekt->post_title?> </div>
+					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1100,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap;text-transform:left;"><?= $projekt->post_title?> </div>
 
 					<!-- LAYER NR. 4 -->
 					<div class="tp-caption ContentZoom-SmallSubtitle   tp-resizeme" id="slide-<?=$num?>-layer-9" data-x="['center','center','center','center']"
-					 data-hoffset="['0','0','1','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['160','40','240','80']"
+					 data-hoffset="['0','0','1','0']" data-y="['middle','middle','middle','middle']" data-voffset="['160','160','121','141']"
 					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":1150,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];rZ:0deg;sX:0.7;sY:0.7;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
-					 data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap;text-transform:left;"><?=__("Click the Zoom Icon for More Information", "html5blank")?> </div>
 
 					<!-- LAYER NR. 5 -->
@@ -473,7 +372,7 @@ $projekty = get_posts(array(
 					 data-hoffset="['-60','-60','-60','-60']" data-y="['middle','middle','middle','middle']" data-voffset="['224','224','184','205']"
 					 data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-actions='[{"event":"click","action":"jumptoslide","slide":"previous","delay":""}]'
 					 data-responsive_offset="on" data-frames='[{"from":"opacity:0;","speed":500,"to":"o:1;","delay":0,"ease":"Power1.easeInOut"},{"delay":"wait","speed":500,"to":"opacity:0;","ease":"Power1.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(111,124,130,1);"}]'
-					 data-textAlign="['centerleft','center','center','center']" data-paddingtop="[10,10,10,10]" data-paddingright="[10,10,10,10]" data-paddingbottom="[10,10,10,10]"
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[10,10,10,10]" data-paddingright="[10,10,10,10]" data-paddingbottom="[10,10,10,10]"
 					 data-paddingleft="[10,10,10,10]" style="z-index: 9; white-space: nowrap; font-size: 30px; line-height: 30px;text-transform:left;letter-spacing:2px;font-weight:500;cursor:pointer;">
 						<i class="fa-icon-angle-left"></i>
 					</div>
@@ -510,48 +409,48 @@ $projekty = get_posts(array(
 					<!-- LAYER NR. 8 -->
 					<div class="tp-caption tp-shape tp-shapewrapper tp-shape tp-shapewrapper " id="slide-<?=$num?>-layer-14" data-x="['center','center','center','center']"
 					 data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full"
-					 data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="off"
+					 data-height="full" data-whitespace="nowrap" data-type="shape" data-basealign="slide" data-responsive_offset="off" data-responsive="on"
 					 data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":700,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":1000,"to":"x:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 12;text-transform:left;background-color:rgba(255,255,255,1);">
 					</div>
 
 					<!-- LAYER NR. 9 -->
-					<div class="tp-caption   tp-resizeme set-img-contain" id="slide-<?=$num?>-layer-15" data-x="['left','center','center','center']" data-hoffset="['5','0','0','0']"
-					 data-y="['middle','top','top','top']" data-voffset="['0','40','40','140']" data-width="['500px','760px','480px','96%']" data-height="['600px','400px','533px','320px']"
+					<div class="tp-caption   tp-resizeme" id="slide-<?=$num?>-layer-15" data-x="['left','left','center','center']" data-hoffset="['-261','-50','0','0']"
+					 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','263','216']" data-width="none" data-height="none" data-responsive="on"
 					 data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":2000,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},{"delay":"bytrigger","speed":700,"to":"x:left;","ease":"Power3.easeInOut"}]'
-					 data-textAlign="['left','left','left','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 13;text-transform:left;"
-					 data-bg="<?= get_the_post_thumbnail_url( $projekt->ID, 'full')?>"
-					 >
-					 </div>
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 13;text-transform:left;">
+						<img src="<?= get_the_post_thumbnail_url( $projekt->ID, 'full')?>" alt="" data-ww="['900px','600px','800px','480px']" data-hh="['600px','400px','533','320px']"
+						 data-no-retina> </div>
+
 					<!-- LAYER NR. 10 -->
-					<div class="tp-caption ContentZoom-DetailTitle   tp-resizeme" id="slide-<?=$num?>-layer-16" data-x="['left','center','center','center']"
-					 data-hoffset="['699','40','40','0']" data-y="['top','top','top','top']" data-voffset="['189','725','125','60']" data-fontsize="['28','28','28','28']"
-					 data-lineheight="['36','36','36','36']" data-width="['100%','100%','100%','100%']" data-height="none" data-whitespace="pre-line" data-type="text"
+					<div class="tp-caption ContentZoom-DetailTitle   tp-resizeme" id="slide-<?=$num?>-layer-16" data-x="['left','left','center','center']"
+					 data-hoffset="['699','598','0','0']" data-y="['top','top','top','top']" data-voffset="['189','225','125','105']" data-fontsize="['36','36','36','36']"
+					 data-lineheight="['36','36','36','36']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text"
 					 data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
-					 data-textAlign="['left','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 14; white-space: pre-line;text-transform:left;"><?= $projekt->post_title?> </div>
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 14; white-space: nowrap;text-transform:left;"><?= $projekt->post_title?> </div>
 
 					<!-- LAYER NR. 12 -->
-					<div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19" data-x="['left','center','center','center']"
-					 data-hoffset="['702','0','0','0']" data-y="['top','top','top','top']" data-voffset="['341','779','779','546']" data-fontsize="['17','15','15','13']"
-					 data-lineheight="['28','24','24','22']" data-width="['585','90%','90%','90%']" data-height="['none','129','129','129']"
+					<div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19" data-x="['left','left','center','center']"
+					 data-hoffset="['702','600','0','0']" data-y="['top','top','top','top']" data-voffset="['341','339','229','186']" data-fontsize="['17','15','15','13']"
+					 data-lineheight="['28','24','24','22']" data-width="['585','472','480','360']" data-height="['none','129','129','129']"
 					 data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
-					 data-textAlign="['left','center','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 16; min-width: 585px; max-width: 585px; white-space: normal;text-transform:left;"><?= $projekt->post_content ?> </div>
 					
-					 <div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19-2" data-x="['left','center','center','center']"
-					 data-hoffset="['702','0','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['80','40','80','0']" data-fontsize="['17','15','15','13']"
-					 data-lineheight="['28','24','24','22']" data-width="['585','90%','90%','90%']" data-height="['none','129','129','129']"
+					 <div class="tp-caption ContentZoom-DetailContent   tp-resizeme" id="slide-<?=$num?>-layer-19-2" data-x="['left','left','center','center']"
+					 data-hoffset="['702','600','0','0']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['80','80','80','80']" data-fontsize="['17','15','15','13']"
+					 data-lineheight="['28','24','24','22']" data-width="['585','472','480','360']" data-height="['none','129','129','129']"
 					 data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"}]'
-					 data-textAlign="['left','center','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+					 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 					 data-paddingleft="[0,0,0,0]" data-lasttriggerstate="reset" style="z-index: 17; min-width: 585px; max-width: 585px; white-space: normal;text-transform:left;"><?=__("Technologies","html5blank")?>: <?=implode(", ", $tags)?> </div>
 
 					<!-- LAYER NR. 13 -->
 				<!--	<div class="tp-caption ContentZoom-Button rev-btn " id="slide-<?=$num?>-layer-26" data-x="['left','left','center','center']" data-hoffset="['703','602','0','0']"
 					 data-y="['top','top','top','top']" data-voffset="['513','492','382','341']" data-width="none" data-height="none" data-whitespace="nowrap"
-					 data-type="button" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(41,46,49,1);bc:rgba(41,46,49,1);bw:1px 1px 1px 1px;"}]'
+					 data-type="button" data-responsive_offset="on" data-responsive="on" data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power2.easeInOut"},{"delay":"bytrigger","speed":500,"to":"y:50px;opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255,255,255,1);bg:rgba(41,46,49,1);bc:rgba(41,46,49,1);bw:1px 1px 1px 1px;"}]'
 					 data-textAlign="['left','left','left','left']" data-paddingtop="[15,15,15,15]" data-paddingright="[50,50,50,50]" data-paddingbottom="[15,15,15,15]"
 					 data-paddingleft="[50,50,50,50]" data-lasttriggerstate="reset" style="z-index: 18; white-space: nowrap;text-transform:left;border-color:rgba(41,46,49,0.50);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">VISIT PROJECT </div>
 -->
@@ -568,7 +467,7 @@ $projekty = get_posts(array(
 						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-15","delay":"250"},
 						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-27","delay":"300"},
 						{"event":"click","action":"stoplayer","layer":"slide-<?=$num?>-layer-14","delay":"350"}]'
-					 data-basealign="slide" data-responsive_offset="off" data-responsive="off"
+					 data-basealign="slide" data-responsive_offset="off" data-responsive="on"
 					 data-frames='[
 						{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":"bytrigger","ease":"Power3.easeInOut"},
 						{"delay":"bytrigger","speed":700,"to":"opacity:0;","ease":"nothing"},
@@ -594,7 +493,7 @@ $projekty = get_posts(array(
                     {"event":"click","action":"togglelayer","layerstatus":"hidden","layer":"slider-59-layer-4","delay":"0"},
                     {"event":"click","action":"togglelayer","layerstatus":"hidden","layer":"slider-59-layer-5","delay":"0"},
                     {"event":"click","action":"togglelayer","layerstatus":"hidden","layer":"slider-59-layer-6","delay":"0"}]'
-				 data-basealign="slide" data-responsive_offset="off" data-responsive="off" data-startslide="0" data-endslide="2" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","ease":"nothing"}]'
+				 data-basealign="slide" data-responsive_offset="off" data-responsive="on" data-startslide="0" data-endslide="2" data-frames='[{"from":"opacity:0;","speed":1000,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","ease":"nothing"}]'
 				 data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
 				 data-paddingleft="[0,0,0,0]" style="z-index: 47; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);text-transform:left;">
 					<div id="rev-burger">
@@ -609,61 +508,10 @@ $projekty = get_posts(array(
 	</div>
 
 <script type="text/javascript">
-			            var revapiprojektyheader,
-			            revapiprojektyheader2,
+			            var revapiprojektyheader2,
 			            revapiP,
-                        tpPH,
                         tpjP,
-                        tpPH2;
-            (function() {            
-    if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",LoadPH)
-        else
-        LoadPH();
-    
-	var templateUrl = "<?= get_template_directory_uri() ?>";
-    function LoadPH() {                
-        if (tpPH===undefined) {
-            tpPH = jQuery;
-
-            if("off" == "on") tpPH.noConflict();        
-        }
-				if(tpPH("#rev_slider_projekty-header").revolution == undefined){
-					revslider_showDoubleJqueryError("#rev_slider_projekty-header");
-				}else{
-					revapiprojektyheader = tpPH("#rev_slider_projekty-header").show().revolution({
-						sliderType:"standard",
-                        jsFileLocation:templateUrl+"/js/lib/revolution/js/",
-						sliderLayout:"fullwidth",
-						dottedOverlay:"none",
-						delay:9000,
-						responsiveLevels:[1240,1024,778,480],
-						visibilityLevels:[1240,1024,778,480],
-						gridwidth:[1200,960,720,440],
-						gridheight:[256,148,148,148],
-						lazyType:"single",
-						
-						navigation: {
-							onHoverStop:"off",
-						},
-						shadow:1,
-						spinner:"off",
-						stopLoop:"off",
-						disableProgressBar:"on",
-						hideThumbsOnMobile:"off",
-						hideSliderAtLimit:0,
-						hideCaptionAtLimit:0,
-						hideAllCaptionAtLilmit:0,
-						debugMode:false,
-						fallbacks: {
-							simplifyAll:"off",
-							nextSlideOnWindowFocus:"off",
-							disableFocusListener:false,
-						}
-						
-					});
-    }; /* END OF revapi call */
-     }; /* END OF ON LOAD FUNCTION */
-    }()); /* END OF WRAPPING FUNCTION */    
+                        tpPH2;   
     (function() {            
     if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoadPH2)
         else
@@ -697,7 +545,7 @@ $projekty = get_posts(array(
 						},
 						responsiveLevels:[1240,1024,778,480],
 						visibilityLevels:[1240,1024,778,480],
-						gridwidth:[1024,1024,778,480],
+						gridwidth:[1320,1024,778,480],
 						gridheight:[200,200,200,200],
 						lazyType:"single",
 						shadow:0,
@@ -763,7 +611,7 @@ $projekty = get_posts(array(
 						responsiveLevels: [1240, 1024, 778, 480],
 						visibilityLevels: [1240, 1024, 778, 480],
 						gridwidth: [1400, 1240, 778, 480],
-						gridheight: [768, 1200, 960, 720],
+						gridheight: [768, 768, 960, 720],
 						lazyType: "none",
 						parallax: {
 							type: "mouse+scroll",
